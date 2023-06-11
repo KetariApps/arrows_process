@@ -1,0 +1,16 @@
+{
+  "name": "arrows_process",
+  "version": "1.0.0",
+  "description": "Get arrow values from events from various sources",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zach Garrett",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^11.8.0",
+    "typescript": "^5.1.3"
+  }
+}
