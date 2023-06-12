@@ -1,0 +1,7439 @@
+[
+  {
+    "id": 1,
+    "tournament_name": "UCLA vs USC Rivalry Tournament",
+    "location": "UCLA",
+    "start_date": "2017-12-13",
+    "end_date": "2017-12-13",
+    "updated_at": "2017-12-23T17:39:59.040Z",
+    "events": [
+      {
+        "id": 1,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "tournament_name": "U.S. Team Trials for WA Indoor Championships",
+    "location": "Easton Newberry Sports Center, Newberry, FL",
+    "start_date": "2017-12-15",
+    "end_date": "2017-12-17",
+    "updated_at": "2017-12-23T17:44:29.382Z",
+    "events": [
+      {
+        "id": 2,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "tournament_name": "49th U.S. National Indoor Championships",
+    "location": "United States",
+    "start_date": "2018-01-20",
+    "end_date": "2018-03-04",
+    "updated_at": "2018-04-26T06:36:58.424Z",
+    "events": [
+      {
+        "id": 13,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "49th U.S. National Indoor Championships - Class and Division Results"
+      },
+      {
+        "id": 14,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "49th U.S. National Indoor Championships - Combined Finals Rankings"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "tournament_name": "2018 JOAD National Indoor Championships",
+    "location": "United States",
+    "start_date": "2018-01-19",
+    "end_date": "2018-03-04",
+    "updated_at": "2018-04-26T06:37:05.731Z",
+    "events": [
+      {
+        "id": 11,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "2018 JOAD National Indoor Championships - Combined Results"
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "tournament_name": "2020 USA Archery JOAD Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2020-01-17",
+    "end_date": "2020-03-01",
+    "updated_at": "2020-03-01T07:13:22.923Z",
+    "events": [
+      {
+        "id": 463,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "2020 USA Archery JOAD Indoor Nationals - Combined Results"
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "tournament_name": "51st USA Archery Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2020-01-17",
+    "end_date": "2020-03-01",
+    "updated_at": "2020-03-07T16:46:50.130Z",
+    "events": [
+      {
+        "id": 464,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Class and Division Results"
+      },
+      {
+        "id": 465,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Finals Rankings"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "tournament_name": "50th U.S. National Indoor Championships",
+    "location": "United States",
+    "start_date": "2018-12-28",
+    "end_date": "2019-02-25",
+    "updated_at": "2019-05-02T05:28:31.437Z",
+    "events": [
+      {
+        "id": 148,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "50th U.S. National Indoor Championships - Combined Class and Division Results"
+      },
+      {
+        "id": 149,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "50th U.S. National Indoor Championships - Combined Finals Rankings"
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "tournament_name": "Compound World/Pan Am Team Trials Stage 3",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2019-04-06",
+    "end_date": "2019-04-08",
+    "updated_at": "2019-04-07T06:45:14.703Z",
+    "events": [
+      {
+        "id": 205,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins #1"
+      },
+      {
+        "id": 206,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins #2"
+      },
+      {
+        "id": 202,
+        "display_order": 11,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Men"
+      },
+      {
+        "id": 203,
+        "display_order": 12,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Women"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "tournament_name": "USAT #1 2018 AAE Arizona Cup",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2018-04-06",
+    "end_date": "2018-04-08",
+    "updated_at": "2018-04-10T22:48:23.846Z",
+    "events": [
+      {
+        "id": 87,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 90,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "tournament_name": "League Nights: 3D Indoor",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-08-06",
+    "end_date": "2020-09-24",
+    "updated_at": "2020-08-06T22:07:36.433Z",
+    "events": [
+      {
+        "id": 550,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Day 1: August 6th, 2020"
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "tournament_name": "Spider Cup #3: 720 Outdoor w/ Team Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-07-25",
+    "end_date": "2020-07-25",
+    "updated_at": "2020-07-25T16:32:24.647Z",
+    "events": [
+      {
+        "id": 546,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "tournament_name": "Spider Cup #2 NFAA Field Round",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-06-20",
+    "end_date": "2020-06-20",
+    "updated_at": "2020-06-23T19:15:21.844Z",
+    "events": [
+      {
+        "id": 509,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Spider Cup #2 NFAA Field Round"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "tournament_name": "2019 JOAD National Indoor Championships - Combined Results",
+    "location": "United States",
+    "start_date": "2018-12-28",
+    "end_date": "2019-02-25",
+    "updated_at": "2019-02-19T15:22:26.183Z",
+    "events": [
+      {
+        "id": 151,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "2019 JOAD National Indoor Championships - Combined Results"
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "tournament_name": "Recurve World/Pan Am Team Trials Stage 3",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2019-03-29",
+    "end_date": "2019-04-04",
+    "updated_at": "2019-04-07T06:45:38.082Z",
+    "events": [
+      {
+        "id": 181,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Rounds #4 and #5"
+      },
+      {
+        "id": 182,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins #1"
+      },
+      {
+        "id": 190,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "1 Arrow Shoot-off Round Robin #1"
+      },
+      {
+        "id": 191,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "1 Arrow Shoot-off Round Robin #2"
+      },
+      {
+        "id": 194,
+        "display_order": 5,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round #6"
+      },
+      {
+        "id": 195,
+        "display_order": 6,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins #2"
+      },
+      {
+        "id": 196,
+        "display_order": 7,
+        "event_type": "RankingEvent",
+        "event_name": "Team Round Simulation #1"
+      },
+      {
+        "id": 197,
+        "display_order": 8,
+        "event_type": "RankingEvent",
+        "event_name": "Team Round Simulation #2"
+      },
+      {
+        "id": 200,
+        "display_order": 9,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins #3"
+      },
+      {
+        "id": 183,
+        "display_order": 11,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Recurve Men"
+      },
+      {
+        "id": 188,
+        "display_order": 12,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Recurve Women"
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "tournament_name": "Spider Cup #6: USAA Indoor Round",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2019-12-14",
+    "end_date": "2019-12-14",
+    "updated_at": "2019-12-14T17:16:33.758Z",
+    "events": [
+      {
+        "id": 410,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "tournament_name": "2020 ESLAC Momentum",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2020-02-01",
+    "end_date": "2020-02-01",
+    "updated_at": "2020-02-02T00:09:25.841Z",
+    "events": [
+      {
+        "id": 462,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2020 ESLAC Momentum"
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "tournament_name": "2019 OAS National Championships",
+    "location": "Various Locations, USA",
+    "start_date": "2019-05-04",
+    "end_date": "2019-05-04",
+    "updated_at": "2019-05-04T21:10:47.924Z",
+    "events": [
+      {
+        "id": 217,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "tournament_name": "Para World/Pan Am Team Trials Stage 3",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2019-04-06",
+    "end_date": "2019-04-08",
+    "updated_at": "2019-04-08T18:32:36.025Z",
+    "events": [
+      {
+        "id": 207,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round #2"
+      },
+      {
+        "id": 210,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Combined Ranking"
+      },
+      {
+        "id": 208,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins"
+      },
+      {
+        "id": 211,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Recurve Open (Para) Men"
+      },
+      {
+        "id": 212,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Compound Open (Para) Men"
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "tournament_name": "Spider Cup #1: NFAA Indoor Round",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-02-22",
+    "end_date": "2020-02-22",
+    "updated_at": "2020-02-22T23:46:18.422Z",
+    "events": [
+      {
+        "id": 494,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "tournament_name": "Florida 4-H State Traditional Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-02-22",
+    "end_date": "2020-02-22",
+    "updated_at": "2020-02-22T21:12:41.025Z",
+    "events": [
+      {
+        "id": 492,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "FITA Round"
+      },
+      {
+        "id": 493,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Field \u0026 3D Round"
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "tournament_name": "League Nights: 3D Outdoor",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-06-11",
+    "end_date": "2020-07-30",
+    "updated_at": "2020-07-30T23:56:47.065Z",
+    "events": [
+      {
+        "id": 504,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Day 1: June, 11th, 2020"
+      },
+      {
+        "id": 506,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Day 2: June 18th, 2020"
+      },
+      {
+        "id": 507,
+        "display_order": 3,
+        "event_type": "RankingEvent",
+        "event_name": "Day 3: Jun 25th, 2020"
+      },
+      {
+        "id": 510,
+        "display_order": 4,
+        "event_type": "RankingEvent",
+        "event_name": "Day 4: July 2nd, 2020"
+      },
+      {
+        "id": 543,
+        "display_order": 5,
+        "event_type": "RankingEvent",
+        "event_name": "Day 5: July 9th, 2020"
+      },
+      {
+        "id": 544,
+        "display_order": 6,
+        "event_type": "RankingEvent",
+        "event_name": "Day 6: July 16th, 2020"
+      },
+      {
+        "id": 545,
+        "display_order": 7,
+        "event_type": "RankingEvent",
+        "event_name": "Day 7: July 23rd, 2020"
+      },
+      {
+        "id": 547,
+        "display_order": 8,
+        "event_type": "RankingEvent",
+        "event_name": "Day 8: July 30th, 2020"
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "tournament_name": "Florida 4-H State 3D Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-01-25",
+    "end_date": "2020-01-25",
+    "updated_at": "2020-02-21T23:18:54.549Z",
+    "events": [
+      {
+        "id": 419,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "tournament_name": "End of Session Challenge",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-02-29",
+    "end_date": "2020-02-29",
+    "updated_at": "2020-02-29T20:55:25.656Z",
+    "events": [
+      {
+        "id": 498,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "tournament_name": "USAT #4 2018 Buckeye Classic",
+    "location": "Darree Fields Park, Dublin, OH",
+    "start_date": "2018-08-24",
+    "end_date": "2018-08-26",
+    "updated_at": "2018-08-26T16:37:52.341Z",
+    "events": [
+      {
+        "id": 125,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Rounds"
+      },
+      {
+        "id": 128,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 130,
+        "display_order": 4,
+        "event_type": "SpecialEvent",
+        "event_name": "World/Pan Am Trials Stage 2 Rankings"
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "tournament_name": "24th Annual Grapestakes Tournament",
+    "location": "Discovery Park, Sacramento, CA",
+    "start_date": "2019-08-24",
+    "end_date": "2019-08-25",
+    "updated_at": "2019-08-25T21:50:44.546Z",
+    "events": [
+      {
+        "id": 310,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "tournament_name": "USAT #1 2019 AAE Arizona Cup",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2019-04-05",
+    "end_date": "2019-04-07",
+    "updated_at": "2019-04-07T16:51:41.882Z",
+    "events": [
+      {
+        "id": 179,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 201,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "tournament_name": "2019 Fivics West Region Outdoor Collegiate Championship",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2019-04-12",
+    "end_date": "2019-04-14",
+    "updated_at": "2019-04-13T19:30:23.914Z",
+    "events": [
+      {
+        "id": 213,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 214,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 216,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 215,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "tournament_name": "2018 US National Outdoor Collegiate Championships",
+    "location": "Easton Newberry Sports Complex, Newberry, FL",
+    "start_date": "2018-05-18",
+    "end_date": "2018-05-20",
+    "updated_at": "2019-05-09T15:21:46.131Z",
+    "events": [
+      {
+        "id": 95,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 96,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 98,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 100,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 99,
+        "display_order": 5,
+        "event_type": "SpecialEvent",
+        "event_name": "Collegiate All-American Calculations"
+      }
+    ]
+  },
+  {
+    "id": 261,
+    "tournament_name": "End of Session Challenge: Christmas Shoot",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2019-12-21",
+    "end_date": "2019-12-21",
+    "updated_at": "2019-12-30T23:08:46.966Z",
+    "events": [
+      {
+        "id": 411,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "tournament_name": "2019 JOAD National Target Championships",
+    "location": "WRAL Soccer Center, Raleigh, NC",
+    "start_date": "2019-07-10",
+    "end_date": "2019-07-14",
+    "updated_at": "2019-07-29T20:50:04.081Z",
+    "events": [
+      {
+        "id": 255,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Rounds (Rankings for Elimination Rounds)"
+      },
+      {
+        "id": 257,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 259,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Team Rounds"
+      },
+      {
+        "id": 256,
+        "display_order": 4,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Class and Division Results (Guests Separated)"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "tournament_name": "2018 West Region Outdoor Collegiate Championships",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2018-03-30",
+    "end_date": "2018-04-01",
+    "updated_at": "2018-03-31T19:37:09.090Z",
+    "events": [
+      {
+        "id": 86,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 89,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "tournament_name": "2019 U.S. National Indoor Championships Final",
+    "location": "Duke Energy Center, Cincinnati, Ohio",
+    "start_date": "2019-03-15",
+    "end_date": "2019-03-15",
+    "updated_at": "2019-03-14T22:26:32.407Z",
+    "events": [
+      {
+        "id": 177,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Finals Rankings"
+      },
+      {
+        "id": 178,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Finals Matches"
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "tournament_name": "USAT #3 2019 Doinker SoCal Showdown",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2019-06-21",
+    "end_date": "2019-06-23",
+    "updated_at": "2019-06-23T00:38:58.304Z",
+    "events": [
+      {
+        "id": 237,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 240,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "tournament_name": "2018 OAS National Championships",
+    "location": "Chula Vista, CA",
+    "start_date": "2018-04-28",
+    "end_date": "2018-04-29",
+    "updated_at": "2019-04-29T18:01:43.484Z",
+    "events": [
+      {
+        "id": 91,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "tournament_name": "USAT #3 2018 Doinker SoCal Showdown and Youth Olympic Games Trials",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2018-06-15",
+    "end_date": "2018-06-17",
+    "updated_at": "2018-06-18T03:01:51.271Z",
+    "events": [
+      {
+        "id": 103,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 105,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 107,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Youth Olympic Games Trials"
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "tournament_name": "51st USA Archery Indoor Nationals - Albuquerque, NM",
+    "location": "Albuquerque, NM",
+    "start_date": "2020-02-01",
+    "end_date": "2020-02-02",
+    "updated_at": "2022-01-30T20:45:33.390Z",
+    "events": [
+      {
+        "id": 428,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 877,
+    "tournament_name": "53rd USA Archery Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2022-01-15",
+    "end_date": "2022-03-01",
+    "updated_at": "2022-05-16T19:36:47.640Z",
+    "events": [
+      {
+        "id": 1219,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Class and Division Results"
+      },
+      {
+        "id": 1317,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Finals Rankings"
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "tournament_name": "USAT #2 2019 Easton Foundations Gator Cup",
+    "location": "Easton Newberry Archery Center, Newberry, FL",
+    "start_date": "2019-05-31",
+    "end_date": "2019-06-02",
+    "updated_at": "2019-06-01T22:37:35.378Z",
+    "events": [
+      {
+        "id": 233,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 235,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 325,
+    "tournament_name": "2020 Mid-South Conference Indoor",
+    "location": "Madisonville, KY",
+    "start_date": "2020-02-14",
+    "end_date": "2020-02-16",
+    "updated_at": "2020-02-16T22:56:14.251Z",
+    "events": [
+      {
+        "id": 470,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 471,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 473,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 474,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "tournament_name": "2019 Cotton Boll Classic",
+    "location": "Palo Verde School, Tulare, CA",
+    "start_date": "2019-05-18",
+    "end_date": "2019-05-19",
+    "updated_at": "2019-05-23T03:41:57.224Z",
+    "events": [
+      {
+        "id": 227,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "tournament_name": "2020 California State JOAD Indoor Championship",
+    "location": "Tulare County Fairgrounds, Tulare, CA",
+    "start_date": "2020-01-03",
+    "end_date": "2020-01-03",
+    "updated_at": "2020-02-10T18:44:04.059Z",
+    "events": [
+      {
+        "id": 412,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "tournament_name": "2020 California State Indoor Championship",
+    "location": "Tulare County Fairgrounds, Tulare, CA",
+    "start_date": "2020-01-04",
+    "end_date": "2020-01-05",
+    "updated_at": "2020-02-10T18:44:22.051Z",
+    "events": [
+      {
+        "id": 413,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "tournament_name": "2018 JOAD National Target Championships",
+    "location": "WRAL Soccer Center, Raleigh, NC",
+    "start_date": "2018-07-11",
+    "end_date": "2018-07-16",
+    "updated_at": "2018-07-13T22:46:49.171Z",
+    "events": [
+      {
+        "id": 108,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Rounds (Guests Combined)"
+      },
+      {
+        "id": 109,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 110,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Team Rounds"
+      },
+      {
+        "id": 111,
+        "display_order": 4,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Class and Division Results (Guests Separated)"
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "tournament_name": "U.S. Olympic Trials",
+    "location": "Various Locations, USA",
+    "start_date": "2019-08-15",
+    "end_date": "2021-06-01",
+    "updated_at": "2021-05-30T18:15:06.295Z",
+    "events": [
+      {
+        "id": 327,
+        "display_order": 2,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Recurve Men - Overall Points"
+      },
+      {
+        "id": 328,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Recurve Women - Overall Points"
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "tournament_name": "2019 California State Outdoor Championships",
+    "location": "El Dorado Park Archery Range, Long Beach, CA",
+    "start_date": "2019-06-08",
+    "end_date": "2019-06-09",
+    "updated_at": "2021-06-16T22:34:51.416Z",
+    "events": [
+      {
+        "id": 236,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "tournament_name": "2019 U.S. National Field Championships",
+    "location": "Ashland County Wildlife Conservation Club, Ashland, OH",
+    "start_date": "2019-08-30",
+    "end_date": "2019-09-01",
+    "updated_at": "2021-08-31T04:17:37.548Z",
+    "events": [
+      {
+        "id": 323,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "tournament_name": "2019 Pacific Coast Championship",
+    "location": "Discovery Park, Sacramento, CA",
+    "start_date": "2019-09-21",
+    "end_date": "2019-09-22",
+    "updated_at": "2019-10-16T04:09:34.703Z",
+    "events": [
+      {
+        "id": 324,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "tournament_name": "134th U.S. National Target Championships and 2018 U.S. Open",
+    "location": "Darree Park Soccer Fields, Dublin, OH",
+    "start_date": "2018-08-08",
+    "end_date": "2018-08-11",
+    "updated_at": "2018-08-10T17:56:16.647Z",
+    "events": [
+      {
+        "id": 118,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Qualification Rounds (Elimination Rankings)"
+      },
+      {
+        "id": 117,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Class and Division Results"
+      },
+      {
+        "id": 119,
+        "display_order": 3,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "World/Pan Am Trials Stage 1 Rankings"
+      },
+      {
+        "id": 124,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 120,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 122,
+        "display_order": 6,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "tournament_name": "USAT #2 2018 Easton Foundations Gator Cup",
+    "location": "Easton Newberry Sports Complex, Newberry, FL",
+    "start_date": "2018-05-11",
+    "end_date": "2018-05-13",
+    "updated_at": "2018-06-14T12:30:37.554Z",
+    "events": [
+      {
+        "id": 92,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 94,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 444,
+    "tournament_name": "Spider Cup #1: Lancaster Round",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-01-16",
+    "end_date": "2021-01-16",
+    "updated_at": "2021-01-17T01:37:32.315Z",
+    "events": [
+      {
+        "id": 654,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "tournament_name": "136th USA Archery Target Nationals and U.S. Open",
+    "location": "Dorey Park, Henrico, VA",
+    "start_date": "2020-08-12",
+    "end_date": "2020-08-15",
+    "updated_at": "2020-08-19T14:53:39.099Z",
+    "events": [
+      {
+        "id": 551,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Qualification Round (Ranking for Eliminations)"
+      },
+      {
+        "id": 548,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 552,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 439,
+    "tournament_name": "Spider Cup #6: USAA Indoor Round w/ Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-12-19",
+    "end_date": "2020-12-19",
+    "updated_at": "2020-12-19T18:17:17.154Z",
+    "events": [
+      {
+        "id": 646,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 399,
+    "tournament_name": "End of Session Challenge: October 2020",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-10-17",
+    "end_date": "2020-10-17",
+    "updated_at": "2020-10-17T21:55:50.374Z",
+    "events": [
+      {
+        "id": 603,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge Indoor"
+      },
+      {
+        "id": 604,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge Outdoor"
+      }
+    ]
+  },
+  {
+    "id": 1288,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2023-01-12",
+    "end_date": "2023-02-26",
+    "updated_at": "2023-02-26T21:03:28.824Z",
+    "events": [
+      {
+        "id": 1948,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Class and Division Results"
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "tournament_name": "USAT #1 2020 Rebel Gear Buckeye Classic",
+    "location": "Darree Fields Park, Dublin, OH",
+    "start_date": "2020-08-28",
+    "end_date": "2020-08-30",
+    "updated_at": "2020-08-29T16:36:46.572Z",
+    "events": [
+      {
+        "id": 555,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 557,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 517,
+    "tournament_name": "End of Session Challenge: February 2021",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-02-27",
+    "end_date": "2021-02-27",
+    "updated_at": "2021-02-27T20:38:20.479Z",
+    "events": [
+      {
+        "id": 729,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "tournament_name": "End of Session August 29, 2020",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-08-29",
+    "end_date": "2020-08-29",
+    "updated_at": "2020-08-29T19:09:30.227Z",
+    "events": [
+      {
+        "id": 559,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge"
+      }
+    ]
+  },
+  {
+    "id": 361,
+    "tournament_name": "2020 USA Archery Indoor Nationals Final",
+    "location": "Yankton, SD",
+    "start_date": "2020-09-27",
+    "end_date": "2020-09-27",
+    "updated_at": "2022-02-23T18:43:00.172Z",
+    "events": []
+  },
+  {
+    "id": 360,
+    "tournament_name": "Spider Cup #4: FITA Field Round",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-09-19",
+    "end_date": "2020-09-19",
+    "updated_at": "2020-09-19T19:22:25.062Z",
+    "events": [
+      {
+        "id": 563,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "FITA Field"
+      }
+    ]
+  },
+  {
+    "id": 438,
+    "tournament_name": "End of Session Challenge: Decemer 2020",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-12-20",
+    "end_date": "2020-12-20",
+    "updated_at": "2020-12-20T20:24:39.960Z",
+    "events": [
+      {
+        "id": 645,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge"
+      }
+    ]
+  },
+  {
+    "id": 397,
+    "tournament_name": "Spider Cup #5: 720 Outdoor Round with Individual Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2020-10-10",
+    "end_date": "2020-10-10",
+    "updated_at": "2020-12-18T20:38:35.066Z",
+    "events": [
+      {
+        "id": 599,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 600,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Matches"
+      }
+    ]
+  },
+  {
+    "id": 445,
+    "tournament_name": "2021 USA Archery JOAD Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2021-01-01",
+    "end_date": "2021-03-31",
+    "updated_at": "2021-06-27T20:32:17.086Z",
+    "events": [
+      {
+        "id": 655,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "2021 USA Archery JOAD Indoor Nationals - Combined Results"
+      }
+    ]
+  },
+  {
+    "id": 475,
+    "tournament_name": "USAA Indoor Florida State Championship - North",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-02-20",
+    "end_date": "2021-02-21",
+    "updated_at": "2021-02-21T22:47:57.386Z",
+    "events": [
+      {
+        "id": 686,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 402,
+    "tournament_name": "USAT #3 2020 Easton Foundations Gator Cup",
+    "location": "Easton Newberry Archery Center, Newberry, FL",
+    "start_date": "2020-11-06",
+    "end_date": "2020-11-08",
+    "updated_at": "2021-04-09T04:28:15.872Z",
+    "events": [
+      {
+        "id": 607,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 608,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 396,
+    "tournament_name": "USAT #2 2020 SoCal Showdown",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2020-10-02",
+    "end_date": "2020-10-04",
+    "updated_at": "2021-06-01T17:19:28.340Z",
+    "events": [
+      {
+        "id": 597,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 598,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 446,
+    "tournament_name": "52nd USA Archery Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2021-01-01",
+    "end_date": "2021-03-31",
+    "updated_at": "2021-06-17T18:13:18.633Z",
+    "events": [
+      {
+        "id": 656,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Class and Division Results"
+      }
+    ]
+  },
+  {
+    "id": 874,
+    "tournament_name": "Florida 4-H State 3D Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-01-22",
+    "end_date": "2022-01-22",
+    "updated_at": "2022-01-22T21:07:54.166Z",
+    "events": [
+      {
+        "id": 1216,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1011,
+    "tournament_name": "4 Etapa Campeonato Paulista/Brasileiro",
+    "location": "Stand Café com Arco",
+    "start_date": "2022-06-11",
+    "end_date": "2022-06-11",
+    "updated_at": "2022-06-11T17:39:11.566Z",
+    "events": [
+      {
+        "id": 1556,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Round Principal"
+      }
+    ]
+  },
+  {
+    "id": 668,
+    "tournament_name": "U.S. Olympic Trials - Stage 3 \u0026 4",
+    "location": "Salt Lake City, Utah",
+    "start_date": "2021-05-23",
+    "end_date": "2021-06-01",
+    "updated_at": "2021-06-01T12:20:59.205Z",
+    "events": [
+      {
+        "id": 917,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Stage 3 - Ranking Round"
+      },
+      {
+        "id": 919,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 3 - Round Robin Matches #1"
+      },
+      {
+        "id": 923,
+        "display_order": 3,
+        "event_type": "RankingEvent",
+        "event_name": "Stage 3 - Team Round Simulation"
+      },
+      {
+        "id": 924,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 3 - Round Robin Matches #2"
+      },
+      {
+        "id": 926,
+        "display_order": 5,
+        "event_type": "RankingEvent",
+        "event_name": "Stage 4 - Ranking Round"
+      },
+      {
+        "id": 927,
+        "display_order": 6,
+        "event_type": "RankingEvent",
+        "event_name": "Stage 4 - Team Round Simulation"
+      },
+      {
+        "id": 928,
+        "display_order": 8,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 4 - Elimination Round"
+      },
+      {
+        "id": 933,
+        "display_order": 10,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 4 - Round Robin Matches"
+      }
+    ]
+  },
+  {
+    "id": 617,
+    "tournament_name": "Spider Cup #2: 720 Outdoor Round with Individual Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-04-17",
+    "end_date": "2021-04-17",
+    "updated_at": "2021-04-17T17:04:57.687Z",
+    "events": [
+      {
+        "id": 836,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 730,
+    "tournament_name": "Spider Cup #4: NFAA Field",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-08-14",
+    "end_date": "2021-08-14",
+    "updated_at": "2021-09-03T10:26:53.983Z",
+    "events": [
+      {
+        "id": 1033,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Spider Cup #4: NFAA Field"
+      }
+    ]
+  },
+  {
+    "id": 866,
+    "tournament_name": "2022 USA Archery Delaware State Indoor Championship",
+    "location": "Dover Building - Delaware State Fairgrounds",
+    "start_date": "2022-01-21",
+    "end_date": "2022-01-23",
+    "updated_at": "2022-01-23T17:08:33.323Z",
+    "events": [
+      {
+        "id": 1208,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1180,
+    "tournament_name": "2022 TMA 4th Quarter Virtual",
+    "location": "Timber Mesa Outdoors",
+    "start_date": "2022-12-11",
+    "end_date": "2022-12-11",
+    "updated_at": "2022-12-13T02:51:09.059Z",
+    "events": [
+      {
+        "id": 1800,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 787,
+    "tournament_name": "Spider Cup #5: FITA Field",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-10-09",
+    "end_date": "2021-10-09",
+    "updated_at": "2021-10-09T18:04:41.635Z",
+    "events": [
+      {
+        "id": 1107,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 786,
+    "tournament_name": "2021 CA JOAD State Indoor Championships",
+    "location": "Tulare, CA",
+    "start_date": "2021-10-08",
+    "end_date": "2021-10-08",
+    "updated_at": "2021-10-12T00:45:58.330Z",
+    "events": [
+      {
+        "id": 1106,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 880,
+    "tournament_name": "PCA Winter JOAD 2022",
+    "location": "Plum Creek Archery, 204 1st Ave E, Dyersville, IA 52040",
+    "start_date": "2022-01-29",
+    "end_date": "2022-01-29",
+    "updated_at": "2022-01-30T02:29:03.100Z",
+    "events": [
+      {
+        "id": 1223,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 862,
+    "tournament_name": "USAA JOAD Indoor Florida State Championship",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-01-14",
+    "end_date": "2022-01-15",
+    "updated_at": "2022-01-15T20:57:38.103Z",
+    "events": [
+      {
+        "id": 1205,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 882,
+    "tournament_name": "2022 ABFAA State 5 Spot Championship",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2022-02-19",
+    "end_date": "2022-02-20",
+    "updated_at": "2022-02-20T22:48:19.272Z",
+    "events": [
+      {
+        "id": 1225,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1044,
+    "tournament_name": "Colorado Outdoor Buckle Series #5",
+    "location": "Titan Sports Park",
+    "start_date": "2022-08-21",
+    "end_date": "2022-08-21",
+    "updated_at": "2022-08-21T23:07:08.012Z",
+    "events": [
+      {
+        "id": 1625,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Distance 1 Qualifying Round"
+      },
+      {
+        "id": 1626,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Distance 2 Qualifying Round"
+      },
+      {
+        "id": 1627,
+        "display_order": 3,
+        "event_type": "RankingEvent",
+        "event_name": "Distance 3 Qualifying Round"
+      },
+      {
+        "id": 1628,
+        "display_order": 4,
+        "event_type": "RankingEvent",
+        "event_name": "Distance 4 Qualifying Round"
+      }
+    ]
+  },
+  {
+    "id": 734,
+    "tournament_name": "End of Session Challenge Indoor - August 2021",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-08-28",
+    "end_date": "2021-08-28",
+    "updated_at": "2021-08-28T19:27:21.199Z",
+    "events": [
+      {
+        "id": 1043,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge"
+      }
+    ]
+  },
+  {
+    "id": 1087,
+    "tournament_name": "2022 USA Archery Utah, Idaho and Wyoming State Outdoor Championships",
+    "location": "Utah",
+    "start_date": "2022-09-17",
+    "end_date": "2022-09-17",
+    "updated_at": "2022-09-17T20:30:20.929Z",
+    "events": [
+      {
+        "id": 1678,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2022 USA Archery Utah, Idaho and Wyoming State Outdoor Championships"
+      }
+    ]
+  },
+  {
+    "id": 689,
+    "tournament_name": "World Archery Youth Championship US Team Trials",
+    "location": "Jack Allen Recreation Center, Decatur, AL",
+    "start_date": "2021-07-06",
+    "end_date": "2021-07-11",
+    "updated_at": "2021-07-11T14:40:46.728Z",
+    "events": [
+      {
+        "id": 978,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 979,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robin Matches"
+      },
+      {
+        "id": 981,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Junior Men"
+      },
+      {
+        "id": 982,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Junior Women"
+      },
+      {
+        "id": 985,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Cadet Men"
+      },
+      {
+        "id": 984,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Cadet Women"
+      },
+      {
+        "id": 986,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Junior Men"
+      },
+      {
+        "id": 987,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Junior Women"
+      },
+      {
+        "id": 988,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Cadet Men"
+      },
+      {
+        "id": 989,
+        "display_order": 10,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Cadet Women"
+      }
+    ]
+  },
+  {
+    "id": 1224,
+    "tournament_name": "2023 KY S3DA Indoor State Championship",
+    "location": "Owensboro Convention Center - Owensboro, KY",
+    "start_date": "2023-02-16",
+    "end_date": "2023-02-19",
+    "updated_at": "2023-02-28T04:11:53.180Z",
+    "events": [
+      {
+        "id": 1880,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualifying Round"
+      }
+    ]
+  },
+  {
+    "id": 1019,
+    "tournament_name": "2022 Shamrock Slam",
+    "location": "Ben Avery Shooting Facility",
+    "start_date": "2022-07-08",
+    "end_date": "2022-07-10",
+    "updated_at": "2022-07-09T21:31:51.055Z",
+    "events": [
+      {
+        "id": 1573,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Shamrock Slam"
+      },
+      {
+        "id": 1587,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Shamrock Slam Elimination round"
+      }
+    ]
+  },
+  {
+    "id": 1017,
+    "tournament_name": "2022 USA Archery Virginia State Outdoor Championship",
+    "location": "Tucker Park Goochland, VA",
+    "start_date": "2022-06-25",
+    "end_date": "2022-06-26",
+    "updated_at": "2022-06-27T15:52:44.370Z",
+    "events": [
+      {
+        "id": 1570,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Sat/Sun Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 625,
+    "tournament_name": "End of Session Challenge Outdoor - May 2021",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-05-01",
+    "end_date": "2021-05-01",
+    "updated_at": "2021-05-01T15:05:47.477Z",
+    "events": [
+      {
+        "id": 846,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge Outdoor"
+      }
+    ]
+  },
+  {
+    "id": 970,
+    "tournament_name": "ENAC Funtastic Friday Fun-Shoot",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-04-15",
+    "end_date": "2022-04-15",
+    "updated_at": "2022-04-15T23:12:30.671Z",
+    "events": [
+      {
+        "id": 1411,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Indoor Scoring Round"
+      }
+    ]
+  },
+  {
+    "id": 687,
+    "tournament_name": "2021 USA Archery JOAD Target Nationals",
+    "location": "Jack Allen Recreation Center, Decatur, AL",
+    "start_date": "2021-07-06",
+    "end_date": "2021-07-11",
+    "updated_at": "2021-07-14T15:34:21.042Z",
+    "events": [
+      {
+        "id": 962,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 963,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "World Archery Youth Championship \u0026 Junior Pan Am Games US Team Trials"
+      },
+      {
+        "id": 965,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 621,
+    "tournament_name": "USAT #2 2021 Easton Foundations Gator Cup",
+    "location": "Easton Newberry Archery Center, Newberry, FL",
+    "start_date": "2021-05-07",
+    "end_date": "2021-05-09",
+    "updated_at": "2021-05-09T14:38:35.810Z",
+    "events": [
+      {
+        "id": 841,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 848,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 891,
+        "display_order": 3,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "2021 World Archery Championships - U.S. Team Trials - Stage #2"
+      }
+    ]
+  },
+  {
+    "id": 876,
+    "tournament_name": "2022 USA Archery JOAD Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2022-01-15",
+    "end_date": "2022-03-01",
+    "updated_at": "2022-03-02T05:08:42.425Z",
+    "events": [
+      {
+        "id": 1218,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Class and Division Results"
+      }
+    ]
+  },
+  {
+    "id": 739,
+    "tournament_name": "2021 USA Archery Field Nationals",
+    "location": "Darrington Archery Ranges, Darrington, WA",
+    "start_date": "2021-09-03",
+    "end_date": "2021-09-05",
+    "updated_at": "2021-09-07T14:43:56.464Z",
+    "events": [
+      {
+        "id": 1049,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 744,
+    "tournament_name": "2021 Arizona State Masters Indoor Championships",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2021-09-18",
+    "end_date": "2021-09-19",
+    "updated_at": "2021-09-18T22:59:01.180Z",
+    "events": [
+      {
+        "id": 1055,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 626,
+    "tournament_name": "End of Session Challenge Indoor - May 2021",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-05-01",
+    "end_date": "2021-05-01",
+    "updated_at": "2021-05-01T19:41:39.546Z",
+    "events": [
+      {
+        "id": 847,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge Indoor"
+      }
+    ]
+  },
+  {
+    "id": 1122,
+    "tournament_name": "Halloween Indoor Shoot",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-10-29",
+    "end_date": "2022-10-29",
+    "updated_at": "2022-10-29T18:44:04.828Z",
+    "events": [
+      {
+        "id": 1734,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Halloween Indoor Shoot"
+      }
+    ]
+  },
+  {
+    "id": 1170,
+    "tournament_name": "2022 Chia Archery Championship",
+    "location": "Ohlone Archery",
+    "start_date": "2022-12-04",
+    "end_date": "2022-12-04",
+    "updated_at": "2022-12-11T20:06:50.675Z",
+    "events": [
+      {
+        "id": 1791,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1805,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Champions Matches"
+      }
+    ]
+  },
+  {
+    "id": 868,
+    "tournament_name": "2022 ESLAC Momentum",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2022-01-22",
+    "end_date": "2022-01-22",
+    "updated_at": "2022-01-23T00:16:11.371Z",
+    "events": [
+      {
+        "id": 1209,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2022 ESLAC Momentum"
+      }
+    ]
+  },
+  {
+    "id": 806,
+    "tournament_name": "DSA Turkey Trot Tournament",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2021-11-20",
+    "end_date": "2021-11-21",
+    "updated_at": "2021-11-20T22:31:44.386Z",
+    "events": [
+      {
+        "id": 1126,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1202,
+    "tournament_name": "Timber Mesa Challenge",
+    "location": "Timber Mesa Outdoors",
+    "start_date": "2023-01-08",
+    "end_date": "2023-01-08",
+    "updated_at": "2023-01-09T02:45:42.263Z",
+    "events": [
+      {
+        "id": 1829,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Double 300 Round"
+      }
+    ]
+  },
+  {
+    "id": 815,
+    "tournament_name": "2022 USA Archery Arizona State JOAD Indoor Championships",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2022-02-26",
+    "end_date": "2022-02-27",
+    "updated_at": "2022-02-27T23:02:04.674Z",
+    "events": [
+      {
+        "id": 1149,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1047,
+    "tournament_name": "2022 USA Archery Washington Outdoor Championship",
+    "location": "Bothell, WA",
+    "start_date": "2022-08-20",
+    "end_date": "2022-08-21",
+    "updated_at": "2022-08-22T02:56:44.312Z",
+    "events": [
+      {
+        "id": 1630,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Saturday 1440 (FITA)"
+      },
+      {
+        "id": 1633,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Sunday 720 Round"
+      }
+    ]
+  },
+  {
+    "id": 688,
+    "tournament_name": "Junior Pan Am Games US Team Trials",
+    "location": "Jack Allen Recreation Center, Decatur, AL",
+    "start_date": "2021-07-06",
+    "end_date": "2021-07-10",
+    "updated_at": "2021-07-10T14:42:06.284Z",
+    "events": [
+      {
+        "id": 970,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 971,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robin Matches"
+      },
+      {
+        "id": 972,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Junior Men"
+      },
+      {
+        "id": 973,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Junior Women"
+      },
+      {
+        "id": 974,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Junior Men"
+      },
+      {
+        "id": 976,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Junior Women"
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "tournament_name": "2019 World Archery Youth Championships - U.S. Team Trials",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2019-06-21",
+    "end_date": "2019-06-24",
+    "updated_at": "2021-09-08T05:22:55.398Z",
+    "events": [
+      {
+        "id": 239,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 241,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins"
+      },
+      {
+        "id": 242,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Recurve Junior Men"
+      },
+      {
+        "id": 243,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Recurve Junior Women"
+      },
+      {
+        "id": 244,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Recurve Cadet Men"
+      },
+      {
+        "id": 245,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Recurve Cadet Women"
+      },
+      {
+        "id": 246,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Compound Junior Men"
+      },
+      {
+        "id": 247,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Compound Junior Women"
+      },
+      {
+        "id": 248,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Compound Cadet Men"
+      },
+      {
+        "id": 249,
+        "display_order": 10,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Points - Compound Cadet Women"
+      }
+    ]
+  },
+  {
+    "id": 1115,
+    "tournament_name": "SGA Ignite Practice",
+    "location": "UCSD",
+    "start_date": "2022-10-22",
+    "end_date": "2022-10-22",
+    "updated_at": "2022-10-29T18:35:55.941Z",
+    "events": [
+      {
+        "id": 1728,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 665,
+    "tournament_name": "Florida 4-H Senior Qualifier",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-05-16",
+    "end_date": "2021-05-16",
+    "updated_at": "2021-05-16T18:52:19.022Z",
+    "events": [
+      {
+        "id": 904,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "FITA Round"
+      },
+      {
+        "id": 905,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Field \u0026 3-D Round"
+      }
+    ]
+  },
+  {
+    "id": 814,
+    "tournament_name": "2022 USA Archery Arizona State Indoor Championships",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2022-01-22",
+    "end_date": "2022-01-30",
+    "updated_at": "2022-01-30T23:43:57.603Z",
+    "events": [
+      {
+        "id": 1148,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1221,
+    "tournament_name": "2023 PCA Winter JOAD",
+    "location": "Plum Creek Archery, Dyersville IA",
+    "start_date": "2023-01-28",
+    "end_date": "2023-01-28",
+    "updated_at": "2023-01-30T22:55:14.665Z",
+    "events": [
+      {
+        "id": 1877,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2023 PCA Winter JOAD"
+      }
+    ]
+  },
+  {
+    "id": 1128,
+    "tournament_name": "2022 Candy Cane Crunch",
+    "location": "Ben Avery Shooting Facility",
+    "start_date": "2022-12-17",
+    "end_date": "2022-12-18",
+    "updated_at": "2022-12-18T22:30:47.897Z",
+    "events": [
+      {
+        "id": 1742,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2022 Candy Cane Crunch"
+      }
+    ]
+  },
+  {
+    "id": 733,
+    "tournament_name": "2021 Grapestakes",
+    "location": "Discovery Park, Sacramento, CA",
+    "start_date": "2021-08-28",
+    "end_date": "2021-08-29",
+    "updated_at": "2021-08-29T21:33:08.705Z",
+    "events": [
+      {
+        "id": 1040,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "25th Annual Grapestakes Tournament"
+      }
+    ]
+  },
+  {
+    "id": 1175,
+    "tournament_name": "2023 Virginia State JOAD Indoor Championship",
+    "location": "Manassas , Viriginia",
+    "start_date": "2023-01-13",
+    "end_date": "2023-01-15",
+    "updated_at": "2023-01-15T13:00:01.925Z",
+    "events": [
+      {
+        "id": 1793,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1232,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Albertville, MN",
+    "location": "Albertville, MN",
+    "start_date": "2023-02-17",
+    "end_date": "2023-02-17",
+    "updated_at": "2023-02-27T00:52:54.742Z",
+    "events": [
+      {
+        "id": 1886,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1031,
+    "tournament_name": "2022 Summer Sizzle",
+    "location": "Ben Avery Shooting Facility Indoor Archery Range",
+    "start_date": "2022-08-05",
+    "end_date": "2022-08-07",
+    "updated_at": "2022-08-08T03:05:20.313Z",
+    "events": [
+      {
+        "id": 1594,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1040,
+    "tournament_name": "Spider Cup #4: FITA Field Round",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-08-13",
+    "end_date": "2022-08-13",
+    "updated_at": "2022-08-13T20:33:48.830Z",
+    "events": [
+      {
+        "id": 1618,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1207,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Pennsylvania",
+    "location": "Lancaster, PA",
+    "start_date": "2023-01-12",
+    "end_date": "2023-01-14",
+    "updated_at": "2023-02-26T22:11:24.681Z",
+    "events": [
+      {
+        "id": 1848,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 979,
+    "tournament_name": "2022 USA Archery Collegiate Target Regionals - West Region",
+    "location": "UCLA",
+    "start_date": "2022-04-22",
+    "end_date": "2022-04-24",
+    "updated_at": "2022-04-24T05:27:42.626Z",
+    "events": [
+      {
+        "id": 1445,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1447,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      },
+      {
+        "id": 1446,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 1448,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 1449,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team"
+      },
+      {
+        "id": 1467,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Champion - West Region"
+      }
+    ]
+  },
+  {
+    "id": 816,
+    "tournament_name": "2021 DSA Candy Cane Crunch",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2021-12-18",
+    "end_date": "2021-12-19",
+    "updated_at": "2021-12-19T23:19:19.184Z",
+    "events": [
+      {
+        "id": 1151,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Candy Cane Crunch"
+      }
+    ]
+  },
+  {
+    "id": 1006,
+    "tournament_name": "2022 USA Archery Alaska State Outdoor Championship",
+    "location": "Anchorage, Alaska",
+    "start_date": "2022-05-17",
+    "end_date": "2022-05-17",
+    "updated_at": "2022-05-26T22:51:26.741Z",
+    "events": [
+      {
+        "id": 1550,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "State Championship Round"
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "tournament_name": "USAT #4 2019 Texas Shootout",
+    "location": "College Station, TX",
+    "start_date": "2019-09-27",
+    "end_date": "2019-10-01",
+    "updated_at": "2021-04-08T04:23:17.925Z",
+    "events": [
+      {
+        "id": 325,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 329,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Olympic Trials Stage #2"
+      },
+      {
+        "id": 330,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      }
+    ]
+  },
+  {
+    "id": 788,
+    "tournament_name": "Florida 4-H State Field Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-10-16",
+    "end_date": "2021-10-16",
+    "updated_at": "2021-12-02T19:13:36.952Z",
+    "events": [
+      {
+        "id": 1108,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 672,
+    "tournament_name": "USA Archery Gulf Coast Tri-State Championship",
+    "location": "Harrison County Fairgrounds",
+    "start_date": "2021-09-18",
+    "end_date": "2021-09-18",
+    "updated_at": "2021-09-18T19:38:49.373Z",
+    "events": [
+      {
+        "id": 944,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 875,
+    "tournament_name": "Spider Cup #1: Lancaster Round w/ Knockout Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-01-22",
+    "end_date": "2022-01-22",
+    "updated_at": "2022-01-27T16:01:59.093Z",
+    "events": [
+      {
+        "id": 1217,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 743,
+    "tournament_name": "2021 Pacific Coast Championships",
+    "location": "Discovery Park Archery Range - Sacramento, CA",
+    "start_date": "2021-09-17",
+    "end_date": "2021-09-19",
+    "updated_at": "2021-09-19T21:30:04.319Z",
+    "events": [
+      {
+        "id": 1053,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Friday Ranking Round"
+      },
+      {
+        "id": 1054,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Sat/Sun Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1089,
+    "tournament_name": "2022 Corner Cup",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2022-12-03",
+    "end_date": "2022-12-17",
+    "updated_at": "2022-12-04T23:30:48.994Z",
+    "events": [
+      {
+        "id": 1750,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Saturday"
+      },
+      {
+        "id": 1752,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Sunday"
+      }
+    ]
+  },
+  {
+    "id": 799,
+    "tournament_name": "2022 Fivics SIACC Qualifier #1 | UCLA",
+    "location": "UCLA",
+    "start_date": "2021-11-06",
+    "end_date": "2021-11-06",
+    "updated_at": "2021-11-07T00:50:34.886Z",
+    "events": [
+      {
+        "id": 1121,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1169,
+    "tournament_name": "Florida 4-H Indoor State",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-12-03",
+    "end_date": "2022-12-03",
+    "updated_at": "2022-12-03T20:24:01.705Z",
+    "events": [
+      {
+        "id": 1790,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 956,
+    "tournament_name": "Florida 4-H State Archery Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-03-19",
+    "end_date": "2022-03-20",
+    "updated_at": "2023-03-01T00:05:16.002Z",
+    "events": [
+      {
+        "id": 1354,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "FITA - Junior/Intermediate"
+      },
+      {
+        "id": 1365,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "FITA - Senior"
+      },
+      {
+        "id": 1356,
+        "display_order": 3,
+        "event_type": "RankingEvent",
+        "event_name": "3D/Field - Junior/Intermediate"
+      },
+      {
+        "id": 1366,
+        "display_order": 4,
+        "event_type": "RankingEvent",
+        "event_name": "3D - Senior"
+      },
+      {
+        "id": 1359,
+        "display_order": 6,
+        "event_type": "RankingEvent",
+        "event_name": "Field - Senior"
+      }
+    ]
+  },
+  {
+    "id": 982,
+    "tournament_name": "Regional Outdoor Collegiate Championship Southeast",
+    "location": "Statesboro, GA",
+    "start_date": "2022-04-23",
+    "end_date": "2022-04-24",
+    "updated_at": "2022-04-24T14:49:05.403Z",
+    "events": [
+      {
+        "id": 1456,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1457,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 1459,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 1460,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team"
+      }
+    ]
+  },
+  {
+    "id": 1016,
+    "tournament_name": "2022 Rocky Mountain Classic",
+    "location": "Utah",
+    "start_date": "2022-06-25",
+    "end_date": "2022-06-25",
+    "updated_at": "2022-06-25T18:14:22.664Z",
+    "events": [
+      {
+        "id": 1569,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2022 Rocky Mountain Classic"
+      }
+    ]
+  },
+  {
+    "id": 1171,
+    "tournament_name": "Season Celebration",
+    "location": "Boneyard archery Madison, north Carolina",
+    "start_date": "2022-12-17",
+    "end_date": "2022-12-17",
+    "updated_at": "2022-12-17T21:32:00.359Z",
+    "events": [
+      {
+        "id": 1792,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 623,
+    "tournament_name": "Strictly Test",
+    "location": "Strictly Archery",
+    "start_date": "2021-04-26",
+    "end_date": "2021-04-27",
+    "updated_at": "2021-04-25T22:04:59.593Z",
+    "events": []
+  },
+  {
+    "id": 624,
+    "tournament_name": "2020 Paralympic Team Trials and 2022 World Archery Para Championships Team Trials",
+    "location": "Various Locations, USA",
+    "start_date": "2021-05-01",
+    "end_date": "2021-06-04",
+    "updated_at": "2021-08-11T15:31:35.047Z",
+    "events": [
+      {
+        "id": 845,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Stage #1"
+      },
+      {
+        "id": 850,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Stage #2"
+      },
+      {
+        "id": 930,
+        "display_order": 3,
+        "event_type": "RankingEvent",
+        "event_name": "Stage #1 - Compound Open Men"
+      },
+      {
+        "id": 931,
+        "display_order": 4,
+        "event_type": "RankingEvent",
+        "event_name": "Stage #2 - Compound Open Men"
+      },
+      {
+        "id": 940,
+        "display_order": 5,
+        "event_type": "RankingEvent",
+        "event_name": "Stage #3 - Ranking Round"
+      },
+      {
+        "id": 941,
+        "display_order": 6,
+        "event_type": "MatchEvent",
+        "event_name": "Stage #3 - Round Robins"
+      },
+      {
+        "id": 851,
+        "display_order": 13,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Open Men"
+      },
+      {
+        "id": 852,
+        "display_order": 14,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Open Women"
+      },
+      {
+        "id": 936,
+        "display_order": 15,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Open Men"
+      },
+      {
+        "id": 853,
+        "display_order": 16,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Open Women"
+      },
+      {
+        "id": 854,
+        "display_order": 17,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - W1 Open Men"
+      },
+      {
+        "id": 897,
+        "display_order": 18,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - W1 Open Women"
+      }
+    ]
+  },
+  {
+    "id": 735,
+    "tournament_name": "2021 USA Archery Iowa State JOAD Outdoor Championship",
+    "location": "Toddville, IA",
+    "start_date": "2021-08-28",
+    "end_date": "2021-08-28",
+    "updated_at": "2021-08-30T19:21:29.347Z",
+    "events": [
+      {
+        "id": 1045,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 661,
+    "tournament_name": "2021 World Archery Championships - US Team Trials",
+    "location": "United States",
+    "start_date": "2021-04-09",
+    "end_date": "2021-06-07",
+    "updated_at": "2021-06-07T13:11:22.073Z",
+    "events": [
+      {
+        "id": 889,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Stage #1"
+      },
+      {
+        "id": 890,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Stage #2"
+      },
+      {
+        "id": 899,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 2 - Compound Round Robins #1"
+      },
+      {
+        "id": 938,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 3 - Round Robins"
+      },
+      {
+        "id": 892,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Senior Men"
+      },
+      {
+        "id": 893,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Senior Women"
+      },
+      {
+        "id": 894,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Senior Men"
+      },
+      {
+        "id": 895,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Senior Women"
+      }
+    ]
+  },
+  {
+    "id": 992,
+    "tournament_name": "2022 OAS New York Conference Championship",
+    "location": "MS 137 School of Heroes",
+    "start_date": "2022-05-21",
+    "end_date": "2022-05-21",
+    "updated_at": "2022-05-21T17:18:53.239Z",
+    "events": [
+      {
+        "id": 1517,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1520,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 1521,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 1523,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1049,
+    "tournament_name": "2022 NJ State JOAD Outdoor Championship",
+    "location": "Bloomfield NJ",
+    "start_date": "2022-09-04",
+    "end_date": "2022-09-04",
+    "updated_at": "2022-09-11T02:47:30.368Z",
+    "events": [
+      {
+        "id": 1636,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 742,
+    "tournament_name": "Colorado 2021 Outdoor State Championship",
+    "location": "Titan Sports Park",
+    "start_date": "2021-09-19",
+    "end_date": "2021-09-19",
+    "updated_at": "2021-09-19T19:59:32.140Z",
+    "events": [
+      {
+        "id": 1052,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1037,
+    "tournament_name": "North Carolina JOAD and Outdoor State",
+    "location": "New Hope Presbyterian Church Clemmons North Carolina",
+    "start_date": "2022-08-06",
+    "end_date": "2022-08-06",
+    "updated_at": "2022-08-08T00:46:53.989Z",
+    "events": [
+      {
+        "id": 1609,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1110,
+    "tournament_name": "2022 ABFAA State 900",
+    "location": "Apache junction",
+    "start_date": "2022-10-30",
+    "end_date": "2022-10-30",
+    "updated_at": "2022-11-05T15:18:17.902Z",
+    "events": [
+      {
+        "id": 1722,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "tournament_name": "135th U.S. National Target Championships and 2019 U.S. Open.",
+    "location": "Darree Park Soccer Fields, Dublin, OH",
+    "start_date": "2019-08-14",
+    "end_date": "2019-08-17",
+    "updated_at": "2023-02-02T01:05:51.890Z",
+    "events": [
+      {
+        "id": 302,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Qualification Rounds (Rankings for Elimination Rounds)\t"
+      },
+      {
+        "id": 261,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Class and Division Results (Guests Separated)"
+      },
+      {
+        "id": 267,
+        "display_order": 3,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Olympic Trials Stage #1"
+      },
+      {
+        "id": 305,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "2019 U.S. Open (Elimination Rounds)"
+      },
+      {
+        "id": 301,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 304,
+        "display_order": 6,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 306,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Olympic Trials Stage #1 Points - Recurve Men"
+      },
+      {
+        "id": 307,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Olympic Trials Stage #1 Points - Recurve Women"
+      }
+    ]
+  },
+  {
+    "id": 955,
+    "tournament_name": "2022 Utah, Idaho, Wyoming State Indoor",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2022-03-19",
+    "end_date": "2022-03-19",
+    "updated_at": "2022-03-19T22:34:20.186Z",
+    "events": [
+      {
+        "id": 1353,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2022 Utah, Idaho, Wyoming State Indoor"
+      }
+    ]
+  },
+  {
+    "id": 1130,
+    "tournament_name": "2023 Arizona State Indoor Championship",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2023-01-21",
+    "end_date": "2023-01-29",
+    "updated_at": "2023-01-29T23:43:32.705Z",
+    "events": [
+      {
+        "id": 1745,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round #1"
+      }
+    ]
+  },
+  {
+    "id": 1015,
+    "tournament_name": "Ohio Double 900",
+    "location": "Below Dam at Alum Creek",
+    "start_date": "2022-06-18",
+    "end_date": "2022-06-19",
+    "updated_at": "2022-06-19T18:12:15.997Z",
+    "events": [
+      {
+        "id": 1568,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ohio Double 900"
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "tournament_name": "2019 US National Outdoor Collegiate Championships \u0026 WUG Trials",
+    "location": "Darree Fields Park, Dublin, OH",
+    "start_date": "2019-05-16",
+    "end_date": "2019-05-19",
+    "updated_at": "2021-05-21T04:45:37.162Z",
+    "events": [
+      {
+        "id": 225,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 228,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 229,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 230,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      },
+      {
+        "id": 231,
+        "display_order": 5,
+        "event_type": "SpecialEvent",
+        "event_name": "2019 Collegiate All-American"
+      },
+      {
+        "id": 232,
+        "display_order": 6,
+        "event_type": "SpecialEvent",
+        "event_name": "2019 Overall Team Points"
+      }
+    ]
+  },
+  {
+    "id": 476,
+    "tournament_name": "USAA JOAD Indoor Florida State Championship - North",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-02-20",
+    "end_date": "2021-02-21",
+    "updated_at": "2021-10-14T19:31:31.926Z",
+    "events": [
+      {
+        "id": 687,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 1020,
+    "tournament_name": "TN Outdoor State Championship",
+    "location": "1878 Downs Blvd, Franklin, TN 37064",
+    "start_date": "2022-06-25",
+    "end_date": "2022-06-25",
+    "updated_at": "2023-01-14T14:04:37.605Z",
+    "events": [
+      {
+        "id": 1574,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1102,
+    "tournament_name": "2022 USA Archery Oklahoma State Outdoor Championship",
+    "location": "Oklahoma City",
+    "start_date": "2022-09-17",
+    "end_date": "2022-09-17",
+    "updated_at": "2022-10-21T15:37:08.509Z",
+    "events": [
+      {
+        "id": 1703,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Oklahoma Outdoor State 2022"
+      }
+    ]
+  },
+  {
+    "id": 810,
+    "tournament_name": "Spider Cup #6: USAA Indoor w/ Individual Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-12-05",
+    "end_date": "2021-12-05",
+    "updated_at": "2021-12-05T20:29:38.029Z",
+    "events": [
+      {
+        "id": 1132,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      },
+      {
+        "id": 1145,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Qualifications"
+      },
+      {
+        "id": 1147,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Matches"
+      }
+    ]
+  },
+  {
+    "id": 1229,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - FL",
+    "location": "Easton Newberry Archery Center, Newberry, FL",
+    "start_date": "2023-02-12",
+    "end_date": "2023-02-19",
+    "updated_at": "2023-02-22T20:11:41.438Z",
+    "events": [
+      {
+        "id": 1883,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 801,
+    "tournament_name": "2022 Fivics SIACC Qualifier #3 | UC Irvine",
+    "location": "Fountain Valley, CA",
+    "start_date": "2021-11-21",
+    "end_date": "2021-11-21",
+    "updated_at": "2021-11-30T18:27:06.289Z",
+    "events": []
+  },
+  {
+    "id": 1134,
+    "tournament_name": "DSA Practice Tournament",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2022-11-19",
+    "end_date": "2022-11-19",
+    "updated_at": "2022-11-23T20:44:31.876Z",
+    "events": [
+      {
+        "id": 1751,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "DSA Practice Tournament"
+      }
+    ]
+  },
+  {
+    "id": 961,
+    "tournament_name": "2022 OAS Los Angeles Conference Championship - Middle School",
+    "location": "Beaumont High School Sports Stadium",
+    "start_date": "2022-03-26",
+    "end_date": "2022-03-26",
+    "updated_at": "2022-03-26T19:45:11.584Z",
+    "events": [
+      {
+        "id": 1376,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1379,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 1380,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 1382,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 962,
+    "tournament_name": "2022 OAS Los Angeles Conference Championship - High School",
+    "location": "Beaumont High School Sports Stadium",
+    "start_date": "2022-03-26",
+    "end_date": "2022-03-26",
+    "updated_at": "2022-03-26T23:53:17.761Z",
+    "events": [
+      {
+        "id": 1383,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1386,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 1387,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 1388,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      }
+    ]
+  },
+  {
+    "id": 785,
+    "tournament_name": "2021 CA State Indoor Championships",
+    "location": "Tulare, CA",
+    "start_date": "2021-10-09",
+    "end_date": "2021-10-10",
+    "updated_at": "2021-10-11T00:17:55.462Z",
+    "events": [
+      {
+        "id": 1103,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 690,
+    "tournament_name": "California State Games 2021",
+    "location": "Easton Archery Center for Excellence",
+    "start_date": "2021-07-17",
+    "end_date": "2021-07-17",
+    "updated_at": "2021-07-17T22:29:23.831Z",
+    "events": [
+      {
+        "id": 992,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "900 Round"
+      }
+    ]
+  },
+  {
+    "id": 996,
+    "tournament_name": "Competitive Advantage Showdown",
+    "location": "Seymour Lake Park",
+    "start_date": "2022-08-27",
+    "end_date": "2022-08-28",
+    "updated_at": "2022-08-28T23:15:18.474Z",
+    "events": [
+      {
+        "id": 1531,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 1532,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Match Play"
+      }
+    ]
+  },
+  {
+    "id": 1036,
+    "tournament_name": "Colorado Outdoor Buckle Series #4",
+    "location": "Titan Sports Park",
+    "start_date": "2022-08-07",
+    "end_date": "2022-08-07",
+    "updated_at": "2022-08-07T19:26:29.610Z",
+    "events": [
+      {
+        "id": 1610,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      },
+      {
+        "id": 1612,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination"
+      }
+    ]
+  },
+  {
+    "id": 1212,
+    "tournament_name": "USAA Florida State Indoor Championship",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-01-14",
+    "end_date": "2023-01-15",
+    "updated_at": "2023-01-15T21:11:53.029Z",
+    "events": [
+      {
+        "id": 1853,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 1203,
+    "tournament_name": "2023 USA Archery KY State Indoor Championship",
+    "location": "Scott High School 5400 Old Taylor Mill Rd, Taylor Mill, KY 41015",
+    "start_date": "2023-01-06",
+    "end_date": "2023-01-08",
+    "updated_at": "2023-01-08T21:08:40.068Z",
+    "events": [
+      {
+        "id": 1835,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2023 USA Archery KY State Indoor Championship"
+      }
+    ]
+  },
+  {
+    "id": 1025,
+    "tournament_name": "Spider Cup #3: 720 Outdoor w/ Team Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-07-09",
+    "end_date": "2022-07-09",
+    "updated_at": "2022-07-12T15:31:21.180Z",
+    "events": [
+      {
+        "id": 1586,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 1183,
+    "tournament_name": "2023 USA Archery Arizona State JOAD Indoor Championships",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2023-02-25",
+    "end_date": "2023-02-26",
+    "updated_at": "2023-02-27T00:30:24.854Z",
+    "events": [
+      {
+        "id": 1834,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 790,
+    "tournament_name": "2021 Arizona State Outdoor Championships",
+    "location": "Ben Avery FITA Range",
+    "start_date": "2021-10-22",
+    "end_date": "2021-10-24",
+    "updated_at": "2021-10-27T19:59:18.731Z",
+    "events": [
+      {
+        "id": 1110,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1112,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      }
+    ]
+  },
+  {
+    "id": 685,
+    "tournament_name": "End of Session Outdoor: July 2021",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-07-03",
+    "end_date": "2021-07-03",
+    "updated_at": "2021-07-03T14:45:54.569Z",
+    "events": [
+      {
+        "id": 960,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge Outdoor"
+      }
+    ]
+  },
+  {
+    "id": 686,
+    "tournament_name": "End of Session Challenge Indoor: July 2021",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-07-03",
+    "end_date": "2021-07-03",
+    "updated_at": "2021-07-03T19:18:17.060Z",
+    "events": [
+      {
+        "id": 961,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "End of Session Challenge Indoor"
+      }
+    ]
+  },
+  {
+    "id": 811,
+    "tournament_name": "2022 Fivics SIACC",
+    "location": "Easton Archery Center for Excellence",
+    "start_date": "2022-02-12",
+    "end_date": "2022-02-13",
+    "updated_at": "2022-02-24T04:28:58.237Z",
+    "events": [
+      {
+        "id": 1139,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "All Qualifier Results"
+      },
+      {
+        "id": 1238,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "SIACC Participants"
+      },
+      {
+        "id": 1235,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robin Matches"
+      },
+      {
+        "id": 1236,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Team Round"
+      },
+      {
+        "id": 1237,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team"
+      },
+      {
+        "id": 1244,
+        "display_order": 12,
+        "event_type": "CustomPointsEvent",
+        "event_name": "SIACC Team Champion Points"
+      }
+    ]
+  },
+  {
+    "id": 1030,
+    "tournament_name": "2022 California State Games",
+    "location": "Easton Archery Center for Excellence",
+    "start_date": "2022-07-16",
+    "end_date": "2022-07-16",
+    "updated_at": "2022-07-16T23:42:14.189Z",
+    "events": [
+      {
+        "id": 1593,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "900 Round"
+      }
+    ]
+  },
+  {
+    "id": 1042,
+    "tournament_name": "2022 USA Archery Iowa State Joad and Outdoor Championships",
+    "location": "Toddville, IA",
+    "start_date": "2022-08-20",
+    "end_date": "2022-08-20",
+    "updated_at": "2022-10-15T14:26:05.342Z",
+    "events": [
+      {
+        "id": 1623,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "State Championship Round"
+      }
+    ]
+  },
+  {
+    "id": 1176,
+    "tournament_name": "2023 USA Archery Viriginia Indoor State Championship",
+    "location": "Manassas , Virginia",
+    "start_date": "2023-01-13",
+    "end_date": "2023-01-15",
+    "updated_at": "2023-01-19T23:36:57.694Z",
+    "events": [
+      {
+        "id": 1794,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1038,
+    "tournament_name": "2022 USA Archery Arizona State Masters Indoor Championship",
+    "location": "Ben Avery Indoor Archery Range",
+    "start_date": "2022-09-10",
+    "end_date": "2022-09-10",
+    "updated_at": "2022-09-10T22:50:03.739Z",
+    "events": [
+      {
+        "id": 1611,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1136,
+    "tournament_name": "2023 Fivics SIACC",
+    "location": "Easton Archery Center for Excellence",
+    "start_date": "2023-01-28",
+    "end_date": "2023-01-29",
+    "updated_at": "2023-01-29T15:14:32.735Z",
+    "events": [
+      {
+        "id": 1861,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "All Qualifier Results"
+      },
+      {
+        "id": 1874,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "SIACC Participant Rankings"
+      },
+      {
+        "id": 1870,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins"
+      },
+      {
+        "id": 1872,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Team Round"
+      },
+      {
+        "id": 1873,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team"
+      },
+      {
+        "id": 1878,
+        "display_order": 12,
+        "event_type": "CustomPointsEvent",
+        "event_name": "SIACC Team Champion Points"
+      }
+    ]
+  },
+  {
+    "id": 813,
+    "tournament_name": "2022 ABFAA State Indoor and SW Sectional",
+    "location": "Ben Avery Indoor Range",
+    "start_date": "2022-01-15",
+    "end_date": "2022-01-16",
+    "updated_at": "2022-01-16T22:20:56.067Z",
+    "events": [
+      {
+        "id": 1188,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "ABFAA 3 Spot Indoor Championship"
+      }
+    ]
+  },
+  {
+    "id": 986,
+    "tournament_name": "Spider Cup #2: 720 Outdoor w/ Individual Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-05-07",
+    "end_date": "2022-05-07",
+    "updated_at": "2022-05-07T17:05:39.083Z",
+    "events": [
+      {
+        "id": 1472,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 1473,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Matches"
+      }
+    ]
+  },
+  {
+    "id": 944,
+    "tournament_name": "2022 USA Archery Arizona State JOAD Outdoor",
+    "location": "Ben Avery FITA Range",
+    "start_date": "2022-04-23",
+    "end_date": "2022-04-24",
+    "updated_at": "2022-04-24T21:37:32.136Z",
+    "events": [
+      {
+        "id": 1301,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1302,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1120,
+    "tournament_name": "2022 ESLAC Halloween Shoot",
+    "location": "Easton Archery Salt Lake Center",
+    "start_date": "2022-10-29",
+    "end_date": "2022-10-29",
+    "updated_at": "2022-10-29T18:12:44.697Z",
+    "events": [
+      {
+        "id": 1731,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2022 ESLAC Halloween Shoot"
+      }
+    ]
+  },
+  {
+    "id": 798,
+    "tournament_name": "Winter Classic 2021",
+    "location": "Rising Phoenix Archery",
+    "start_date": "2021-11-27",
+    "end_date": "2021-11-28",
+    "updated_at": "2022-05-21T03:15:27.547Z",
+    "events": [
+      {
+        "id": 1120,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 983,
+    "tournament_name": "2022 OAS National Championship",
+    "location": "Easton Archery Centers (CA/FL)",
+    "start_date": "2022-04-23",
+    "end_date": "2022-04-23",
+    "updated_at": "2022-04-26T04:18:35.680Z",
+    "events": [
+      {
+        "id": 1462,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1463,
+        "display_order": 2,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Team Champions"
+      },
+      {
+        "id": 1464,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Team Champions"
+      }
+    ]
+  },
+  {
+    "id": 987,
+    "tournament_name": "2022 USA Archery Field Nationals",
+    "location": "Lewis and Clark Recreation Area, Yankton, SD",
+    "start_date": "2022-05-11",
+    "end_date": "2022-05-14",
+    "updated_at": "2022-05-16T05:21:38.065Z",
+    "events": [
+      {
+        "id": 1474,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1480,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "World Games and World Field Championships US Team Trials - Ranking Round"
+      },
+      {
+        "id": 1478,
+        "display_order": 3,
+        "event_type": "RankingEvent",
+        "event_name": "World Games and World Field Championships US Team Trials - Top 8"
+      },
+      {
+        "id": 1479,
+        "display_order": 4,
+        "event_type": "RankingEvent",
+        "event_name": "World Games and World Field Championships US Team Trials - Top 4"
+      },
+      {
+        "id": 1481,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "World Games and World Field Championships US Team Trials - Combined Ranking"
+      }
+    ]
+  },
+  {
+    "id": 1018,
+    "tournament_name": "2022 Florida State JOAD Outdoor Championship",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-06-25",
+    "end_date": "2022-06-25",
+    "updated_at": "2022-06-29T15:25:19.721Z",
+    "events": [
+      {
+        "id": 1572,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1578,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Qualifications"
+      }
+    ]
+  },
+  {
+    "id": 892,
+    "tournament_name": "2022 USA Archery Iowa State Indoor Championships",
+    "location": "Plum Creek Archery, 204 1st Ave E, Dyersville, IA 52040",
+    "start_date": "2022-02-19",
+    "end_date": "2022-02-19",
+    "updated_at": "2022-02-20T03:44:14.634Z",
+    "events": [
+      {
+        "id": 1240,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 812,
+    "tournament_name": "Florida 4-H Indoor State",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-12-04",
+    "end_date": "2021-12-04",
+    "updated_at": "2021-12-04T21:32:04.700Z",
+    "events": [
+      {
+        "id": 1141,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1227,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Albuquerque, NM",
+    "location": "Albuquerque, NM",
+    "start_date": "2023-02-10",
+    "end_date": "2023-02-10",
+    "updated_at": "2023-02-16T01:43:54.111Z",
+    "events": [
+      {
+        "id": 1882,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1286,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Salt Lake City, UT",
+    "location": "Salt Lake City, UT",
+    "start_date": "2023-02-24",
+    "end_date": "2023-02-24",
+    "updated_at": "2023-02-25T03:54:27.506Z",
+    "events": [
+      {
+        "id": 1945,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 860,
+    "tournament_name": "USAA Indoor Florida State Championship",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-01-15",
+    "end_date": "2022-01-16",
+    "updated_at": "2022-01-18T15:44:41.431Z",
+    "events": [
+      {
+        "id": 1203,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 1131,
+    "tournament_name": "Cranberry Crush",
+    "location": "Boneyard archery Madison, north Carolina",
+    "start_date": "2022-11-19",
+    "end_date": "2022-11-19",
+    "updated_at": "2022-11-19T19:53:37.011Z",
+    "events": [
+      {
+        "id": 1749,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1090,
+    "tournament_name": "2022 USA Archery Colorado Outdoor State Championship",
+    "location": "Titan Sports Park",
+    "start_date": "2022-09-24",
+    "end_date": "2022-09-24",
+    "updated_at": "2022-09-24T19:45:05.252Z",
+    "events": [
+      {
+        "id": 1681,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1083,
+    "tournament_name": "Winter Classic 2022",
+    "location": "RPA",
+    "start_date": "2022-11-26",
+    "end_date": "2022-11-27",
+    "updated_at": "2022-11-27T23:55:11.683Z",
+    "events": [
+      {
+        "id": 1671,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 608,
+    "tournament_name": "USAT #1 2021 AAE Arizona Cup",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2021-04-09",
+    "end_date": "2021-04-11",
+    "updated_at": "2021-05-08T14:31:49.438Z",
+    "events": [
+      {
+        "id": 824,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 826,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "2021 World Archery Championships - U.S. Team Trials - Stage #1"
+      },
+      {
+        "id": 827,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1026,
+    "tournament_name": "2022 July Juggernaut",
+    "location": "Ben Avery Indoor Shooting Facility",
+    "start_date": "2022-07-16",
+    "end_date": "2022-07-17",
+    "updated_at": "2022-07-16T22:15:00.246Z",
+    "events": [
+      {
+        "id": 1588,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualifying round"
+      }
+    ]
+  },
+  {
+    "id": 1125,
+    "tournament_name": "2023 Fivics SIACC Qualifier #4 | UCI (Morning)",
+    "location": "Fountain Valley",
+    "start_date": "2022-11-20",
+    "end_date": "2022-11-20",
+    "updated_at": "2023-01-18T06:05:41.535Z",
+    "events": [
+      {
+        "id": 1738,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1211,
+    "tournament_name": "USAA Florida State JOAD Indoor Championship",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-01-13",
+    "end_date": "2023-01-13",
+    "updated_at": "2023-01-14T01:20:43.296Z",
+    "events": [
+      {
+        "id": 1852,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 1091,
+    "tournament_name": "USAA Outdoor Florida State Championship",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-09-24",
+    "end_date": "2022-09-25",
+    "updated_at": "2022-09-25T16:50:57.210Z",
+    "events": [
+      {
+        "id": 1682,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "FITA Round"
+      }
+    ]
+  },
+  {
+    "id": 664,
+    "tournament_name": "OAS Open 2021",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-05-15",
+    "end_date": "2021-05-15",
+    "updated_at": "2021-05-15T19:47:09.773Z",
+    "events": [
+      {
+        "id": 902,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 667,
+    "tournament_name": "2021 USA Archery Collegiate Target Nationals",
+    "location": "Dorey Park, Richmond, VA",
+    "start_date": "2021-05-20",
+    "end_date": "2021-05-23",
+    "updated_at": "2021-05-23T12:14:14.525Z",
+    "events": [
+      {
+        "id": 907,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 908,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 909,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      },
+      {
+        "id": 912,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 914,
+        "display_order": 5,
+        "event_type": "SpecialEvent",
+        "event_name": "2021 USA Archery Collegiate All-American"
+      },
+      {
+        "id": 915,
+        "display_order": 6,
+        "event_type": "SpecialEvent",
+        "event_name": "2021 National Team Championship - Overall Points"
+      }
+    ]
+  },
+  {
+    "id": 800,
+    "tournament_name": "2022 Fivics SIACC Qualifier #2 | UCSD",
+    "location": "UC San Diego",
+    "start_date": "2021-11-13",
+    "end_date": "2021-11-13",
+    "updated_at": "2022-02-10T05:58:42.150Z",
+    "events": [
+      {
+        "id": 1125,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking"
+      }
+    ]
+  },
+  {
+    "id": 864,
+    "tournament_name": "2022 Delaware 4-H Indoor Archery Championship",
+    "location": "Dover Building - Delaware State Fairgrounds",
+    "start_date": "2022-01-21",
+    "end_date": "2022-01-23",
+    "updated_at": "2022-01-23T19:28:38.339Z",
+    "events": [
+      {
+        "id": 1206,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Delaware 4-H Indoor Archery Championship"
+      }
+    ]
+  },
+  {
+    "id": 1000,
+    "tournament_name": "USAT #2 Easton Foundations Gator Cup 2022",
+    "location": "Easton Newberry Archery Center, Newberry, FL",
+    "start_date": "2022-05-27",
+    "end_date": "2022-05-29",
+    "updated_at": "2022-06-07T14:19:27.572Z",
+    "events": [
+      {
+        "id": 1543,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 1551,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1121,
+    "tournament_name": "Ghouls \u0026 Goblins 2022",
+    "location": "Boneyard archery Madison, north Carolina",
+    "start_date": "2022-10-29",
+    "end_date": "2022-10-29",
+    "updated_at": "2022-10-29T19:02:37.030Z",
+    "events": []
+  },
+  {
+    "id": 964,
+    "tournament_name": "2022 Mid-South Conference Outdoor Championships",
+    "location": "Williamsburg, KY",
+    "start_date": "2022-04-16",
+    "end_date": "2022-04-16",
+    "updated_at": "2022-04-19T17:46:02.039Z",
+    "events": [
+      {
+        "id": 1390,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1392,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 1393,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Head-to-Head Matches"
+      },
+      {
+        "id": 1394,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      }
+    ]
+  },
+  {
+    "id": 1041,
+    "tournament_name": "2022 Grapestakes",
+    "location": "Discovery Park, Sacramento, CA",
+    "start_date": "2022-08-27",
+    "end_date": "2022-08-28",
+    "updated_at": "2022-09-01T04:24:43.617Z",
+    "events": [
+      {
+        "id": 1622,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "26th Annual Grapestakes Tournament"
+      }
+    ]
+  },
+  {
+    "id": 1187,
+    "tournament_name": "2022 Ugly Sweater Shoot",
+    "location": "Easton Archery Salt Lake Center",
+    "start_date": "2022-12-17",
+    "end_date": "2022-12-17",
+    "updated_at": "2022-12-17T20:07:19.219Z",
+    "events": [
+      {
+        "id": 1810,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2022 Ugly Sweater Shoot"
+      }
+    ]
+  },
+  {
+    "id": 1086,
+    "tournament_name": "2022 NJ State Outdoor Championship",
+    "location": "Bloomfield NJ",
+    "start_date": "2022-09-18",
+    "end_date": "2022-09-18",
+    "updated_at": "2022-09-18T18:46:02.912Z",
+    "events": [
+      {
+        "id": 1677,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1279,
+    "tournament_name": "OKLAHOMA STATE JOAD \u0026 INDOOR CHAMPIONSHIPS 2023",
+    "location": "Oklahoma City",
+    "start_date": "2023-02-18",
+    "end_date": "2023-02-19",
+    "updated_at": "2023-02-20T17:45:50.069Z",
+    "events": [
+      {
+        "id": 1935,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "JOAD \u0026 Indoor State Championship 2023"
+      }
+    ]
+  },
+  {
+    "id": 1218,
+    "tournament_name": "Florida 4-H 3D Archery Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-01-21",
+    "end_date": "2023-01-21",
+    "updated_at": "2023-01-22T11:26:45.677Z",
+    "events": [
+      {
+        "id": 1866,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1116,
+    "tournament_name": "2023 Fivics SIACC Qualifier #1 | CSULB",
+    "location": "CSULB",
+    "start_date": "2022-10-29",
+    "end_date": "2022-10-29",
+    "updated_at": "2023-01-24T06:00:33.896Z",
+    "events": [
+      {
+        "id": 1729,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1094,
+    "tournament_name": "Spider Cup #5: NFAA Field",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-10-08",
+    "end_date": "2022-10-08",
+    "updated_at": "2022-10-11T16:08:50.677Z",
+    "events": [
+      {
+        "id": 1690,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1210,
+    "tournament_name": "TN Indoor State Championship 2023",
+    "location": "Middle Tn Expo Murfreesboro, TN",
+    "start_date": "2023-01-14",
+    "end_date": "2023-01-14",
+    "updated_at": "2023-01-15T01:06:25.588Z",
+    "events": [
+      {
+        "id": 1851,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 954,
+    "tournament_name": "2022 USA Archery Colorado State Indoor Championship",
+    "location": "Archery School of The Rockies, Colorado Springs, Colorado",
+    "start_date": "2022-03-19",
+    "end_date": "2022-03-20",
+    "updated_at": "2022-03-20T23:03:49.079Z",
+    "events": [
+      {
+        "id": 1352,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 669,
+    "tournament_name": "USAT #3 2021 SoCal Showdown",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2021-06-04",
+    "end_date": "2021-06-06",
+    "updated_at": "2021-07-29T17:17:44.612Z",
+    "events": [
+      {
+        "id": 935,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 939,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1012,
+    "tournament_name": "2022 California State Outdoor",
+    "location": "Conejo Valley Archers in Simi Valley",
+    "start_date": "2022-06-24",
+    "end_date": "2022-06-26",
+    "updated_at": "2022-07-08T18:18:14.834Z",
+    "events": [
+      {
+        "id": 1563,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Friday Ranking Round"
+      },
+      {
+        "id": 1562,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Sat/Sun Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 796,
+    "tournament_name": "Competitive Learning Series: Halloween Shoot",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-10-30",
+    "end_date": "2021-10-30",
+    "updated_at": "2021-10-30T16:46:09.704Z",
+    "events": [
+      {
+        "id": 1117,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Competitive Learning Series: Halloween Shoot"
+      }
+    ]
+  },
+  {
+    "id": 1216,
+    "tournament_name": "2023 USA Archery Delaware State Indoor Championship",
+    "location": "Dover Building - Delaware State Fairgrounds",
+    "start_date": "2023-01-20",
+    "end_date": "2023-01-22",
+    "updated_at": "2023-01-22T17:18:23.809Z",
+    "events": [
+      {
+        "id": 1865,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2023 Delaware State Indoor"
+      }
+    ]
+  },
+  {
+    "id": 1213,
+    "tournament_name": "Mississippi State Championship",
+    "location": "Hattiesburg",
+    "start_date": "2023-01-21",
+    "end_date": "2023-01-21",
+    "updated_at": "2023-01-21T22:56:03.059Z",
+    "events": [
+      {
+        "id": 1854,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "tournament_name": "Ohio Indoor Championship",
+    "location": "The Ohio State University",
+    "start_date": "2020-02-29",
+    "end_date": "2020-03-01",
+    "updated_at": "2021-06-23T03:08:21.986Z",
+    "events": [
+      {
+        "id": 420,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Event"
+      },
+      {
+        "id": 495,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "JOAD Indoor"
+      }
+    ]
+  },
+  {
+    "id": 1123,
+    "tournament_name": "2023 Fivics SIACC Qualifier #2 | UCLA",
+    "location": "UCLA",
+    "start_date": "2022-11-05",
+    "end_date": "2022-11-05",
+    "updated_at": "2023-01-16T01:19:16.024Z",
+    "events": [
+      {
+        "id": 1736,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 802,
+    "tournament_name": "2022 Fivics SIACC Qualifier #4 | UC Irvine",
+    "location": "Fountain Valley",
+    "start_date": "2021-11-21",
+    "end_date": "2021-11-21",
+    "updated_at": "2021-11-30T18:48:03.230Z",
+    "events": [
+      {
+        "id": 1140,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1188,
+    "tournament_name": "Spider Cup #1: Lancaster Indoor Round w/ Knockout Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-01-21",
+    "end_date": "2023-01-22",
+    "updated_at": "2023-01-22T18:59:58.513Z",
+    "events": [
+      {
+        "id": 1811,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      },
+      {
+        "id": 1868,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Knockout Eliminations"
+      }
+    ]
+  },
+  {
+    "id": 893,
+    "tournament_name": "2022 USA Archery JOAD Indoor Nationals - Florida",
+    "location": "Newberry, FL",
+    "start_date": "2022-02-18",
+    "end_date": "2022-02-19",
+    "updated_at": "2022-04-06T20:01:40.817Z",
+    "events": [
+      {
+        "id": 1245,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1231,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Madisonville, KY",
+    "location": "Madisonville, KY",
+    "start_date": "2023-02-17",
+    "end_date": "2023-02-17",
+    "updated_at": "2023-02-18T04:13:23.035Z",
+    "events": [
+      {
+        "id": 1885,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1208,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Chula Vista",
+    "location": "Chula Vista, CA",
+    "start_date": "2023-01-13",
+    "end_date": "2023-01-14",
+    "updated_at": "2023-02-26T22:11:09.803Z",
+    "events": [
+      {
+        "id": 1849,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1192,
+    "tournament_name": "Indoor National Archery Scholarship Tour - Chula Vista",
+    "location": "Easton Archery Center of Excellence",
+    "start_date": "2022-12-17",
+    "end_date": "2022-12-17",
+    "updated_at": "2022-12-17T20:54:32.555Z",
+    "events": [
+      {
+        "id": 1816,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1817,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Finals Match"
+      }
+    ]
+  },
+  {
+    "id": 1194,
+    "tournament_name": "Indoor National Archery Scholarship Tour - Salt Lake City, UT",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2023-02-18",
+    "end_date": "2023-02-18",
+    "updated_at": "2023-02-18T20:06:55.940Z",
+    "events": [
+      {
+        "id": 1822,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1941,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Finals Event"
+      }
+    ]
+  },
+  {
+    "id": 953,
+    "tournament_name": "2022 OAS San Diego Conference Championship",
+    "location": "Easton Archery Center of Excellence - Chula Vista",
+    "start_date": "2022-03-12",
+    "end_date": "2022-03-12",
+    "updated_at": "2022-03-12T22:46:59.140Z",
+    "events": [
+      {
+        "id": 1343,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1346,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 1347,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 1348,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 1349,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 795,
+    "tournament_name": "2021 ESLAC Halloween Shoot",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2021-10-30",
+    "end_date": "2021-10-30",
+    "updated_at": "2021-10-30T18:05:24.432Z",
+    "events": [
+      {
+        "id": 1116,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2021 ESLAC Halloween Shoot"
+      }
+    ]
+  },
+  {
+    "id": 1220,
+    "tournament_name": "2023 ESLAC Momentum",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2023-01-28",
+    "end_date": "2023-01-28",
+    "updated_at": "2023-01-28T20:15:15.562Z",
+    "events": [
+      {
+        "id": 1875,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2023 ESLAC Momentum"
+      }
+    ]
+  },
+  {
+    "id": 959,
+    "tournament_name": "2022 OAS Florida State Championship",
+    "location": "Seminole High School",
+    "start_date": "2022-03-26",
+    "end_date": "2022-03-26",
+    "updated_at": "2023-04-08T01:24:36.289Z",
+    "events": [
+      {
+        "id": 1368,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1371,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 1372,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 1373,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 1374,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1093,
+    "tournament_name": "Spider Cup #6: USAA Indoor Round w/ Individual Elimination",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-12-04",
+    "end_date": "2022-12-04",
+    "updated_at": "2022-12-16T23:06:01.957Z",
+    "events": [
+      {
+        "id": 1689,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      },
+      {
+        "id": 1798,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Matches"
+      }
+    ]
+  },
+  {
+    "id": 994,
+    "tournament_name": "2022 USA Archery Collegiate Target Nationals",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2022-05-19",
+    "end_date": "2022-05-22",
+    "updated_at": "2022-05-22T15:25:28.304Z",
+    "events": [
+      {
+        "id": 1525,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1526,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 1527,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      },
+      {
+        "id": 1528,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 1529,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-American Team"
+      },
+      {
+        "id": 1542,
+        "display_order": 6,
+        "event_type": "SpecialEvent",
+        "event_name": "Overall Team Championship"
+      }
+    ]
+  },
+  {
+    "id": 1024,
+    "tournament_name": "2022 Garden State Game",
+    "location": "Bloomfield Archer NJ",
+    "start_date": "2022-07-10",
+    "end_date": "2022-07-10",
+    "updated_at": "2022-07-10T18:15:02.959Z",
+    "events": [
+      {
+        "id": 1585,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 728,
+    "tournament_name": "2021 Summer Sizzle",
+    "location": "Ben Avery Shooting Facility, AZ",
+    "start_date": "2021-08-05",
+    "end_date": "2021-08-08",
+    "updated_at": "2021-08-09T03:55:32.948Z",
+    "events": [
+      {
+        "id": 1031,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1088,
+    "tournament_name": "2022 Pacific Coast Championships",
+    "location": "Discovery Park Archery Range - Sacramento, CA",
+    "start_date": "2022-09-23",
+    "end_date": "2022-09-25",
+    "updated_at": "2022-12-18T03:08:03.310Z",
+    "events": [
+      {
+        "id": 1679,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Friday Ranking Round"
+      },
+      {
+        "id": 1688,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Sat/Sun Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1199,
+    "tournament_name": "2023 CA JOAD State Indoor Championships",
+    "location": "Tulare, CA",
+    "start_date": "2023-01-06",
+    "end_date": "2023-01-06",
+    "updated_at": "2023-01-12T05:10:14.400Z",
+    "events": [
+      {
+        "id": 1827,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1198,
+    "tournament_name": "2023 CA State Indoor Championships",
+    "location": "Tulare, CA",
+    "start_date": "2023-01-07",
+    "end_date": "2023-01-08",
+    "updated_at": "2023-01-12T05:10:28.241Z",
+    "events": [
+      {
+        "id": 1826,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1242,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Sacramento, CA",
+    "location": "Sacramento, CA",
+    "start_date": "2023-02-17",
+    "end_date": "2023-02-17",
+    "updated_at": "2023-02-27T00:51:49.894Z",
+    "events": [
+      {
+        "id": 1897,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1244,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Mason, MI",
+    "location": "Mason, MI",
+    "start_date": "2023-02-24",
+    "end_date": "2023-02-26",
+    "updated_at": "2023-02-28T17:56:15.255Z",
+    "events": [
+      {
+        "id": 1899,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 943,
+    "tournament_name": "2022 USA Archery JOAD Indoor Nationals - Pennsylvania",
+    "location": "Lancaster, PA",
+    "start_date": "2022-02-25",
+    "end_date": "2022-02-26",
+    "updated_at": "2022-04-18T17:48:55.658Z",
+    "events": []
+  },
+  {
+    "id": 732,
+    "tournament_name": "137th U.S. National Target Championships and 2021 U.S. Open",
+    "location": "Dorey Park and Recreation Center, Richmond, VA",
+    "start_date": "2021-08-17",
+    "end_date": "2021-08-21",
+    "updated_at": "2021-10-04T16:26:25.652Z",
+    "events": [
+      {
+        "id": 1037,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Qualification Rounds (Elimination Round Rankings)"
+      },
+      {
+        "id": 1035,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Class and Division Results (Guests Separated)"
+      },
+      {
+        "id": 1042,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "2021 U.S. Open (Elimination Rounds)"
+      },
+      {
+        "id": 1038,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 1041,
+        "display_order": 6,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      }
+    ]
+  },
+  {
+    "id": 1282,
+    "tournament_name": "54th USA Archery Indoor Nationals - Combined Results",
+    "location": "United States",
+    "start_date": "2023-01-12",
+    "end_date": "2023-02-26",
+    "updated_at": "2023-02-27T04:36:08.132Z",
+    "events": [
+      {
+        "id": 1939,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Class and Division Results"
+      },
+      {
+        "id": 1940,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Finals Rankings"
+      }
+    ]
+  },
+  {
+    "id": 1181,
+    "tournament_name": "2023 North Carolina State and JOAD Indoor Championships",
+    "location": "Randleman Parks and Rec Center Randleman North Carolina",
+    "start_date": "2023-01-06",
+    "end_date": "2023-01-07",
+    "updated_at": "2023-02-12T04:14:48.842Z",
+    "events": [
+      {
+        "id": 1803,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 965,
+    "tournament_name": "2022 Collegiate Target Regionals KY-SE",
+    "location": "Williamsburg, KY",
+    "start_date": "2022-04-14",
+    "end_date": "2022-04-15",
+    "updated_at": "2022-04-15T06:06:50.241Z",
+    "events": [
+      {
+        "id": 1391,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1397,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 1398,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 1399,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Head-to-Head Matches"
+      },
+      {
+        "id": 1439,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team"
+      }
+    ]
+  },
+  {
+    "id": 989,
+    "tournament_name": "2022 Spring OAS Mail-In Tournament",
+    "location": "Online",
+    "start_date": "2022-02-01",
+    "end_date": "2022-05-01",
+    "updated_at": "2022-12-02T17:10:35.412Z",
+    "events": [
+      {
+        "id": 1477,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 852,
+    "tournament_name": "North Carolina Indoor USA Archery and JOAD State Championship",
+    "location": "Education Building at the Winston Salem Fairgrounds",
+    "start_date": "2022-02-11",
+    "end_date": "2022-02-12",
+    "updated_at": "2022-02-14T18:52:05.640Z",
+    "events": [
+      {
+        "id": 1187,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking round"
+      }
+    ]
+  },
+  {
+    "id": 947,
+    "tournament_name": "2022 OAS Orlando Conference Championship",
+    "location": "The Geneva School",
+    "start_date": "2022-03-05",
+    "end_date": "2022-03-05",
+    "updated_at": "2022-03-12T06:36:19.671Z",
+    "events": [
+      {
+        "id": 1319,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1322,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 1323,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 1324,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 1325,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 724,
+    "tournament_name": "USAT #4 2021 Buckeye Classic",
+    "location": "Darree Soccer Fields, Dublin, Ohio",
+    "start_date": "2021-07-30",
+    "end_date": "2021-08-01",
+    "updated_at": "2022-03-17T18:05:02.399Z",
+    "events": [
+      {
+        "id": 1026,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 1028,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1284,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - College Station, TX",
+    "location": "College Station, TX",
+    "start_date": "2023-02-24",
+    "end_date": "2023-02-25",
+    "updated_at": "2023-02-25T22:54:03.833Z",
+    "events": [
+      {
+        "id": 1943,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 891,
+    "tournament_name": "TN Indoor State Championship 2022",
+    "location": "Music City Archery",
+    "start_date": "2022-02-11",
+    "end_date": "2022-02-13",
+    "updated_at": "2023-01-11T19:07:34.856Z",
+    "events": [
+      {
+        "id": 1234,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1177,
+    "tournament_name": "2022 Fall OAS Mail-In Tournament",
+    "location": "Online",
+    "start_date": "2022-09-01",
+    "end_date": "2022-12-01",
+    "updated_at": "2022-12-06T20:30:00.287Z",
+    "events": [
+      {
+        "id": 1795,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 898,
+    "tournament_name": "2022 ABFAA Classic 600",
+    "location": "Paseo Vista Archery Range",
+    "start_date": "2022-03-06",
+    "end_date": "2022-03-06",
+    "updated_at": "2022-03-06T19:44:43.450Z",
+    "events": [
+      {
+        "id": 1253,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Classic Round"
+      }
+    ]
+  },
+  {
+    "id": 1215,
+    "tournament_name": "2023 Delaware 4-H Indoor Archery Championship",
+    "location": "Dover Building - Delaware State Fairgrounds",
+    "start_date": "2023-01-20",
+    "end_date": "2023-01-22",
+    "updated_at": "2023-01-22T20:29:27.988Z",
+    "events": [
+      {
+        "id": 1862,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Delaware 4-H Indoor Archery Championship"
+      }
+    ]
+  },
+  {
+    "id": 1023,
+    "tournament_name": "2022 KY S3DA Outdoor State Championship",
+    "location": "University of the Cumberlands - Williamsburg, KY",
+    "start_date": "2022-07-09",
+    "end_date": "2022-07-10",
+    "updated_at": "2022-07-10T22:56:42.529Z",
+    "events": [
+      {
+        "id": 1580,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Jr. Eagle/Eagle Ranking"
+      },
+      {
+        "id": 1584,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Youth/Young Adult Ranking"
+      },
+      {
+        "id": 1582,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Head-to-Head Matches"
+      }
+    ]
+  },
+  {
+    "id": 966,
+    "tournament_name": "USAT #1 2022 AAE Arizona Cup",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2022-04-01",
+    "end_date": "2022-04-03",
+    "updated_at": "2022-06-12T03:07:12.526Z",
+    "events": [
+      {
+        "id": 1395,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 1407,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "2022 World University Games Trials"
+      },
+      {
+        "id": 1408,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 681,
+    "tournament_name": "Ohio Double 900",
+    "location": "Westerville Ohio",
+    "start_date": "2021-06-26",
+    "end_date": "2021-06-27",
+    "updated_at": "2021-06-27T19:06:51.037Z",
+    "events": [
+      {
+        "id": 956,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Day 1"
+      }
+    ]
+  },
+  {
+    "id": 1126,
+    "tournament_name": "2023 Fivics SIACC Qualifier #5 | UCI (Afternoon)",
+    "location": "Fountain Valley, CA",
+    "start_date": "2022-11-20",
+    "end_date": "2022-11-20",
+    "updated_at": "2023-01-25T03:15:58.987Z",
+    "events": [
+      {
+        "id": 1739,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 988,
+    "tournament_name": "2022 USA Archery Arizona State Outdoor",
+    "location": "Ben Avery FITA Range",
+    "start_date": "2022-10-22",
+    "end_date": "2022-10-23",
+    "updated_at": "2022-10-23T19:11:46.975Z",
+    "events": [
+      {
+        "id": 1475,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1476,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1007,
+    "tournament_name": "USAT #3 2022 SoCal Showdown",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2022-06-10",
+    "end_date": "2022-06-12",
+    "updated_at": "2022-06-14T15:08:59.703Z",
+    "events": [
+      {
+        "id": 1552,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 1559,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1124,
+    "tournament_name": "2023 Fivics SIACC Qualifier #3 | UCSD",
+    "location": "UC San Diego",
+    "start_date": "2022-11-12",
+    "end_date": "2022-11-12",
+    "updated_at": "2023-01-29T15:36:50.525Z",
+    "events": [
+      {
+        "id": 1737,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 957,
+    "tournament_name": "2022 USA Archery Indoor Nationals Final",
+    "location": "Louisville, Kentucky",
+    "start_date": "2022-03-17",
+    "end_date": "2022-03-17",
+    "updated_at": "2023-03-20T00:36:50.844Z",
+    "events": [
+      {
+        "id": 1362,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Finals Rankings"
+      },
+      {
+        "id": 1363,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      }
+    ]
+  },
+  {
+    "id": 1114,
+    "tournament_name": "SGA Team Practice",
+    "location": "UCSD",
+    "start_date": "2022-10-22",
+    "end_date": "2022-10-22",
+    "updated_at": "2022-10-22T17:26:43.774Z",
+    "events": [
+      {
+        "id": 1727,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 971,
+    "tournament_name": "2022 OAS California State Championship",
+    "location": "Easton Archery Center of Excellence - Chula Vista",
+    "start_date": "2022-04-09",
+    "end_date": "2022-04-09",
+    "updated_at": "2022-04-09T18:17:59.643Z",
+    "events": [
+      {
+        "id": 1412,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1415,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 1416,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 1417,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 1418,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1234,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Harrisonburg, VA",
+    "location": "Harrisonburg, VA",
+    "start_date": "2023-02-17",
+    "end_date": "2023-02-18",
+    "updated_at": "2023-02-27T00:48:33.273Z",
+    "events": [
+      {
+        "id": 1888,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 855,
+    "tournament_name": "2022 Mid-South Conference Indoor Championships",
+    "location": "Madisonville, KY",
+    "start_date": "2022-01-20",
+    "end_date": "2022-01-23",
+    "updated_at": "2022-01-23T22:54:49.255Z",
+    "events": [
+      {
+        "id": 1191,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1195,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 1192,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Head-to-Head Matches"
+      },
+      {
+        "id": 1196,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      }
+    ]
+  },
+  {
+    "id": 671,
+    "tournament_name": "Spider Cup #3: 720 Outdoor w/ Team Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2021-06-05",
+    "end_date": "2021-06-05",
+    "updated_at": "2021-06-05T16:43:53.161Z",
+    "events": [
+      {
+        "id": 943,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 679,
+    "tournament_name": "2021 California State Outdoor",
+    "location": "Discovery Park, Sacramento, CA",
+    "start_date": "2021-06-25",
+    "end_date": "2021-06-27",
+    "updated_at": "2021-06-27T21:22:34.208Z",
+    "events": [
+      {
+        "id": 952,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Friday Ranking Round"
+      },
+      {
+        "id": 953,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Saturday/Sunday Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1185,
+    "tournament_name": "KY S3DA - Fisher Barton Memorial Scholarship Regional",
+    "location": "Williamsburg, KY",
+    "start_date": "2022-12-17",
+    "end_date": "2022-12-17",
+    "updated_at": "2022-12-17T22:26:45.998Z",
+    "events": [
+      {
+        "id": 1807,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualifying Round"
+      }
+    ]
+  },
+  {
+    "id": 1205,
+    "tournament_name": "2023 Mid-South Conference Indoor Championships",
+    "location": "Western KY Archery Complex - Madisonville, KY",
+    "start_date": "2023-01-20",
+    "end_date": "2023-01-22",
+    "updated_at": "2023-02-03T19:57:27.581Z",
+    "events": [
+      {
+        "id": 1838,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1839,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 1840,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Head-to-Head Matches"
+      },
+      {
+        "id": 1841,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      }
+    ]
+  },
+  {
+    "id": 853,
+    "tournament_name": "2022 CA State Indoor Championships",
+    "location": "Tulare, CA",
+    "start_date": "2022-01-08",
+    "end_date": "2022-01-09",
+    "updated_at": "2022-02-02T20:38:20.151Z",
+    "events": [
+      {
+        "id": 1189,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1095,
+    "tournament_name": "2022 USA Archery 3D Collegiate Nationals",
+    "location": "Graham Creek Interpretive Center, Foley, AL",
+    "start_date": "2022-10-14",
+    "end_date": "2022-10-15",
+    "updated_at": "2022-10-16T13:20:24.863Z",
+    "events": [
+      {
+        "id": 1692,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1699,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team"
+      },
+      {
+        "id": 1701,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      },
+      {
+        "id": 1694,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Equipment Round"
+      },
+      {
+        "id": 1702,
+        "display_order": 6,
+        "event_type": "SpecialEvent",
+        "event_name": "Overall Team Points"
+      }
+    ]
+  },
+  {
+    "id": 854,
+    "tournament_name": "2022 CA JOAD State Indoor Championships",
+    "location": "Tulare, CA",
+    "start_date": "2022-01-07",
+    "end_date": "2022-01-07",
+    "updated_at": "2022-02-02T19:29:50.663Z",
+    "events": [
+      {
+        "id": 1190,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1200,
+    "tournament_name": "2023 Kentucky State JOAD Indoor Championship",
+    "location": "Scott High School 5400 Old Taylor Mill Rd, Taylor Mill, KY 41015",
+    "start_date": "2023-01-06",
+    "end_date": "2023-01-08",
+    "updated_at": "2023-01-08T01:36:34.451Z",
+    "events": [
+      {
+        "id": 1836,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2023 Kentucky State JOAD Indoor Championship"
+      }
+    ]
+  },
+  {
+    "id": 968,
+    "tournament_name": "Competition Learning Series: Outdoor Round w/ Team Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-04-02",
+    "end_date": "2022-04-02",
+    "updated_at": "2022-04-02T15:21:30.016Z",
+    "events": [
+      {
+        "id": 1409,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      }
+    ]
+  },
+  {
+    "id": 1039,
+    "tournament_name": "138th USA Archery Target Nationals and 2022 U.S. Open",
+    "location": "Greater Chester Valley Sports Complex, Malvern, Pennsylvania",
+    "start_date": "2022-08-10",
+    "end_date": "2022-08-13",
+    "updated_at": "2023-02-27T22:50:18.462Z",
+    "events": [
+      {
+        "id": 1613,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Qualification Rounds (Elimination Round Rankings)"
+      },
+      {
+        "id": 1614,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Class and Division Results (Guests Separated)"
+      },
+      {
+        "id": 1621,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "2022 U.S. Open"
+      },
+      {
+        "id": 1619,
+        "display_order": 8,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 1620,
+        "display_order": 9,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      }
+    ]
+  },
+  {
+    "id": 1240,
+    "tournament_name": "2023 USA Archery JOAD Indoor Nationals - Fiskdale, MA",
+    "location": "Fiskdale, MA",
+    "start_date": "2023-02-24",
+    "end_date": "2023-02-24",
+    "updated_at": "2023-02-27T00:58:14.117Z",
+    "events": [
+      {
+        "id": 1895,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1033,
+    "tournament_name": "USAT #4 2022 Rebel Gear Buckeye Classic",
+    "location": "Darree Soccer Fields, Dublin, OH",
+    "start_date": "2022-07-29",
+    "end_date": "2022-07-31",
+    "updated_at": "2022-08-02T11:40:37.857Z",
+    "events": [
+      {
+        "id": 1606,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 1608,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1111,
+    "tournament_name": "Florida 4-H State Field Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2022-10-22",
+    "end_date": "2022-10-22",
+    "updated_at": "2023-03-01T00:19:04.486Z",
+    "events": [
+      {
+        "id": 1725,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1029,
+    "tournament_name": "2022 USA Archery JOAD Target Nationals",
+    "location": "Jack Allen Recreation Center, Decatur, Alabama",
+    "start_date": "2022-07-20",
+    "end_date": "2022-07-24",
+    "updated_at": "2022-08-01T13:50:41.326Z",
+    "events": [
+      {
+        "id": 1597,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Qualification Round (Rankings for Elimination Round)"
+      },
+      {
+        "id": 1592,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Class and Division Results (Guests Separated)"
+      },
+      {
+        "id": 1596,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 1605,
+        "display_order": 4,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Rankings for Team Round"
+      },
+      {
+        "id": 1599,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Team Rounds"
+      }
+    ]
+  },
+  {
+    "id": 1315,
+    "tournament_name": "2023 USA Archery Indoor Nationals Final",
+    "location": "Louisville, Kentucky",
+    "start_date": "2023-03-23",
+    "end_date": "2023-03-23",
+    "updated_at": "2023-03-23T13:44:12.338Z",
+    "events": [
+      {
+        "id": 2026,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Combined Finals Rankings"
+      },
+      {
+        "id": 2027,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "2023 USA Archery Indoor Nationals Final"
+      }
+    ]
+  },
+  {
+    "id": 1295,
+    "tournament_name": "Florida 4-H FITA Archery Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-03-11",
+    "end_date": "2023-03-11",
+    "updated_at": "2023-03-11T19:54:45.478Z",
+    "events": [
+      {
+        "id": 1964,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1316,
+    "tournament_name": "SC State Indoor 2023",
+    "location": "South Carolina",
+    "start_date": "2023-04-01",
+    "end_date": "2023-04-01",
+    "updated_at": "2023-04-01T20:45:19.027Z",
+    "events": [
+      {
+        "id": 2030,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1301,
+    "tournament_name": "2023 Shamrock Slam",
+    "location": "Ben Avery Shooting Facility",
+    "start_date": "2023-03-31",
+    "end_date": "2023-04-02",
+    "updated_at": "2023-04-02T19:00:22.004Z",
+    "events": [
+      {
+        "id": 1982,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1983,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1310,
+    "tournament_name": "2023 New Mexico State JOAD Championships",
+    "location": "Albuquerque, New Mexico",
+    "start_date": "2023-03-12",
+    "end_date": "2023-03-12",
+    "updated_at": "2023-03-12T18:49:19.822Z",
+    "events": [
+      {
+        "id": 2010,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1293,
+    "tournament_name": "54th USA Archery Indoor Nationals - Collegiate Results",
+    "location": "United States",
+    "start_date": "2023-01-12",
+    "end_date": "2023-02-26",
+    "updated_at": "2023-03-15T23:25:11.009Z",
+    "events": [
+      {
+        "id": 1954,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Collegiate Ranking Round Results"
+      },
+      {
+        "id": 1959,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Collegiate Official Teams"
+      },
+      {
+        "id": 1956,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Collegiate Mixed Teams"
+      },
+      {
+        "id": 1960,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Collegiate Team Championship Points"
+      }
+    ]
+  },
+  {
+    "id": 1294,
+    "tournament_name": "2023 USA Archery Arizona State JOAD Outdoor Championships",
+    "location": "Ben Avery FITA Range",
+    "start_date": "2023-04-22",
+    "end_date": "2023-04-23",
+    "updated_at": "2023-04-23T18:38:13.602Z",
+    "events": [
+      {
+        "id": 1957,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1958,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1305,
+    "tournament_name": "2023 Utah, Idaho, \u0026 Wyoming State Indoor",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2023-03-11",
+    "end_date": "2023-03-11",
+    "updated_at": "2023-03-11T21:04:49.744Z",
+    "events": [
+      {
+        "id": 1987,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1311,
+    "tournament_name": "Winter wrap-up",
+    "location": "Boneyard archery Madison, north Carolina",
+    "start_date": "2023-03-11",
+    "end_date": "2023-03-11",
+    "updated_at": "2023-03-12T20:24:34.343Z",
+    "events": [
+      {
+        "id": 2014,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1292,
+    "tournament_name": "2023 Eastern S3DA Indoor National Championship",
+    "location": "Owensboro Convention Center - Owensboro, KY",
+    "start_date": "2023-03-03",
+    "end_date": "2023-03-05",
+    "updated_at": "2023-03-05T19:27:56.205Z",
+    "events": [
+      {
+        "id": 1953,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualifying Round"
+      },
+      {
+        "id": 1977,
+        "display_order": 2,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Jr. Eagle Team Rankings"
+      },
+      {
+        "id": 1978,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Eagle Team Rankings"
+      },
+      {
+        "id": 1979,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Youth Team Rankings"
+      },
+      {
+        "id": 1980,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Young Adult Team Rankings"
+      }
+    ]
+  },
+  {
+    "id": 1184,
+    "tournament_name": "2023 Colorado State Joad Indoor Championship",
+    "location": "Archery School of the Rockies, Colorado Springs, CO",
+    "start_date": "2023-01-15",
+    "end_date": "2023-01-15",
+    "updated_at": "2023-03-11T17:31:58.759Z",
+    "events": [
+      {
+        "id": 1856,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1345,
+    "tournament_name": "2023 Vegas Vengeance",
+    "location": "Ben Avery Shooting Facility Indoor Archery Range",
+    "start_date": "2023-05-27",
+    "end_date": "2023-05-28",
+    "updated_at": "2023-05-28T22:29:06.743Z",
+    "events": [
+      {
+        "id": 2184,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2023 Vegas Vengeance"
+      }
+    ]
+  },
+  {
+    "id": 1302,
+    "tournament_name": "2023 Massachusetts Indoor JOAD State Championship",
+    "location": "Ashland, MA",
+    "start_date": "2023-01-21",
+    "end_date": "2023-01-22",
+    "updated_at": "2023-03-04T22:54:21.738Z",
+    "events": [
+      {
+        "id": 1984,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1317,
+    "tournament_name": "Florida 4-H State Archery Match",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-04-01",
+    "end_date": "2023-04-02",
+    "updated_at": "2023-04-02T19:19:42.096Z",
+    "events": [
+      {
+        "id": 2031,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "FITA - Junior/Intermediate"
+      },
+      {
+        "id": 2032,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "FITA - Senior"
+      },
+      {
+        "id": 2033,
+        "display_order": 3,
+        "event_type": "RankingEvent",
+        "event_name": "3D/Field - Junior/Intermediate"
+      },
+      {
+        "id": 2034,
+        "display_order": 4,
+        "event_type": "RankingEvent",
+        "event_name": "3D - Senior"
+      },
+      {
+        "id": 2036,
+        "display_order": 5,
+        "event_type": "RankingEvent",
+        "event_name": "Field - Senior"
+      }
+    ]
+  },
+  {
+    "id": 1336,
+    "tournament_name": "Outdoor National Archery Scholarship Tour - Newberry, FL",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-04-22",
+    "end_date": "2023-04-22",
+    "updated_at": "2023-04-22T17:25:04.242Z",
+    "events": [
+      {
+        "id": 2139,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 2140,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Finals Match"
+      }
+    ]
+  },
+  {
+    "id": 1337,
+    "tournament_name": "2023 UAA State Formal",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2023-04-22",
+    "end_date": "2023-04-22",
+    "updated_at": "2023-04-22T22:47:22.242Z",
+    "events": [
+      {
+        "id": 2141,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "UAA State Formal"
+      }
+    ]
+  },
+  {
+    "id": 1300,
+    "tournament_name": "2023 USA Archery New Mexico State Indoor Championship",
+    "location": "Albuquerque, New Mexico",
+    "start_date": "2023-03-04",
+    "end_date": "2023-03-04",
+    "updated_at": "2023-03-10T06:56:12.301Z",
+    "events": [
+      {
+        "id": 1970,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1347,
+    "tournament_name": "2023 USA Archery Mississippi State Outdoor Championship",
+    "location": "Hattiesburg, MS",
+    "start_date": "2023-05-06",
+    "end_date": "2023-05-06",
+    "updated_at": "2023-05-06T19:53:59.453Z",
+    "events": [
+      {
+        "id": 2187,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Event"
+      }
+    ]
+  },
+  {
+    "id": 1239,
+    "tournament_name": "2023 USA Archery Massachusetts Indoor State Championship (FITA)",
+    "location": "Ashland, MA",
+    "start_date": "2023-01-21",
+    "end_date": "2023-01-22",
+    "updated_at": "2023-03-04T19:50:10.279Z",
+    "events": [
+      {
+        "id": 1893,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1354,
+    "tournament_name": "2023 Ohio Double 900",
+    "location": "Below Dam at Alum Creek",
+    "start_date": "2023-05-20",
+    "end_date": "2023-05-21",
+    "updated_at": "2023-05-21T18:15:43.239Z",
+    "events": [
+      {
+        "id": 2212,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ohio Double 900"
+      }
+    ]
+  },
+  {
+    "id": 1343,
+    "tournament_name": "USA Archery South Central MS Collegiate Regional",
+    "location": "Hattiesburg, MS",
+    "start_date": "2023-04-29",
+    "end_date": "2023-04-30",
+    "updated_at": "2023-04-30T14:35:49.000Z",
+    "events": [
+      {
+        "id": 2168,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2170,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      },
+      {
+        "id": 2169,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 2171,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 2172,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Recurve Men"
+      },
+      {
+        "id": 2177,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Recurve Women"
+      },
+      {
+        "id": 2178,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Compound Men"
+      },
+      {
+        "id": 2179,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Compound Women"
+      },
+      {
+        "id": 2180,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Barebow Men"
+      },
+      {
+        "id": 2181,
+        "display_order": 10,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Barebow Women"
+      },
+      {
+        "id": 2182,
+        "display_order": 11,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Fixed Pins Men"
+      },
+      {
+        "id": 2183,
+        "display_order": 12,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Fixed Pins Women"
+      }
+    ]
+  },
+  {
+    "id": 1313,
+    "tournament_name": "2023 OAS San Diego Conference Championship",
+    "location": "The Grauer School",
+    "start_date": "2023-03-18",
+    "end_date": "2023-03-18",
+    "updated_at": "2023-03-18T23:19:56.437Z",
+    "events": [
+      {
+        "id": 2017,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2020,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 2021,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 2022,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 2023,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1387,
+    "tournament_name": "National Archery Scholarship Tour - Salt Lake City Outdoor",
+    "location": "Easton Salt Lake Archery Center",
+    "start_date": "2023-05-27",
+    "end_date": "2023-05-27",
+    "updated_at": "2023-05-27T18:48:36.717Z",
+    "events": [
+      {
+        "id": 2254,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2255,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Finals Event"
+      }
+    ]
+  },
+  {
+    "id": 1332,
+    "tournament_name": "2023 Collegiate Target Regionals South East",
+    "location": "Statesboro, GA",
+    "start_date": "2023-04-15",
+    "end_date": "2023-04-16",
+    "updated_at": "2023-04-15T16:03:43.450Z",
+    "events": [
+      {
+        "id": 2092,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2093,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 2096,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Recurve Men"
+      },
+      {
+        "id": 2120,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Recurve Women"
+      },
+      {
+        "id": 2121,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Compound Men"
+      },
+      {
+        "id": 2122,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Compound Women"
+      },
+      {
+        "id": 2123,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Barebow Men"
+      },
+      {
+        "id": 2124,
+        "display_order": 10,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Barebow Women"
+      },
+      {
+        "id": 2125,
+        "display_order": 11,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Fixed Pins Men"
+      },
+      {
+        "id": 2126,
+        "display_order": 12,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Fixed Pins Women"
+      }
+    ]
+  },
+  {
+    "id": 1289,
+    "tournament_name": "2023 USA Archery Colorado State Indoor Championship",
+    "location": "Archery School of the Rockies 2110 Busch Ave, Colorado Springs, CO 80904",
+    "start_date": "2023-03-11",
+    "end_date": "2023-03-12",
+    "updated_at": "2023-03-14T22:57:18.278Z",
+    "events": [
+      {
+        "id": 1949,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "2023 Colorado Indoor State Championships"
+      }
+    ]
+  },
+  {
+    "id": 1330,
+    "tournament_name": "2023 World Archery Youth Championship US Team Trials",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2023-04-12",
+    "end_date": "2023-04-12",
+    "updated_at": "2023-04-12T18:30:15.701Z",
+    "events": [
+      {
+        "id": 2085,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2086,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Round Robins"
+      },
+      {
+        "id": 2097,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve U21 Men"
+      },
+      {
+        "id": 2099,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve U21 Women"
+      },
+      {
+        "id": 2100,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve U18 Men"
+      },
+      {
+        "id": 2102,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve U18 Women"
+      },
+      {
+        "id": 2103,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound U21 Men"
+      },
+      {
+        "id": 2104,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound U21 Women"
+      },
+      {
+        "id": 2106,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound U18 Men"
+      },
+      {
+        "id": 2107,
+        "display_order": 10,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound U18 Women"
+      }
+    ]
+  },
+  {
+    "id": 1298,
+    "tournament_name": "Archers Cup 2023",
+    "location": "Ace Archers, Foxborough MA",
+    "start_date": "2023-03-10",
+    "end_date": "2023-03-12",
+    "updated_at": "2023-03-12T23:29:29.329Z",
+    "events": [
+      {
+        "id": 1967,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1309,
+    "tournament_name": "2023 OAS Los Angeles Conference Championship",
+    "location": "San Gorgonio Middle School",
+    "start_date": "2023-03-11",
+    "end_date": "2023-03-11",
+    "updated_at": "2023-03-14T17:14:49.620Z",
+    "events": [
+      {
+        "id": 2003,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2006,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 2007,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 2008,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 2009,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1323,
+    "tournament_name": "2023 Mid-South Conference Outdoor Championships",
+    "location": "University of the Cumberlands",
+    "start_date": "2023-04-08",
+    "end_date": "2023-04-08",
+    "updated_at": "2023-05-02T17:01:53.225Z",
+    "events": [
+      {
+        "id": 2058,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2059,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Teams"
+      },
+      {
+        "id": 2060,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 2061,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Rounds"
+      }
+    ]
+  },
+  {
+    "id": 1327,
+    "tournament_name": "Spider Cup #2: NAST Outdoor Round w/ Knockout Eliminations",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-04-15",
+    "end_date": "2023-04-15",
+    "updated_at": "2023-04-15T18:52:53.261Z",
+    "events": [
+      {
+        "id": 2073,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 2074,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Matches"
+      }
+    ]
+  },
+  {
+    "id": 1319,
+    "tournament_name": "2023 OAS Orlando Conference Championship",
+    "location": "The Geneva School",
+    "start_date": "2023-04-01",
+    "end_date": "2023-04-01",
+    "updated_at": "2023-04-01T16:57:36.910Z",
+    "events": [
+      {
+        "id": 2039,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2042,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 2043,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 2044,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 2045,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1322,
+    "tournament_name": "2023 USA Archery Collegiate Target Regionals - KY Southeast",
+    "location": "University of the Cumberlands",
+    "start_date": "2023-04-05",
+    "end_date": "2023-04-07",
+    "updated_at": "2023-04-06T17:20:42.672Z",
+    "events": [
+      {
+        "id": 2054,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2055,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Rounds"
+      },
+      {
+        "id": 2056,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Rounds"
+      },
+      {
+        "id": 2057,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Head-to-Head Matches"
+      }
+    ]
+  },
+  {
+    "id": 1331,
+    "tournament_name": "2023 West Region Outdoor Collegiate Championship",
+    "location": "Sacramento, CA",
+    "start_date": "2023-04-22",
+    "end_date": "2023-04-23",
+    "updated_at": "2023-04-25T02:46:33.635Z",
+    "events": [
+      {
+        "id": 2087,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2089,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      },
+      {
+        "id": 2088,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 2090,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 2091,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Recurve Men"
+      },
+      {
+        "id": 2159,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Recurve Women"
+      },
+      {
+        "id": 2160,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Compound Men"
+      },
+      {
+        "id": 2161,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Compound Women"
+      },
+      {
+        "id": 2162,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Barebow Men"
+      },
+      {
+        "id": 2163,
+        "display_order": 10,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Barebow Women"
+      },
+      {
+        "id": 2164,
+        "display_order": 11,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Fixed Pins Men"
+      },
+      {
+        "id": 2165,
+        "display_order": 12,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-Region Team - Fixed Pins Women"
+      },
+      {
+        "id": 2166,
+        "display_order": 13,
+        "event_type": "CustomPointsEvent",
+        "event_name": "West Region Overall Team Championship Points"
+      }
+    ]
+  },
+  {
+    "id": 1340,
+    "tournament_name": "2023 OAS Florida State Championship",
+    "location": "East River High School",
+    "start_date": "2023-04-22",
+    "end_date": "2023-04-22",
+    "updated_at": "2023-04-22T20:24:06.233Z",
+    "events": [
+      {
+        "id": 2150,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2153,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 2154,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 2155,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 2156,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1353,
+    "tournament_name": "2023 USA Archery Collegiate Target Nationals",
+    "location": "Georgia Southern University, Statesboro, GA",
+    "start_date": "2023-05-19",
+    "end_date": "2023-05-21",
+    "updated_at": "2023-05-21T10:43:12.820Z",
+    "events": [
+      {
+        "id": 2211,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2245,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      },
+      {
+        "id": 2246,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Official Team Round"
+      },
+      {
+        "id": 2247,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Mixed Team Round"
+      },
+      {
+        "id": 2248,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All-American Team"
+      },
+      {
+        "id": 2250,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "All Around Archers of the Year"
+      },
+      {
+        "id": 2251,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Team Championship Points"
+      }
+    ]
+  },
+  {
+    "id": 949,
+    "tournament_name": "2022 USA Archery Colorado State JOAD Indoor Championship",
+    "location": "Archery School of the Rockies, Colorado Springs, Colorado, USA",
+    "start_date": "2022-03-12",
+    "end_date": "2022-03-12",
+    "updated_at": "2023-03-03T01:28:31.357Z",
+    "events": [
+      {
+        "id": 1334,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification"
+      }
+    ]
+  },
+  {
+    "id": 1321,
+    "tournament_name": "2023 OAS New York Conference Championship",
+    "location": "MS 137, America’s School of Heroes",
+    "start_date": "2023-04-01",
+    "end_date": "2023-04-01",
+    "updated_at": "2023-04-01T17:47:40.562Z",
+    "events": [
+      {
+        "id": 2047,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2050,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 2051,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 2052,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 2053,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1390,
+    "tournament_name": "North Carolina USA Archery Outdoor State and JOAD",
+    "location": "Asheville North Carolina",
+    "start_date": "2023-06-17",
+    "end_date": "2023-06-17",
+    "updated_at": "2023-06-08T00:13:22.836Z",
+    "events": [
+      {
+        "id": 2259,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "North Carolina USA Archery Outdoor State and JOAD"
+      }
+    ]
+  },
+  {
+    "id": 1349,
+    "tournament_name": "2023 Spring OAS Mail-In Tournament",
+    "location": "Online",
+    "start_date": "2023-02-01",
+    "end_date": "2023-05-01",
+    "updated_at": "2023-05-22T16:39:02.569Z",
+    "events": [
+      {
+        "id": 2195,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2252,
+        "display_order": 2,
+        "event_type": "CustomPointsEvent",
+        "event_name": "High School Team Award"
+      },
+      {
+        "id": 2253,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Middle School Team Award"
+      }
+    ]
+  },
+  {
+    "id": 1195,
+    "tournament_name": "Indoor National Archery Scholarship Tour - Newberry, FL",
+    "location": "Easton Newberry Archery Center",
+    "start_date": "2023-03-04",
+    "end_date": "2023-03-05",
+    "updated_at": "2023-03-04T18:18:58.674Z",
+    "events": [
+      {
+        "id": 1823,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 1971,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Finals Match"
+      }
+    ]
+  },
+  {
+    "id": 1299,
+    "tournament_name": "2023 USA Archery Iowa State Indoor Championship",
+    "location": "Dyersville Iowa",
+    "start_date": "2023-03-04",
+    "end_date": "2023-03-04",
+    "updated_at": "2023-03-05T02:07:36.477Z",
+    "events": [
+      {
+        "id": 1969,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  },
+  {
+    "id": 1344,
+    "tournament_name": "2023 OAS National Championship",
+    "location": "EACE \u0026 ENAC",
+    "start_date": "2023-04-29",
+    "end_date": "2023-04-29",
+    "updated_at": "2023-05-22T22:00:10.688Z",
+    "events": [
+      {
+        "id": 2174,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2175,
+        "display_order": 2,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Team Champions"
+      },
+      {
+        "id": 2176,
+        "display_order": 3,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Team Champions"
+      }
+    ]
+  },
+  {
+    "id": 1392,
+    "tournament_name": "2023 Bay State Games",
+    "location": "Metrowest Family Outdoor Center, Hokpinton, MA",
+    "start_date": "2023-06-24",
+    "end_date": "2023-06-25",
+    "updated_at": "2023-06-10T22:00:26.541Z",
+    "events": [
+      {
+        "id": 2262,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualifications"
+      },
+      {
+        "id": 2263,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Eliminations"
+      }
+    ]
+  },
+  {
+    "id": 1351,
+    "tournament_name": "USAT #2 2023 Easton Foundations Gator Cup",
+    "location": "Easton Newberry Archery Center, Newberry, FL",
+    "start_date": "2023-05-12",
+    "end_date": "2023-05-14",
+    "updated_at": "2023-05-24T22:09:47.817Z",
+    "events": [
+      {
+        "id": 2198,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 2203,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1334,
+    "tournament_name": "2023 OAS California State Championship",
+    "location": "Easton Archery Center of Excellence - Chula Vista",
+    "start_date": "2023-04-15",
+    "end_date": "2023-04-15",
+    "updated_at": "2023-04-19T17:05:00.085Z",
+    "events": [
+      {
+        "id": 2109,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      },
+      {
+        "id": 2112,
+        "display_order": 4,
+        "event_type": "MatchEvent",
+        "event_name": "Singles Matches"
+      },
+      {
+        "id": 2113,
+        "display_order": 5,
+        "event_type": "MatchEvent",
+        "event_name": "Triples Matches"
+      },
+      {
+        "id": 2114,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall High School Results"
+      },
+      {
+        "id": 2115,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Overall Middle School Results"
+      }
+    ]
+  },
+  {
+    "id": 1348,
+    "tournament_name": "2023 World Archery Para Championships and Para Pan Am Games U.S. Team Trials",
+    "location": "Various Locations, USA",
+    "start_date": "2023-04-14",
+    "end_date": "2023-04-16",
+    "updated_at": "2023-05-15T16:36:23.863Z",
+    "events": [
+      {
+        "id": 2188,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Stage 1 Qualification"
+      },
+      {
+        "id": 2204,
+        "display_order": 2,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Stage 2 Qualification"
+      },
+      {
+        "id": 2210,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 3 Round Robins"
+      },
+      {
+        "id": 2189,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Open Men"
+      },
+      {
+        "id": 2190,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Open Women"
+      },
+      {
+        "id": 2191,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Open Men"
+      },
+      {
+        "id": 2192,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Open Women"
+      },
+      {
+        "id": 2193,
+        "display_order": 8,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - W1 Open Men"
+      },
+      {
+        "id": 2194,
+        "display_order": 9,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - W1 Open Women"
+      }
+    ]
+  },
+  {
+    "id": 1335,
+    "tournament_name": "2023 World Archery Championships and Pan Am Games U.S. Team Trials",
+    "location": "Various Locations, USA",
+    "start_date": "2023-04-14",
+    "end_date": "2023-04-16",
+    "updated_at": "2023-05-10T15:40:48.221Z",
+    "events": [
+      {
+        "id": 2127,
+        "display_order": 1,
+        "event_type": "CombinedRankingEvent",
+        "event_name": "Stage 1 Qualification"
+      },
+      {
+        "id": 2200,
+        "display_order": 2,
+        "event_type": "RankingEvent",
+        "event_name": "Stage 2 Qualification"
+      },
+      {
+        "id": 2201,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Stage 3 Round Robins"
+      },
+      {
+        "id": 2128,
+        "display_order": 4,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Senior Men"
+      },
+      {
+        "id": 2129,
+        "display_order": 5,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Recurve Senior Women"
+      },
+      {
+        "id": 2131,
+        "display_order": 6,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Senior Men"
+      },
+      {
+        "id": 2132,
+        "display_order": 7,
+        "event_type": "CustomPointsEvent",
+        "event_name": "Points Standings - Compound Senior Women"
+      }
+    ]
+  },
+  {
+    "id": 1352,
+    "tournament_name": "The Sunset Showdown 1",
+    "location": "1590 E Lost Dutchman Blvd, Apache Junction, AZ 85119",
+    "start_date": "2023-06-16",
+    "end_date": "2023-06-17",
+    "updated_at": "2023-06-10T22:20:34.731Z",
+    "events": [
+      {
+        "id": 2265,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualifications"
+      },
+      {
+        "id": 2266,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Eliminations"
+      }
+    ]
+  },
+  {
+    "id": 1329,
+    "tournament_name": "USAT #1 2023 AAE Arizona Cup",
+    "location": "Ben Avery Shooting Facility, Phoenix, AZ",
+    "start_date": "2023-04-14",
+    "end_date": "2023-04-16",
+    "updated_at": "2023-05-07T14:59:02.378Z",
+    "events": [
+      {
+        "id": 2083,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 2118,
+        "display_order": 3,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1389,
+    "tournament_name": "USAT #3 2023 SoCal Showdown",
+    "location": "Easton Archery Center of Excellence, Chula Vista, CA",
+    "start_date": "2023-06-09",
+    "end_date": "2023-06-11",
+    "updated_at": "2023-06-11T13:44:13.219Z",
+    "events": [
+      {
+        "id": 2256,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Qualification Round"
+      },
+      {
+        "id": 2258,
+        "display_order": 2,
+        "event_type": "MatchEvent",
+        "event_name": "Elimination Round"
+      }
+    ]
+  },
+  {
+    "id": 1324,
+    "tournament_name": "2023 Icebreaker",
+    "location": "NJ",
+    "start_date": "2023-04-16",
+    "end_date": "2023-04-16",
+    "updated_at": "2023-04-17T00:54:25.032Z",
+    "events": [
+      {
+        "id": 2062,
+        "display_order": 1,
+        "event_type": "RankingEvent",
+        "event_name": "Ranking Round"
+      }
+    ]
+  }
+]

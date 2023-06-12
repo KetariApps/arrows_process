@@ -1,252 +1,88 @@
-// WADB Types ::
-
-//// Types for competition overview responses
-
-export type PhaseNo = 48 | 32 | 16 | 12 | 8 | 4 | 1 | 0;
-
-export type Phase = {
-  Name: string;
-  NameShort: string;
-  Finished: boolean;
-  Phase: string;
-  PhCode: string;
-};
-
-export type CatCode = "RM" | "RW" | "CM" | "CW" | "RX" | "RM";
-
-export type Cat = {
-  Code: CatCode;
-  Phases: Phase[];
-};
-
-export type Stage =
-  | "entries"
-  | "qr individual"
-  | "qr team"
-  | "bracket individual"
-  | "bracket team"
-  | "rank individual"
-  | "rank team";
-
-export type EventResItem = {
-  Name: string;
-  ID: string;
-  CatInd: Cat[];
-  CatTeam: Cat[];
-  DFrom: string;
-  DTo: string;
-  CountryName: string;
-  Place: string;
-  Stages: Stage[];
-};
-
-export type EventResJSON = {
-  items: EventResItem[];
-};
-
-export type Ath = {
-  FName: string;
-  GName: string;
-  Id: string;
-  NOC: string;
-  WNameOrd: boolean;
-};
-
-//// Types for competition division response
-
-export type AthItem = {
-  Athlete: Ath;
-  Rnk: number;
-  Score: number;
-};
-
-export type EventDivResItem = {
-  Code: CatCode;
-  Results: AthItem[];
-};
-
-export type EventDivResJSON = {
-  items: EventDivResItem[];
-};
-
-//// Types for individual qr score response
-
-export type End = {
-  Arrows: string[];
-  Sum: number;
-};
-
-export type Scorecard = {
-  Ends: End[];
-  Score: number;
-};
-
-export type AthScoreResJSON = {
-  items: Scorecard[];
-};
-
-// END WADB TYPES
-/////////////////
-
-// ArchEnemy -> WADB Fetch Types ::
-
-export type WAAPIRes = {
-  FName: string;
-  GName: string;
-  Id: string;
-  NOC: string;
-  WNameOrd: boolean;
-  Ends: number[][];
-  CompName: string;
-  CompID: string;
-  CompDFrom: string;
-  CompDTo: string;
-  CompPlace: string;
-  CompCountryName: string;
-  CatCode: CatCode;
-}[];
-
-export type GetWADataProp = {
-  CompId: string;
-  isBracket: boolean;
-  isTeam: boolean;
-  isIndoor: boolean;
-};
-
-export type FetchProps = {
-  compId: string;
-  content: string;
-  detailed?: boolean;
-  catCode?: string;
-  athId?: string;
-  phase?: string;
-};
-
-export type fetchDataFunc = (props: FetchProps) => Promise<Response>;
-
-export type AthProps = {
-  name: string;
-  athId: string;
-  division: string;
-  gender: string;
-};
-
-export type EventDbJSON = {
-  name: string;
-  location: string;
-  discipline: string;
-  year: string;
-  url: string;
-  WAID: string;
-};
-
-// END ARCHENEMY -> WADB FETCH TYPES
-////////////////////////////////////
-
-// ARCHENEMY -> BE FETCH TYPES
-//////////////////////////////
-
-export type BeEventObj = {
-  ape: number /** arrows per end */;
-  cgs: {
-    ars: { aid: number /** athlete id */ }[] /** athlete results */;
-    cut: number;
-    dor: number;
-    nm: string /** category name */;
-  }[];
-  dld: number;
-  dor: number;
-  enm: "Qualification Round" | string /** stage eg.Qualification */;
-  epr: number /** ends per round */;
-  etp: "RankingEvent" | string /** event type */;
-  fita: boolean;
-  id: number;
-  nos: number;
-  rds: number /** rounds */;
-  rps: {
-    [arg0: number]: {
-      aid: number /** athlete */;
-      alt: string /** ? string of numbers */;
-      cnd:
-        | "CMM"
-        | "CMW"
-        | "RMM"
-        | "RMW"
-        | "CSM"
-        | "CSW"
-        | "RSM"
-        | "RSW"
-        | "CJM"
-        | "CJW"
-        | "RJM"
-        | "RJW"
-        | "CCM"
-        | "CCW"
-        | "CRM"
-        | "CRW" /** category */;
-      fnm: string /** first name */;
-      lnm: string /** last name */;
-      tgt: string /** target number */;
-      tm: string /** state */;
-      tnl: number[];
-    };
-  } /** athletes */;
-  srl: number;
-  stb: boolean;
-  tdt: string /** tournament date range - (moabbr dd, yyyy) */;
-  tlc: string /** location - place, city, state abbr */;
-  tnl: {
-    [arg0: number]: {
-      id: number /** event field / sub event id */;
-      nm: string /** event field / sub event / date */;
-    };
-  } /** athletes */;
-  tnm: string /** tournament name */;
-};
-
-export type BeScoresObj = {
-  ars: {
-    [
-      arg0: number /** athlete id */
-    ]: string /** arrow values - no spaces 1-9, M, T, X */;
-  } /** athlete results */;
-};
-
-// ARCHENEMY -> BE FETCH TYPES
-//////////////////////////////
-
-// ARCHENEMY JSON
-/////////////////
-
-type EVStats = {
-  Ends: number[][];
-  StandardDeviation: number;
-  Mean: number;
-  Variance: number;
-  ArrowCount: number;
+export enum SourceApi {
+  WA,
+  BE,
 }
 
-export type AEAthsJSON = {
-  WAID: number;
-  BEID: number;
-  FName: string;
-  LName: string;
-  NameOrder: string;
-  Gender: string;
-  Events: {
-    [arg0: string]: {
-      Name: string;
-      ID: number;
-      API: 'WA' | 'BE';
-      Date: Date;
-      Country: string;
-      Place: string;
-      Division: string;
-      Stats: EVStats;
-      AEStats: EVStats;
-    };
-  };
-};
+export enum EventType {
+  QUAL,
+  ELIM,
+}
 
-// END ARCHENEMY JSON
-/////////////////////
+export enum Division {
+  RS, // Recurve Senior
+  R21, // Recurve U21 (Junior)
+  R18, // Recurve U18 (Cadet)
+  R15, // Recurve U15 (Cub)
+  R13, // Recurve U13 (Bowman)
+  R5, // Recurve 50+ (Master)
+  R6, // Recurve 60+ (Master 60)
+  R7, // Recurve 70+ (Master 70)
+  RC, // Recurve College
+  RO, // Recurve Open
+
+  CS, // Compound Senior
+  C21, // Compound U21 (Junior)
+  C18, // Compound U18 (Cadet)
+  C15, // Compound U15 (Cub)
+  C13, // Compound U13 (Bowman)
+  C5, // Compound 50+ (Master)
+  C6, // Compound 60+ (Master 60)
+  C7, // Compound 70+ (Master 70)
+  CC, // Compound College
+  CO, // Compound Open
+
+  W1, // W1 Open
+
+  VI, // V.I. Open
+
+  BS, // Barebow Senior
+  B21, // Barebow U21 (Junior)
+  B18, // Barebow U18 (Cadet)
+  B15, // Barebow U15 (Cub)
+  B5, // Barebow 50+ (Master)
+
+  F21, // Fixed Pins U21
+  F18, // Fixed Pins U18
+}
+
+export enum NameOrder {
+  FL,
+  LF,
+}
+
+export enum Gender {
+  M,
+  F,
+}
+
+export interface EventStats {
+  std: number[];
+  mean: number;
+  variance: number[];
+  arrow_count: number;
+}
+
+export interface ArrowsEvent {
+  name: string;
+  type: EventType;
+  id: number;
+  api: SourceApi;
+  start: Date;
+  end: Date;
+  country: string;
+  place: string;
+  division: Division;
+  stats: EventStats;
+  ends: number[][];
+}
+
+export interface ArrowsJSON {
+  id: string;
+  waid?: number;
+  beid?: number;
+  f_name?: string;
+  l_name?: string;
+  name_order?: NameOrder;
+  gender?: Gender;
+  events: ArrowsEvent[];
+}

@@ -1,4 +1,4 @@
-import type { FetchProps } from "../types.d.ts";
+import { FetchProps } from "./types.js";
 
 export default function worldArchery() {}
 
