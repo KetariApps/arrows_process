@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node build/index.js",
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "author": "Zach Garrett",
   "license": "ISC",
@@ -15,7 +16,11 @@
     "mathjs": "^11.8.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "4.0.1",
     "@types/node": "^20.3.0",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.3",
+    "@graphql-codegen/typescript": "4.0.0",
+    "@graphql-codegen/typescript-resolvers": "4.0.0",
+    "@graphql-codegen/introspection": "4.0.0"
   }
 }
