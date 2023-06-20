@@ -1,17 +1,14 @@
-import { BeEventType } from "./types.js";
-import {
-  filterTournamentByName,
-  getBetweenEndsEventData,
-  getBetweenEndsEventList,
-} from "./lib.js";
-
+import { getEventData } from "./lib/getEventData.js";
+import { getEventList } from "./lib/getEventList.js";
+import { filterByName } from "./lib/tournamentFilters.js";
+import { BeEventType } from "./lib/types.js";
 export default async function cloneBetweenEndsData() {
   // get all the tournaments in the BetweenEnds database
-  await getBetweenEndsEventList().then(async (tournaments) => {
+  await getEventList().then(async (tournaments) => {
     // filter the tournaments to only include USAT events
     // todo : abstract filters to allow for more complex filter types
     const matchingTournaments = tournaments?.filter((tournament) =>
-      filterTournamentByName(tournament, "USAT")
+      filterByName(tournament, "USAT")
     );
     if (matchingTournaments === undefined) return null;
 
@@ -35,15 +32,13 @@ export default async function cloneBetweenEndsData() {
         return await Promise.all(
           events.map(async (event) => {
             if (event === undefined) return null;
-            return await getBetweenEndsEventData(event).then(
-              async (eventData) => {
-                if (eventData === undefined) return null;
-                // map eventData to ArrowsJSON
+            return await getEventData(event).then(async (eventData) => {
+              if (eventData === undefined) return null;
+              // map eventData to ArrowsJSON
 
-                // insert eventData into arrows_db
-                console.log(eventData);
-              }
-            );
+              // insert eventData into arrows_db
+              console.log(eventData);
+            });
           })
         );
       })

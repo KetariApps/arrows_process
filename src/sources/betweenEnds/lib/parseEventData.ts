@@ -1,13 +1,9 @@
+import { EventProfile } from "./getEventData.js";
 import { mean, std, variance } from "mathjs";
 import {
   BeAth,
   BeDivision,
-  BeEndpoint,
-  BeEventObj,
   BeEventType,
-  BeScoresObj,
-  BeTournamentEvent,
-  BeTournamet,
 } from "./types.js";
 import {
   ArrowsJSON,
@@ -17,64 +13,9 @@ import {
   Gender,
   NameOrder,
   SourceApi,
-} from "../../types.js";
+} from "../../../types.js";
 
-interface EventProfile {
-  start: Date;
-  end: Date;
-  comp_id: number;
-  arrows_per_end: number;
-  name: string;
-  place: string;
-  event_type: BeEventType;
-}
-
-export async function getBetweenEndsEventData(
-  tournamentEvent: BeTournamentEvent
-) {
-  try {
-    const evId = tournamentEvent.id;
-
-    // get the resources
-    const [evJSON, evScoresJSON] = await Promise.all([
-      getData(BeEndpoint.events, evId).then(
-        async (event) => (await event.json()) as BeEventObj
-      ),
-      getData(BeEndpoint.events, evId, true).then(
-        async (event) => (await event.json()) as BeScoresObj
-      ),
-    ]);
-
-    const date = evJSON.tdt.split("-");
-    const event: EventProfile = {
-      start: new Date(Date.parse(date[0])),
-      end: new Date(Date.parse(date[1])),
-      comp_id: evId,
-      event_type: tournamentEvent.event_type,
-      arrows_per_end: evJSON.ape,
-      name: evJSON.tnm,
-      place: evJSON.tlc,
-    };
-
-    const aths = Object.values(evJSON.rps);
-
-    // parse the scores for each athlete
-    const athScores: ArrowsJSON[] = aths
-      .map((ath) => {
-        const scoreString = evScoresJSON.ars[ath.aid];
-        const eventProfile = parseEventProfile(ath, event, scoreString);
-        return eventProfile;
-      })
-      .filter(
-        (scoreProfile): scoreProfile is ArrowsJSON => scoreProfile !== null
-      );
-    return athScores;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-export const parseEventProfile = (
+export const parseEventData = (
   ath: BeAth,
   event: EventProfile,
   scoreString: string
@@ -140,45 +81,6 @@ export const parseEventProfile = (
   return eventData;
 };
 
-export async function getBetweenEndsEventList() {
-  try {
-    const eventList = getData(BeEndpoint.tournaments).then(
-      async (event) => (await event.json()) as BeTournamet[]
-    );
-
-    return eventList;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-export const getData = (
-  endpoint: BeEndpoint,
-  evNum?: number,
-  scores?: boolean
-) => {
-  const url = `https://resultsapi.herokuapp.com/${endpoint}/${
-    evNum === undefined ? "" : evNum
-  }${scores ? "/scores" : ""}`;
-  return fetch(url, {
-    headers: {
-      accept: "application/json, text/plain, */*",
-      "accept-language": "en-US,en;q=0.9",
-      "sec-ch-ua":
-        '"Chromium";v="88", "Google Chrome";v="88", ";Not A Brand";v="99"',
-      "sec-ch-ua-mobile": "?0",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "cross-site",
-    },
-    referrer: "https://www.betweenends.com/",
-    referrerPolicy: "strict-origin-when-cross-origin",
-    body: null,
-    method: "GET",
-    mode: "cors",
-  });
-};
-
 const getScores = (scoreString: string, ape: number) => {
   const regexstr = `.{1,${ape}}`,
     regex = new RegExp(regexstr, "g");
@@ -187,11 +89,6 @@ const getScores = (scoreString: string, ape: number) => {
   const endArrows = ends.map((e) => e.match(/\w/g));
   return endArrows;
 };
-
-export const filterTournamentByName = (
-  tournament: BeTournamet,
-  substring: string
-) => tournament.tournament_name.includes(substring);
 
 const mapGender = (division: BeDivision) =>
   BeDivision[division].includes("W") ? Gender.F : Gender.M;
