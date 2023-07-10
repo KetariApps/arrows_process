@@ -1,5 +1,6 @@
+import { BeEndpoint } from "./enums.js";
 import { fetchData } from "./fetchData.js";
-import { BeEndpoint, BeTournamet } from "./types.js";
+import type { BeTournamet } from "./types.d.ts";
 
 export async function getEventList() {
   try {

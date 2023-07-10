@@ -1,7 +1,7 @@
 import { getEventData } from "./lib/getEventData.js";
 import { getEventList } from "./lib/getEventList.js";
 import { filterByName } from "./lib/tournamentFilters.js";
-import { BeEventType } from "./lib/types.js";
+import { BeEventType } from "./lib/enums.js";
 export default async function cloneBetweenEndsData() {
   // get all the tournaments in the BetweenEnds database
   await getEventList().then(async (tournaments) => {

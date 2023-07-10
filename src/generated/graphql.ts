@@ -19,7 +19,7 @@ export type Scalars = {
 export type Arrow = {
   __typename?: 'Arrow';
   angle?: Maybe<Scalars['Int']['output']>;
-  id: Scalars['ID']['output'];
+  id?: Maybe<Scalars['ID']['output']>;
   offset: Scalars['Int']['output'];
   set: Set;
   setAggregate?: Maybe<ArrowSetSetAggregationSelection>;
@@ -53,7 +53,7 @@ export type ArrowAggregateSelection = {
   __typename?: 'ArrowAggregateSelection';
   angle: IntAggregateSelectionNullable;
   count: Scalars['Int']['output'];
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
   offset: IntAggregateSelectionNonNullable;
   timestamp: IntAggregateSelectionNonNullable;
 };
@@ -198,7 +198,7 @@ export type ArrowSetSetAggregationSelection = {
 
 export type ArrowSetSetNodeAggregateSelection = {
   __typename?: 'ArrowSetSetNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type ArrowSetUpdateConnectionInput = {
@@ -253,7 +253,7 @@ export type ArrowWhere = {
   id?: InputMaybe<Scalars['ID']['input']>;
   id_CONTAINS?: InputMaybe<Scalars['ID']['input']>;
   id_ENDS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  id_IN?: InputMaybe<Array<Scalars['ID']['input']>>;
+  id_IN?: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
   id_STARTS_WITH?: InputMaybe<Scalars['ID']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   offset_GT?: InputMaybe<Scalars['Int']['input']>;
@@ -284,17 +284,15 @@ export type ArrowsConnection = {
 export type Athlete = {
   __typename?: 'Athlete';
   activeNation: NationCode;
-  elimRating: Scalars['Int']['output'];
+  elimElo?: Maybe<Scalars['Int']['output']>;
   familyName: Scalars['String']['output'];
   givenName: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  id?: Maybe<Scalars['ID']['output']>;
   matches: Array<Event>;
   matchesAggregate?: Maybe<AthleteEventMatchesAggregationSelection>;
   matchesConnection: AthleteMatchesConnection;
-  qualRating: Scalars['Int']['output'];
-  results: Array<Result>;
-  resultsAggregate?: Maybe<AthleteResultResultsAggregationSelection>;
-  resultsConnection: AthleteResultsConnection;
+  nameOrder: NameOrder;
+  qualElo?: Maybe<Scalars['Int']['output']>;
   sets: Array<Set>;
   setsAggregate?: Maybe<AthleteSetSetsAggregationSelection>;
   setsConnection: AthleteSetsConnection;
@@ -323,28 +321,6 @@ export type AthleteMatchesConnectionArgs = {
 };
 
 
-export type AthleteResultsArgs = {
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  options?: InputMaybe<ResultOptions>;
-  where?: InputMaybe<ResultWhere>;
-};
-
-
-export type AthleteResultsAggregateArgs = {
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  where?: InputMaybe<ResultWhere>;
-};
-
-
-export type AthleteResultsConnectionArgs = {
-  after?: InputMaybe<Scalars['String']['input']>;
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  first?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<AthleteResultsConnectionSort>>;
-  where?: InputMaybe<AthleteResultsConnectionWhere>;
-};
-
-
 export type AthleteSetsArgs = {
   directed?: InputMaybe<Scalars['Boolean']['input']>;
   options?: InputMaybe<SetOptions>;
@@ -369,22 +345,20 @@ export type AthleteSetsConnectionArgs = {
 export type AthleteAggregateSelection = {
   __typename?: 'AthleteAggregateSelection';
   count: Scalars['Int']['output'];
-  elimRating: IntAggregateSelectionNonNullable;
+  elimElo: IntAggregateSelectionNullable;
   familyName: StringAggregateSelectionNonNullable;
   givenName: StringAggregateSelectionNonNullable;
-  id: IdAggregateSelectionNonNullable;
-  qualRating: IntAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
+  qualElo: IntAggregateSelectionNullable;
 };
 
 export type AthleteConnectInput = {
   matches?: InputMaybe<Array<AthleteMatchesConnectFieldInput>>;
-  results?: InputMaybe<Array<AthleteResultsConnectFieldInput>>;
   sets?: InputMaybe<Array<AthleteSetsConnectFieldInput>>;
 };
 
 export type AthleteConnectOrCreateInput = {
   matches?: InputMaybe<Array<AthleteMatchesConnectOrCreateFieldInput>>;
-  results?: InputMaybe<Array<AthleteResultsConnectOrCreateFieldInput>>;
   sets?: InputMaybe<Array<AthleteSetsConnectOrCreateFieldInput>>;
 };
 
@@ -398,24 +372,22 @@ export type AthleteConnectWhere = {
 
 export type AthleteCreateInput = {
   activeNation: NationCode;
-  elimRating: Scalars['Int']['input'];
+  elimElo?: InputMaybe<Scalars['Int']['input']>;
   familyName: Scalars['String']['input'];
   givenName: Scalars['String']['input'];
   matches?: InputMaybe<AthleteMatchesFieldInput>;
-  qualRating: Scalars['Int']['input'];
-  results?: InputMaybe<AthleteResultsFieldInput>;
+  nameOrder: NameOrder;
+  qualElo?: InputMaybe<Scalars['Int']['input']>;
   sets?: InputMaybe<AthleteSetsFieldInput>;
 };
 
 export type AthleteDeleteInput = {
   matches?: InputMaybe<Array<AthleteMatchesDeleteFieldInput>>;
-  results?: InputMaybe<Array<AthleteResultsDeleteFieldInput>>;
   sets?: InputMaybe<Array<AthleteSetsDeleteFieldInput>>;
 };
 
 export type AthleteDisconnectInput = {
   matches?: InputMaybe<Array<AthleteMatchesDisconnectFieldInput>>;
-  results?: InputMaybe<Array<AthleteResultsDisconnectFieldInput>>;
   sets?: InputMaybe<Array<AthleteSetsDisconnectFieldInput>>;
 };
 
@@ -434,40 +406,40 @@ export type AthleteEventMatchesAggregationSelection = {
 
 export type AthleteEventMatchesEdgeAggregateSelection = {
   __typename?: 'AthleteEventMatchesEdgeAggregateSelection';
-  deltaR: IntAggregateSelectionNonNullable;
+  eloDelta: IntAggregateSelectionNullable;
 };
 
 export type AthleteEventMatchesNodeAggregateSelection = {
   __typename?: 'AthleteEventMatchesNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type AthleteMatch = {
-  deltaR: Scalars['Int']['output'];
   division: Division;
+  eloDelta?: Maybe<Scalars['Int']['output']>;
   gender: Gender;
   nation: NationCode;
 };
 
 export type AthleteMatchCreateInput = {
-  deltaR: Scalars['Int']['input'];
   division: Division;
+  eloDelta?: InputMaybe<Scalars['Int']['input']>;
   gender: Gender;
   nation: NationCode;
 };
 
 export type AthleteMatchSort = {
-  deltaR?: InputMaybe<SortDirection>;
   division?: InputMaybe<SortDirection>;
+  eloDelta?: InputMaybe<SortDirection>;
   gender?: InputMaybe<SortDirection>;
   nation?: InputMaybe<SortDirection>;
 };
 
 export type AthleteMatchUpdateInput = {
-  deltaR?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
   division?: InputMaybe<Division>;
+  eloDelta?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
   gender?: InputMaybe<Gender>;
   nation?: InputMaybe<NationCode>;
 };
@@ -476,14 +448,14 @@ export type AthleteMatchWhere = {
   AND?: InputMaybe<Array<AthleteMatchWhere>>;
   NOT?: InputMaybe<AthleteMatchWhere>;
   OR?: InputMaybe<Array<AthleteMatchWhere>>;
-  deltaR?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_IN?: InputMaybe<Array<Scalars['Int']['input']>>;
-  deltaR_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_LTE?: InputMaybe<Scalars['Int']['input']>;
   division?: InputMaybe<Division>;
   division_IN?: InputMaybe<Array<Division>>;
+  eloDelta?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_IN?: InputMaybe<Array<InputMaybe<Scalars['Int']['input']>>>;
+  eloDelta_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_LTE?: InputMaybe<Scalars['Int']['input']>;
   gender?: InputMaybe<Gender>;
   gender_IN?: InputMaybe<Array<Gender>>;
   nation?: InputMaybe<NationCode>;
@@ -560,26 +532,26 @@ export type AthleteMatchesEdgeAggregationWhereInput = {
   AND?: InputMaybe<Array<AthleteMatchesEdgeAggregationWhereInput>>;
   NOT?: InputMaybe<AthleteMatchesEdgeAggregationWhereInput>;
   OR?: InputMaybe<Array<AthleteMatchesEdgeAggregationWhereInput>>;
-  deltaR_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type AthleteMatchesFieldInput = {
@@ -597,8 +569,8 @@ export type AthleteMatchesNodeAggregationWhereInput = {
 export type AthleteMatchesRelationship = AthleteMatch & {
   __typename?: 'AthleteMatchesRelationship';
   cursor: Scalars['String']['output'];
-  deltaR: Scalars['Int']['output'];
   division: Division;
+  eloDelta?: Maybe<Scalars['Int']['output']>;
   gender: Gender;
   nation: NationCode;
   node: Event;
@@ -621,10 +593,11 @@ export type AthleteMatchesUpdateFieldInput = {
 
 export type AthleteOnCreateInput = {
   activeNation: NationCode;
-  elimRating: Scalars['Int']['input'];
+  elimElo?: InputMaybe<Scalars['Int']['input']>;
   familyName: Scalars['String']['input'];
   givenName: Scalars['String']['input'];
-  qualRating: Scalars['Int']['input'];
+  nameOrder: NameOrder;
+  qualElo?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type AthleteOptions = {
@@ -636,143 +609,60 @@ export type AthleteOptions = {
 
 export type AthleteRelationInput = {
   matches?: InputMaybe<Array<AthleteMatchesCreateFieldInput>>;
-  results?: InputMaybe<Array<AthleteResultsCreateFieldInput>>;
   sets?: InputMaybe<Array<AthleteSetsCreateFieldInput>>;
 };
 
-export type AthleteResultResultsAggregationSelection = {
-  __typename?: 'AthleteResultResultsAggregationSelection';
-  count: Scalars['Int']['output'];
-  node?: Maybe<AthleteResultResultsNodeAggregateSelection>;
+export type AthleteSet = {
+  eloDelta?: Maybe<Scalars['Int']['output']>;
+  result: Result;
 };
 
-export type AthleteResultResultsNodeAggregateSelection = {
-  __typename?: 'AthleteResultResultsNodeAggregateSelection';
-  deltaR: IntAggregateSelectionNullable;
-  id: IdAggregateSelectionNonNullable;
-};
-
-export type AthleteResultsAggregateInput = {
-  AND?: InputMaybe<Array<AthleteResultsAggregateInput>>;
-  NOT?: InputMaybe<AthleteResultsAggregateInput>;
-  OR?: InputMaybe<Array<AthleteResultsAggregateInput>>;
-  count?: InputMaybe<Scalars['Int']['input']>;
-  count_GT?: InputMaybe<Scalars['Int']['input']>;
-  count_GTE?: InputMaybe<Scalars['Int']['input']>;
-  count_LT?: InputMaybe<Scalars['Int']['input']>;
-  count_LTE?: InputMaybe<Scalars['Int']['input']>;
-  node?: InputMaybe<AthleteResultsNodeAggregationWhereInput>;
-};
-
-export type AthleteResultsConnectFieldInput = {
-  connect?: InputMaybe<Array<ResultConnectInput>>;
-  /** Whether or not to overwrite any matching relationship with the new properties. Will default to `false` in 4.0.0. */
-  overwrite?: Scalars['Boolean']['input'];
-  where?: InputMaybe<ResultConnectWhere>;
-};
-
-export type AthleteResultsConnectOrCreateFieldInput = {
-  onCreate: AthleteResultsConnectOrCreateFieldInputOnCreate;
-  where: ResultConnectOrCreateWhere;
-};
-
-export type AthleteResultsConnectOrCreateFieldInputOnCreate = {
-  node: ResultOnCreateInput;
-};
-
-export type AthleteResultsConnection = {
-  __typename?: 'AthleteResultsConnection';
-  edges: Array<AthleteResultsRelationship>;
-  pageInfo: PageInfo;
-  totalCount: Scalars['Int']['output'];
-};
-
-export type AthleteResultsConnectionSort = {
-  node?: InputMaybe<ResultSort>;
-};
-
-export type AthleteResultsConnectionWhere = {
-  AND?: InputMaybe<Array<AthleteResultsConnectionWhere>>;
-  NOT?: InputMaybe<AthleteResultsConnectionWhere>;
-  OR?: InputMaybe<Array<AthleteResultsConnectionWhere>>;
-  node?: InputMaybe<ResultWhere>;
-};
-
-export type AthleteResultsCreateFieldInput = {
-  node: ResultCreateInput;
-};
-
-export type AthleteResultsDeleteFieldInput = {
-  delete?: InputMaybe<ResultDeleteInput>;
-  where?: InputMaybe<AthleteResultsConnectionWhere>;
-};
-
-export type AthleteResultsDisconnectFieldInput = {
-  disconnect?: InputMaybe<ResultDisconnectInput>;
-  where?: InputMaybe<AthleteResultsConnectionWhere>;
-};
-
-export type AthleteResultsFieldInput = {
-  connect?: InputMaybe<Array<AthleteResultsConnectFieldInput>>;
-  connectOrCreate?: InputMaybe<Array<AthleteResultsConnectOrCreateFieldInput>>;
-  create?: InputMaybe<Array<AthleteResultsCreateFieldInput>>;
-};
-
-export type AthleteResultsNodeAggregationWhereInput = {
-  AND?: InputMaybe<Array<AthleteResultsNodeAggregationWhereInput>>;
-  NOT?: InputMaybe<AthleteResultsNodeAggregationWhereInput>;
-  OR?: InputMaybe<Array<AthleteResultsNodeAggregationWhereInput>>;
-  deltaR_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
-};
-
-export type AthleteResultsRelationship = {
-  __typename?: 'AthleteResultsRelationship';
-  cursor: Scalars['String']['output'];
-  node: Result;
-};
-
-export type AthleteResultsUpdateConnectionInput = {
-  node?: InputMaybe<ResultUpdateInput>;
-};
-
-export type AthleteResultsUpdateFieldInput = {
-  connect?: InputMaybe<Array<AthleteResultsConnectFieldInput>>;
-  connectOrCreate?: InputMaybe<Array<AthleteResultsConnectOrCreateFieldInput>>;
-  create?: InputMaybe<Array<AthleteResultsCreateFieldInput>>;
-  delete?: InputMaybe<Array<AthleteResultsDeleteFieldInput>>;
-  disconnect?: InputMaybe<Array<AthleteResultsDisconnectFieldInput>>;
-  update?: InputMaybe<AthleteResultsUpdateConnectionInput>;
-  where?: InputMaybe<AthleteResultsConnectionWhere>;
+export type AthleteSetCreateInput = {
+  eloDelta?: InputMaybe<Scalars['Int']['input']>;
+  result: Result;
 };
 
 export type AthleteSetSetsAggregationSelection = {
   __typename?: 'AthleteSetSetsAggregationSelection';
   count: Scalars['Int']['output'];
+  edge?: Maybe<AthleteSetSetsEdgeAggregateSelection>;
   node?: Maybe<AthleteSetSetsNodeAggregateSelection>;
+};
+
+export type AthleteSetSetsEdgeAggregateSelection = {
+  __typename?: 'AthleteSetSetsEdgeAggregateSelection';
+  eloDelta: IntAggregateSelectionNullable;
 };
 
 export type AthleteSetSetsNodeAggregateSelection = {
   __typename?: 'AthleteSetSetsNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
+};
+
+export type AthleteSetSort = {
+  eloDelta?: InputMaybe<SortDirection>;
+  result?: InputMaybe<SortDirection>;
+};
+
+export type AthleteSetUpdateInput = {
+  eloDelta?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
+  result?: InputMaybe<Result>;
+};
+
+export type AthleteSetWhere = {
+  AND?: InputMaybe<Array<AthleteSetWhere>>;
+  NOT?: InputMaybe<AthleteSetWhere>;
+  OR?: InputMaybe<Array<AthleteSetWhere>>;
+  eloDelta?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_IN?: InputMaybe<Array<InputMaybe<Scalars['Int']['input']>>>;
+  eloDelta_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_LTE?: InputMaybe<Scalars['Int']['input']>;
+  result?: InputMaybe<Result>;
+  result_IN?: InputMaybe<Array<Result>>;
 };
 
 export type AthleteSetsAggregateInput = {
@@ -784,11 +674,13 @@ export type AthleteSetsAggregateInput = {
   count_GTE?: InputMaybe<Scalars['Int']['input']>;
   count_LT?: InputMaybe<Scalars['Int']['input']>;
   count_LTE?: InputMaybe<Scalars['Int']['input']>;
+  edge?: InputMaybe<AthleteSetsEdgeAggregationWhereInput>;
   node?: InputMaybe<AthleteSetsNodeAggregationWhereInput>;
 };
 
 export type AthleteSetsConnectFieldInput = {
   connect?: InputMaybe<Array<SetConnectInput>>;
+  edge: AthleteSetCreateInput;
   /** Whether or not to overwrite any matching relationship with the new properties. Will default to `false` in 4.0.0. */
   overwrite?: Scalars['Boolean']['input'];
   where?: InputMaybe<SetConnectWhere>;
@@ -800,6 +692,7 @@ export type AthleteSetsConnectOrCreateFieldInput = {
 };
 
 export type AthleteSetsConnectOrCreateFieldInputOnCreate = {
+  edge: AthleteSetCreateInput;
   node: SetOnCreateInput;
 };
 
@@ -811,6 +704,7 @@ export type AthleteSetsConnection = {
 };
 
 export type AthleteSetsConnectionSort = {
+  edge?: InputMaybe<AthleteSetSort>;
   node?: InputMaybe<SetSort>;
 };
 
@@ -818,10 +712,12 @@ export type AthleteSetsConnectionWhere = {
   AND?: InputMaybe<Array<AthleteSetsConnectionWhere>>;
   NOT?: InputMaybe<AthleteSetsConnectionWhere>;
   OR?: InputMaybe<Array<AthleteSetsConnectionWhere>>;
+  edge?: InputMaybe<AthleteSetWhere>;
   node?: InputMaybe<SetWhere>;
 };
 
 export type AthleteSetsCreateFieldInput = {
+  edge: AthleteSetCreateInput;
   node: SetCreateInput;
 };
 
@@ -833,6 +729,32 @@ export type AthleteSetsDeleteFieldInput = {
 export type AthleteSetsDisconnectFieldInput = {
   disconnect?: InputMaybe<SetDisconnectInput>;
   where?: InputMaybe<AthleteSetsConnectionWhere>;
+};
+
+export type AthleteSetsEdgeAggregationWhereInput = {
+  AND?: InputMaybe<Array<AthleteSetsEdgeAggregationWhereInput>>;
+  NOT?: InputMaybe<AthleteSetsEdgeAggregationWhereInput>;
+  OR?: InputMaybe<Array<AthleteSetsEdgeAggregationWhereInput>>;
+  eloDelta_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type AthleteSetsFieldInput = {
@@ -847,13 +769,16 @@ export type AthleteSetsNodeAggregationWhereInput = {
   OR?: InputMaybe<Array<AthleteSetsNodeAggregationWhereInput>>;
 };
 
-export type AthleteSetsRelationship = {
+export type AthleteSetsRelationship = AthleteSet & {
   __typename?: 'AthleteSetsRelationship';
   cursor: Scalars['String']['output'];
+  eloDelta?: Maybe<Scalars['Int']['output']>;
   node: Set;
+  result: Result;
 };
 
 export type AthleteSetsUpdateConnectionInput = {
+  edge?: InputMaybe<AthleteSetUpdateInput>;
   node?: InputMaybe<SetUpdateInput>;
 };
 
@@ -870,11 +795,12 @@ export type AthleteSetsUpdateFieldInput = {
 /** Fields to sort Athletes by. The order in which sorts are applied is not guaranteed when specifying many fields in one AthleteSort object. */
 export type AthleteSort = {
   activeNation?: InputMaybe<SortDirection>;
-  elimRating?: InputMaybe<SortDirection>;
+  elimElo?: InputMaybe<SortDirection>;
   familyName?: InputMaybe<SortDirection>;
   givenName?: InputMaybe<SortDirection>;
   id?: InputMaybe<SortDirection>;
-  qualRating?: InputMaybe<SortDirection>;
+  nameOrder?: InputMaybe<SortDirection>;
+  qualElo?: InputMaybe<SortDirection>;
 };
 
 export type AthleteUniqueWhere = {
@@ -883,16 +809,16 @@ export type AthleteUniqueWhere = {
 
 export type AthleteUpdateInput = {
   activeNation?: InputMaybe<NationCode>;
-  elimRating?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
   familyName?: InputMaybe<Scalars['String']['input']>;
   givenName?: InputMaybe<Scalars['String']['input']>;
   matches?: InputMaybe<Array<AthleteMatchesUpdateFieldInput>>;
-  qualRating?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
-  results?: InputMaybe<Array<AthleteResultsUpdateFieldInput>>;
+  nameOrder?: InputMaybe<NameOrder>;
+  qualElo?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
   sets?: InputMaybe<Array<AthleteSetsUpdateFieldInput>>;
 };
 
@@ -902,12 +828,12 @@ export type AthleteWhere = {
   OR?: InputMaybe<Array<AthleteWhere>>;
   activeNation?: InputMaybe<NationCode>;
   activeNation_IN?: InputMaybe<Array<NationCode>>;
-  elimRating?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_IN?: InputMaybe<Array<Scalars['Int']['input']>>;
-  elimRating_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_LTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_GT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_GTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_IN?: InputMaybe<Array<InputMaybe<Scalars['Int']['input']>>>;
+  elimElo_LT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_LTE?: InputMaybe<Scalars['Int']['input']>;
   familyName?: InputMaybe<Scalars['String']['input']>;
   familyName_CONTAINS?: InputMaybe<Scalars['String']['input']>;
   familyName_ENDS_WITH?: InputMaybe<Scalars['String']['input']>;
@@ -921,7 +847,7 @@ export type AthleteWhere = {
   id?: InputMaybe<Scalars['ID']['input']>;
   id_CONTAINS?: InputMaybe<Scalars['ID']['input']>;
   id_ENDS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  id_IN?: InputMaybe<Array<Scalars['ID']['input']>>;
+  id_IN?: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
   id_STARTS_WITH?: InputMaybe<Scalars['ID']['input']>;
   matchesAggregate?: InputMaybe<AthleteMatchesAggregateInput>;
   /** Return Athletes where all of the related AthleteMatchesConnections match this filter */
@@ -940,29 +866,14 @@ export type AthleteWhere = {
   matches_SINGLE?: InputMaybe<EventWhere>;
   /** Return Athletes where some of the related Events match this filter */
   matches_SOME?: InputMaybe<EventWhere>;
-  qualRating?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_IN?: InputMaybe<Array<Scalars['Int']['input']>>;
-  qualRating_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_LTE?: InputMaybe<Scalars['Int']['input']>;
-  resultsAggregate?: InputMaybe<AthleteResultsAggregateInput>;
-  /** Return Athletes where all of the related AthleteResultsConnections match this filter */
-  resultsConnection_ALL?: InputMaybe<AthleteResultsConnectionWhere>;
-  /** Return Athletes where none of the related AthleteResultsConnections match this filter */
-  resultsConnection_NONE?: InputMaybe<AthleteResultsConnectionWhere>;
-  /** Return Athletes where one of the related AthleteResultsConnections match this filter */
-  resultsConnection_SINGLE?: InputMaybe<AthleteResultsConnectionWhere>;
-  /** Return Athletes where some of the related AthleteResultsConnections match this filter */
-  resultsConnection_SOME?: InputMaybe<AthleteResultsConnectionWhere>;
-  /** Return Athletes where all of the related Results match this filter */
-  results_ALL?: InputMaybe<ResultWhere>;
-  /** Return Athletes where none of the related Results match this filter */
-  results_NONE?: InputMaybe<ResultWhere>;
-  /** Return Athletes where one of the related Results match this filter */
-  results_SINGLE?: InputMaybe<ResultWhere>;
-  /** Return Athletes where some of the related Results match this filter */
-  results_SOME?: InputMaybe<ResultWhere>;
+  nameOrder?: InputMaybe<NameOrder>;
+  nameOrder_IN?: InputMaybe<Array<NameOrder>>;
+  qualElo?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_GT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_GTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_IN?: InputMaybe<Array<InputMaybe<Scalars['Int']['input']>>>;
+  qualElo_LT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_LTE?: InputMaybe<Scalars['Int']['input']>;
   setsAggregate?: InputMaybe<AthleteSetsAggregateInput>;
   /** Return Athletes where all of the related AthleteSetsConnections match this filter */
   setsConnection_ALL?: InputMaybe<AthleteSetsConnectionWhere>;
@@ -1020,12 +931,6 @@ export type CreateMatchesMutationResponse = {
   matches: Array<Match>;
 };
 
-export type CreateResultsMutationResponse = {
-  __typename?: 'CreateResultsMutationResponse';
-  info: CreateInfo;
-  results: Array<Result>;
-};
-
 export type CreateSetsMutationResponse = {
   __typename?: 'CreateSetsMutationResponse';
   info: CreateInfo;
@@ -1080,7 +985,7 @@ export enum Division {
 export type Event = {
   __typename?: 'Event';
   complete: Scalars['Boolean']['output'];
-  id: Scalars['ID']['output'];
+  id?: Maybe<Scalars['ID']['output']>;
   matches: Array<Match>;
   matchesAggregate?: Maybe<EventMatchMatchesAggregationSelection>;
   matchesConnection: EventMatchesConnection;
@@ -1111,7 +1016,7 @@ export type EventMatchesConnectionArgs = {
 export type EventAggregateSelection = {
   __typename?: 'EventAggregateSelection';
   count: Scalars['Int']['output'];
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type EventConnectInput = {
@@ -1157,7 +1062,7 @@ export type EventMatchMatchesAggregationSelection = {
 
 export type EventMatchMatchesNodeAggregateSelection = {
   __typename?: 'EventMatchMatchesNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type EventMatchesAggregateInput = {
@@ -1290,7 +1195,7 @@ export type EventWhere = {
   id?: InputMaybe<Scalars['ID']['input']>;
   id_CONTAINS?: InputMaybe<Scalars['ID']['input']>;
   id_ENDS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  id_IN?: InputMaybe<Array<Scalars['ID']['input']>>;
+  id_IN?: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
   id_STARTS_WITH?: InputMaybe<Scalars['ID']['input']>;
   matchesAggregate?: InputMaybe<EventMatchesAggregateInput>;
   /** Return Events where all of the related EventMatchesConnections match this filter */
@@ -1323,10 +1228,10 @@ export enum Gender {
   M = 'M'
 }
 
-export type IdAggregateSelectionNonNullable = {
-  __typename?: 'IDAggregateSelectionNonNullable';
-  longest: Scalars['ID']['output'];
-  shortest: Scalars['ID']['output'];
+export type IdAggregateSelectionNullable = {
+  __typename?: 'IDAggregateSelectionNullable';
+  longest?: Maybe<Scalars['ID']['output']>;
+  shortest?: Maybe<Scalars['ID']['output']>;
 };
 
 export type IntAggregateSelectionNonNullable = {
@@ -1354,7 +1259,7 @@ export type Match = {
   event?: Maybe<Event>;
   eventAggregate?: Maybe<MatchEventEventAggregationSelection>;
   eventConnection: MatchEventConnection;
-  id: Scalars['ID']['output'];
+  id?: Maybe<Scalars['ID']['output']>;
   sets: Array<Set>;
   setsAggregate?: Maybe<MatchSetSetsAggregationSelection>;
   setsConnection: MatchSetsConnection;
@@ -1430,7 +1335,7 @@ export type MatchSetsConnectionArgs = {
 export type MatchAggregateSelection = {
   __typename?: 'MatchAggregateSelection';
   count: Scalars['Int']['output'];
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type MatchAthleteAthletesAggregationSelection = {
@@ -1442,16 +1347,16 @@ export type MatchAthleteAthletesAggregationSelection = {
 
 export type MatchAthleteAthletesEdgeAggregateSelection = {
   __typename?: 'MatchAthleteAthletesEdgeAggregateSelection';
-  deltaR: IntAggregateSelectionNonNullable;
+  eloDelta: IntAggregateSelectionNullable;
 };
 
 export type MatchAthleteAthletesNodeAggregateSelection = {
   __typename?: 'MatchAthleteAthletesNodeAggregateSelection';
-  elimRating: IntAggregateSelectionNonNullable;
+  elimElo: IntAggregateSelectionNullable;
   familyName: StringAggregateSelectionNonNullable;
   givenName: StringAggregateSelectionNonNullable;
-  id: IdAggregateSelectionNonNullable;
-  qualRating: IntAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
+  qualElo: IntAggregateSelectionNullable;
 };
 
 export type MatchAthletesAggregateInput = {
@@ -1524,26 +1429,26 @@ export type MatchAthletesEdgeAggregationWhereInput = {
   AND?: InputMaybe<Array<MatchAthletesEdgeAggregationWhereInput>>;
   NOT?: InputMaybe<MatchAthletesEdgeAggregationWhereInput>;
   OR?: InputMaybe<Array<MatchAthletesEdgeAggregationWhereInput>>;
-  deltaR_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  deltaR_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type MatchAthletesFieldInput = {
@@ -1556,26 +1461,26 @@ export type MatchAthletesNodeAggregationWhereInput = {
   AND?: InputMaybe<Array<MatchAthletesNodeAggregationWhereInput>>;
   NOT?: InputMaybe<MatchAthletesNodeAggregationWhereInput>;
   OR?: InputMaybe<Array<MatchAthletesNodeAggregationWhereInput>>;
-  elimRating_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
   familyName_AVERAGE_LENGTH_EQUAL?: InputMaybe<Scalars['Float']['input']>;
   familyName_AVERAGE_LENGTH_GT?: InputMaybe<Scalars['Float']['input']>;
   familyName_AVERAGE_LENGTH_GTE?: InputMaybe<Scalars['Float']['input']>;
@@ -1606,33 +1511,33 @@ export type MatchAthletesNodeAggregationWhereInput = {
   givenName_SHORTEST_LENGTH_GTE?: InputMaybe<Scalars['Int']['input']>;
   givenName_SHORTEST_LENGTH_LT?: InputMaybe<Scalars['Int']['input']>;
   givenName_SHORTEST_LENGTH_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type MatchAthletesRelationship = AthleteMatch & {
   __typename?: 'MatchAthletesRelationship';
   cursor: Scalars['String']['output'];
-  deltaR: Scalars['Int']['output'];
   division: Division;
+  eloDelta?: Maybe<Scalars['Int']['output']>;
   gender: Gender;
   nation: NationCode;
   node: Athlete;
@@ -1767,7 +1672,7 @@ export type MatchEventEventAggregationSelection = {
 
 export type MatchEventEventNodeAggregateSelection = {
   __typename?: 'MatchEventEventNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type MatchEventFieldInput = {
@@ -1828,7 +1733,7 @@ export type MatchSetSetsAggregationSelection = {
 
 export type MatchSetSetsNodeAggregateSelection = {
   __typename?: 'MatchSetSetsNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type MatchSetsAggregateInput = {
@@ -1977,7 +1882,7 @@ export type MatchWhere = {
   id?: InputMaybe<Scalars['ID']['input']>;
   id_CONTAINS?: InputMaybe<Scalars['ID']['input']>;
   id_ENDS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  id_IN?: InputMaybe<Array<Scalars['ID']['input']>>;
+  id_IN?: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
   id_STARTS_WITH?: InputMaybe<Scalars['ID']['input']>;
   setsAggregate?: InputMaybe<MatchSetsAggregateInput>;
   /** Return Matches where all of the related MatchSetsConnections match this filter */
@@ -2013,21 +1918,18 @@ export type Mutation = {
   createAthletes: CreateAthletesMutationResponse;
   createEvents: CreateEventsMutationResponse;
   createMatches: CreateMatchesMutationResponse;
-  createResults: CreateResultsMutationResponse;
   createSets: CreateSetsMutationResponse;
   createTargets: CreateTargetsMutationResponse;
   deleteArrows: DeleteInfo;
   deleteAthletes: DeleteInfo;
   deleteEvents: DeleteInfo;
   deleteMatches: DeleteInfo;
-  deleteResults: DeleteInfo;
   deleteSets: DeleteInfo;
   deleteTargets: DeleteInfo;
   updateArrows: UpdateArrowsMutationResponse;
   updateAthletes: UpdateAthletesMutationResponse;
   updateEvents: UpdateEventsMutationResponse;
   updateMatches: UpdateMatchesMutationResponse;
-  updateResults: UpdateResultsMutationResponse;
   updateSets: UpdateSetsMutationResponse;
   updateTargets: UpdateTargetsMutationResponse;
 };
@@ -2050,11 +1952,6 @@ export type MutationCreateEventsArgs = {
 
 export type MutationCreateMatchesArgs = {
   input: Array<MatchCreateInput>;
-};
-
-
-export type MutationCreateResultsArgs = {
-  input: Array<ResultCreateInput>;
 };
 
 
@@ -2089,12 +1986,6 @@ export type MutationDeleteEventsArgs = {
 export type MutationDeleteMatchesArgs = {
   delete?: InputMaybe<MatchDeleteInput>;
   where?: InputMaybe<MatchWhere>;
-};
-
-
-export type MutationDeleteResultsArgs = {
-  delete?: InputMaybe<ResultDeleteInput>;
-  where?: InputMaybe<ResultWhere>;
 };
 
 
@@ -2153,17 +2044,6 @@ export type MutationUpdateMatchesArgs = {
 };
 
 
-export type MutationUpdateResultsArgs = {
-  connect?: InputMaybe<ResultConnectInput>;
-  connectOrCreate?: InputMaybe<ResultConnectOrCreateInput>;
-  create?: InputMaybe<ResultRelationInput>;
-  delete?: InputMaybe<ResultDeleteInput>;
-  disconnect?: InputMaybe<ResultDisconnectInput>;
-  update?: InputMaybe<ResultUpdateInput>;
-  where?: InputMaybe<ResultWhere>;
-};
-
-
 export type MutationUpdateSetsArgs = {
   connect?: InputMaybe<SetConnectInput>;
   connectOrCreate?: InputMaybe<SetConnectOrCreateInput>;
@@ -2179,6 +2059,13 @@ export type MutationUpdateTargetsArgs = {
   update?: InputMaybe<TargetUpdateInput>;
   where?: InputMaybe<TargetWhere>;
 };
+
+export enum NameOrder {
+  F = 'F',
+  Fl = 'FL',
+  L = 'L',
+  Lf = 'LF'
+}
 
 export enum NationCode {
   Abw = 'ABW',
@@ -2453,9 +2340,6 @@ export type Query = {
   matches: Array<Match>;
   matchesAggregate: MatchAggregateSelection;
   matchesConnection: MatchesConnection;
-  results: Array<Result>;
-  resultsAggregate: ResultAggregateSelection;
-  resultsConnection: ResultsConnection;
   sets: Array<Set>;
   setsAggregate: SetAggregateSelection;
   setsConnection: SetsConnection;
@@ -2541,25 +2425,6 @@ export type QueryMatchesConnectionArgs = {
 };
 
 
-export type QueryResultsArgs = {
-  options?: InputMaybe<ResultOptions>;
-  where?: InputMaybe<ResultWhere>;
-};
-
-
-export type QueryResultsAggregateArgs = {
-  where?: InputMaybe<ResultWhere>;
-};
-
-
-export type QueryResultsConnectionArgs = {
-  after?: InputMaybe<Scalars['String']['input']>;
-  first?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<ResultSort>>>;
-  where?: InputMaybe<ResultWhere>;
-};
-
-
 export type QuerySetsArgs = {
   options?: InputMaybe<SetOptions>;
   where?: InputMaybe<SetWhere>;
@@ -2597,469 +2462,11 @@ export type QueryTargetsConnectionArgs = {
   where?: InputMaybe<TargetWhere>;
 };
 
-export type Result = {
-  __typename?: 'Result';
-  athlete: Athlete;
-  athleteAggregate?: Maybe<ResultAthleteAthleteAggregationSelection>;
-  athleteConnection: ResultAthleteConnection;
-  deltaR?: Maybe<Scalars['Int']['output']>;
-  id: Scalars['ID']['output'];
-  result: Result;
-  sets: Array<Set>;
-  setsAggregate?: Maybe<ResultSetSetsAggregationSelection>;
-  setsConnection: ResultSetsConnection;
-};
-
-
-export type ResultAthleteArgs = {
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  options?: InputMaybe<AthleteOptions>;
-  where?: InputMaybe<AthleteWhere>;
-};
-
-
-export type ResultAthleteAggregateArgs = {
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  where?: InputMaybe<AthleteWhere>;
-};
-
-
-export type ResultAthleteConnectionArgs = {
-  after?: InputMaybe<Scalars['String']['input']>;
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  first?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<ResultAthleteConnectionSort>>;
-  where?: InputMaybe<ResultAthleteConnectionWhere>;
-};
-
-
-export type ResultSetsArgs = {
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  options?: InputMaybe<SetOptions>;
-  where?: InputMaybe<SetWhere>;
-};
-
-
-export type ResultSetsAggregateArgs = {
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  where?: InputMaybe<SetWhere>;
-};
-
-
-export type ResultSetsConnectionArgs = {
-  after?: InputMaybe<Scalars['String']['input']>;
-  directed?: InputMaybe<Scalars['Boolean']['input']>;
-  first?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<ResultSetsConnectionSort>>;
-  where?: InputMaybe<ResultSetsConnectionWhere>;
-};
-
-export type ResultAggregateSelection = {
-  __typename?: 'ResultAggregateSelection';
-  count: Scalars['Int']['output'];
-  deltaR: IntAggregateSelectionNullable;
-  id: IdAggregateSelectionNonNullable;
-};
-
-export type ResultAthleteAggregateInput = {
-  AND?: InputMaybe<Array<ResultAthleteAggregateInput>>;
-  NOT?: InputMaybe<ResultAthleteAggregateInput>;
-  OR?: InputMaybe<Array<ResultAthleteAggregateInput>>;
-  count?: InputMaybe<Scalars['Int']['input']>;
-  count_GT?: InputMaybe<Scalars['Int']['input']>;
-  count_GTE?: InputMaybe<Scalars['Int']['input']>;
-  count_LT?: InputMaybe<Scalars['Int']['input']>;
-  count_LTE?: InputMaybe<Scalars['Int']['input']>;
-  node?: InputMaybe<ResultAthleteNodeAggregationWhereInput>;
-};
-
-export type ResultAthleteAthleteAggregationSelection = {
-  __typename?: 'ResultAthleteAthleteAggregationSelection';
-  count: Scalars['Int']['output'];
-  node?: Maybe<ResultAthleteAthleteNodeAggregateSelection>;
-};
-
-export type ResultAthleteAthleteNodeAggregateSelection = {
-  __typename?: 'ResultAthleteAthleteNodeAggregateSelection';
-  elimRating: IntAggregateSelectionNonNullable;
-  familyName: StringAggregateSelectionNonNullable;
-  givenName: StringAggregateSelectionNonNullable;
-  id: IdAggregateSelectionNonNullable;
-  qualRating: IntAggregateSelectionNonNullable;
-};
-
-export type ResultAthleteConnectFieldInput = {
-  connect?: InputMaybe<AthleteConnectInput>;
-  /** Whether or not to overwrite any matching relationship with the new properties. Will default to `false` in 4.0.0. */
-  overwrite?: Scalars['Boolean']['input'];
-  where?: InputMaybe<AthleteConnectWhere>;
-};
-
-export type ResultAthleteConnectOrCreateFieldInput = {
-  onCreate: ResultAthleteConnectOrCreateFieldInputOnCreate;
-  where: AthleteConnectOrCreateWhere;
-};
-
-export type ResultAthleteConnectOrCreateFieldInputOnCreate = {
-  node: AthleteOnCreateInput;
-};
-
-export type ResultAthleteConnection = {
-  __typename?: 'ResultAthleteConnection';
-  edges: Array<ResultAthleteRelationship>;
-  pageInfo: PageInfo;
-  totalCount: Scalars['Int']['output'];
-};
-
-export type ResultAthleteConnectionSort = {
-  node?: InputMaybe<AthleteSort>;
-};
-
-export type ResultAthleteConnectionWhere = {
-  AND?: InputMaybe<Array<ResultAthleteConnectionWhere>>;
-  NOT?: InputMaybe<ResultAthleteConnectionWhere>;
-  OR?: InputMaybe<Array<ResultAthleteConnectionWhere>>;
-  node?: InputMaybe<AthleteWhere>;
-};
-
-export type ResultAthleteCreateFieldInput = {
-  node: AthleteCreateInput;
-};
-
-export type ResultAthleteDeleteFieldInput = {
-  delete?: InputMaybe<AthleteDeleteInput>;
-  where?: InputMaybe<ResultAthleteConnectionWhere>;
-};
-
-export type ResultAthleteDisconnectFieldInput = {
-  disconnect?: InputMaybe<AthleteDisconnectInput>;
-  where?: InputMaybe<ResultAthleteConnectionWhere>;
-};
-
-export type ResultAthleteFieldInput = {
-  connect?: InputMaybe<ResultAthleteConnectFieldInput>;
-  connectOrCreate?: InputMaybe<ResultAthleteConnectOrCreateFieldInput>;
-  create?: InputMaybe<ResultAthleteCreateFieldInput>;
-};
-
-export type ResultAthleteNodeAggregationWhereInput = {
-  AND?: InputMaybe<Array<ResultAthleteNodeAggregationWhereInput>>;
-  NOT?: InputMaybe<ResultAthleteNodeAggregationWhereInput>;
-  OR?: InputMaybe<Array<ResultAthleteNodeAggregationWhereInput>>;
-  elimRating_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
-  familyName_AVERAGE_LENGTH_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  familyName_AVERAGE_LENGTH_GT?: InputMaybe<Scalars['Float']['input']>;
-  familyName_AVERAGE_LENGTH_GTE?: InputMaybe<Scalars['Float']['input']>;
-  familyName_AVERAGE_LENGTH_LT?: InputMaybe<Scalars['Float']['input']>;
-  familyName_AVERAGE_LENGTH_LTE?: InputMaybe<Scalars['Float']['input']>;
-  familyName_LONGEST_LENGTH_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  familyName_LONGEST_LENGTH_GT?: InputMaybe<Scalars['Int']['input']>;
-  familyName_LONGEST_LENGTH_GTE?: InputMaybe<Scalars['Int']['input']>;
-  familyName_LONGEST_LENGTH_LT?: InputMaybe<Scalars['Int']['input']>;
-  familyName_LONGEST_LENGTH_LTE?: InputMaybe<Scalars['Int']['input']>;
-  familyName_SHORTEST_LENGTH_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  familyName_SHORTEST_LENGTH_GT?: InputMaybe<Scalars['Int']['input']>;
-  familyName_SHORTEST_LENGTH_GTE?: InputMaybe<Scalars['Int']['input']>;
-  familyName_SHORTEST_LENGTH_LT?: InputMaybe<Scalars['Int']['input']>;
-  familyName_SHORTEST_LENGTH_LTE?: InputMaybe<Scalars['Int']['input']>;
-  givenName_AVERAGE_LENGTH_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  givenName_AVERAGE_LENGTH_GT?: InputMaybe<Scalars['Float']['input']>;
-  givenName_AVERAGE_LENGTH_GTE?: InputMaybe<Scalars['Float']['input']>;
-  givenName_AVERAGE_LENGTH_LT?: InputMaybe<Scalars['Float']['input']>;
-  givenName_AVERAGE_LENGTH_LTE?: InputMaybe<Scalars['Float']['input']>;
-  givenName_LONGEST_LENGTH_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  givenName_LONGEST_LENGTH_GT?: InputMaybe<Scalars['Int']['input']>;
-  givenName_LONGEST_LENGTH_GTE?: InputMaybe<Scalars['Int']['input']>;
-  givenName_LONGEST_LENGTH_LT?: InputMaybe<Scalars['Int']['input']>;
-  givenName_LONGEST_LENGTH_LTE?: InputMaybe<Scalars['Int']['input']>;
-  givenName_SHORTEST_LENGTH_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  givenName_SHORTEST_LENGTH_GT?: InputMaybe<Scalars['Int']['input']>;
-  givenName_SHORTEST_LENGTH_GTE?: InputMaybe<Scalars['Int']['input']>;
-  givenName_SHORTEST_LENGTH_LT?: InputMaybe<Scalars['Int']['input']>;
-  givenName_SHORTEST_LENGTH_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
-};
-
-export type ResultAthleteRelationship = {
-  __typename?: 'ResultAthleteRelationship';
-  cursor: Scalars['String']['output'];
-  node: Athlete;
-};
-
-export type ResultAthleteUpdateConnectionInput = {
-  node?: InputMaybe<AthleteUpdateInput>;
-};
-
-export type ResultAthleteUpdateFieldInput = {
-  connect?: InputMaybe<ResultAthleteConnectFieldInput>;
-  connectOrCreate?: InputMaybe<ResultAthleteConnectOrCreateFieldInput>;
-  create?: InputMaybe<ResultAthleteCreateFieldInput>;
-  delete?: InputMaybe<ResultAthleteDeleteFieldInput>;
-  disconnect?: InputMaybe<ResultAthleteDisconnectFieldInput>;
-  update?: InputMaybe<ResultAthleteUpdateConnectionInput>;
-  where?: InputMaybe<ResultAthleteConnectionWhere>;
-};
-
-export type ResultConnectInput = {
-  athlete?: InputMaybe<ResultAthleteConnectFieldInput>;
-  sets?: InputMaybe<Array<ResultSetsConnectFieldInput>>;
-};
-
-export type ResultConnectOrCreateInput = {
-  athlete?: InputMaybe<ResultAthleteConnectOrCreateFieldInput>;
-  sets?: InputMaybe<Array<ResultSetsConnectOrCreateFieldInput>>;
-};
-
-export type ResultConnectOrCreateWhere = {
-  node: ResultUniqueWhere;
-};
-
-export type ResultConnectWhere = {
-  node: ResultWhere;
-};
-
-export type ResultCreateInput = {
-  athlete?: InputMaybe<ResultAthleteFieldInput>;
-  deltaR?: InputMaybe<Scalars['Int']['input']>;
-  sets?: InputMaybe<ResultSetsFieldInput>;
-};
-
-export type ResultDeleteInput = {
-  athlete?: InputMaybe<ResultAthleteDeleteFieldInput>;
-  sets?: InputMaybe<Array<ResultSetsDeleteFieldInput>>;
-};
-
-export type ResultDisconnectInput = {
-  athlete?: InputMaybe<ResultAthleteDisconnectFieldInput>;
-  sets?: InputMaybe<Array<ResultSetsDisconnectFieldInput>>;
-};
-
-export type ResultEdge = {
-  __typename?: 'ResultEdge';
-  cursor: Scalars['String']['output'];
-  node: Result;
-};
-
-export type ResultOnCreateInput = {
-  deltaR?: InputMaybe<Scalars['Int']['input']>;
-};
-
-export type ResultOptions = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  /** Specify one or more ResultSort objects to sort Results by. The sorts will be applied in the order in which they are arranged in the array. */
-  sort?: InputMaybe<Array<ResultSort>>;
-};
-
-export type ResultRelationInput = {
-  athlete?: InputMaybe<ResultAthleteCreateFieldInput>;
-  sets?: InputMaybe<Array<ResultSetsCreateFieldInput>>;
-};
-
-export type ResultSetSetsAggregationSelection = {
-  __typename?: 'ResultSetSetsAggregationSelection';
-  count: Scalars['Int']['output'];
-  node?: Maybe<ResultSetSetsNodeAggregateSelection>;
-};
-
-export type ResultSetSetsNodeAggregateSelection = {
-  __typename?: 'ResultSetSetsNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
-};
-
-export type ResultSetsAggregateInput = {
-  AND?: InputMaybe<Array<ResultSetsAggregateInput>>;
-  NOT?: InputMaybe<ResultSetsAggregateInput>;
-  OR?: InputMaybe<Array<ResultSetsAggregateInput>>;
-  count?: InputMaybe<Scalars['Int']['input']>;
-  count_GT?: InputMaybe<Scalars['Int']['input']>;
-  count_GTE?: InputMaybe<Scalars['Int']['input']>;
-  count_LT?: InputMaybe<Scalars['Int']['input']>;
-  count_LTE?: InputMaybe<Scalars['Int']['input']>;
-  node?: InputMaybe<ResultSetsNodeAggregationWhereInput>;
-};
-
-export type ResultSetsConnectFieldInput = {
-  connect?: InputMaybe<Array<SetConnectInput>>;
-  /** Whether or not to overwrite any matching relationship with the new properties. Will default to `false` in 4.0.0. */
-  overwrite?: Scalars['Boolean']['input'];
-  where?: InputMaybe<SetConnectWhere>;
-};
-
-export type ResultSetsConnectOrCreateFieldInput = {
-  onCreate: ResultSetsConnectOrCreateFieldInputOnCreate;
-  where: SetConnectOrCreateWhere;
-};
-
-export type ResultSetsConnectOrCreateFieldInputOnCreate = {
-  node: SetOnCreateInput;
-};
-
-export type ResultSetsConnection = {
-  __typename?: 'ResultSetsConnection';
-  edges: Array<ResultSetsRelationship>;
-  pageInfo: PageInfo;
-  totalCount: Scalars['Int']['output'];
-};
-
-export type ResultSetsConnectionSort = {
-  node?: InputMaybe<SetSort>;
-};
-
-export type ResultSetsConnectionWhere = {
-  AND?: InputMaybe<Array<ResultSetsConnectionWhere>>;
-  NOT?: InputMaybe<ResultSetsConnectionWhere>;
-  OR?: InputMaybe<Array<ResultSetsConnectionWhere>>;
-  node?: InputMaybe<SetWhere>;
-};
-
-export type ResultSetsCreateFieldInput = {
-  node: SetCreateInput;
-};
-
-export type ResultSetsDeleteFieldInput = {
-  delete?: InputMaybe<SetDeleteInput>;
-  where?: InputMaybe<ResultSetsConnectionWhere>;
-};
-
-export type ResultSetsDisconnectFieldInput = {
-  disconnect?: InputMaybe<SetDisconnectInput>;
-  where?: InputMaybe<ResultSetsConnectionWhere>;
-};
-
-export type ResultSetsFieldInput = {
-  connect?: InputMaybe<Array<ResultSetsConnectFieldInput>>;
-  connectOrCreate?: InputMaybe<Array<ResultSetsConnectOrCreateFieldInput>>;
-  create?: InputMaybe<Array<ResultSetsCreateFieldInput>>;
-};
-
-export type ResultSetsNodeAggregationWhereInput = {
-  AND?: InputMaybe<Array<ResultSetsNodeAggregationWhereInput>>;
-  NOT?: InputMaybe<ResultSetsNodeAggregationWhereInput>;
-  OR?: InputMaybe<Array<ResultSetsNodeAggregationWhereInput>>;
-};
-
-export type ResultSetsRelationship = {
-  __typename?: 'ResultSetsRelationship';
-  cursor: Scalars['String']['output'];
-  node: Set;
-};
-
-export type ResultSetsUpdateConnectionInput = {
-  node?: InputMaybe<SetUpdateInput>;
-};
-
-export type ResultSetsUpdateFieldInput = {
-  connect?: InputMaybe<Array<ResultSetsConnectFieldInput>>;
-  connectOrCreate?: InputMaybe<Array<ResultSetsConnectOrCreateFieldInput>>;
-  create?: InputMaybe<Array<ResultSetsCreateFieldInput>>;
-  delete?: InputMaybe<Array<ResultSetsDeleteFieldInput>>;
-  disconnect?: InputMaybe<Array<ResultSetsDisconnectFieldInput>>;
-  update?: InputMaybe<ResultSetsUpdateConnectionInput>;
-  where?: InputMaybe<ResultSetsConnectionWhere>;
-};
-
-/** Fields to sort Results by. The order in which sorts are applied is not guaranteed when specifying many fields in one ResultSort object. */
-export type ResultSort = {
-  deltaR?: InputMaybe<SortDirection>;
-  id?: InputMaybe<SortDirection>;
-};
-
-export type ResultUniqueWhere = {
-  id?: InputMaybe<Scalars['ID']['input']>;
-};
-
-export type ResultUpdateInput = {
-  athlete?: InputMaybe<ResultAthleteUpdateFieldInput>;
-  deltaR?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_DECREMENT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_INCREMENT?: InputMaybe<Scalars['Int']['input']>;
-  sets?: InputMaybe<Array<ResultSetsUpdateFieldInput>>;
-};
-
-export type ResultWhere = {
-  AND?: InputMaybe<Array<ResultWhere>>;
-  NOT?: InputMaybe<ResultWhere>;
-  OR?: InputMaybe<Array<ResultWhere>>;
-  athlete?: InputMaybe<AthleteWhere>;
-  athleteAggregate?: InputMaybe<ResultAthleteAggregateInput>;
-  athleteConnection?: InputMaybe<ResultAthleteConnectionWhere>;
-  athleteConnection_NOT?: InputMaybe<ResultAthleteConnectionWhere>;
-  athlete_NOT?: InputMaybe<AthleteWhere>;
-  deltaR?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_GT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_GTE?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_IN?: InputMaybe<Array<InputMaybe<Scalars['Int']['input']>>>;
-  deltaR_LT?: InputMaybe<Scalars['Int']['input']>;
-  deltaR_LTE?: InputMaybe<Scalars['Int']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  id_CONTAINS?: InputMaybe<Scalars['ID']['input']>;
-  id_ENDS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  id_IN?: InputMaybe<Array<Scalars['ID']['input']>>;
-  id_STARTS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  setsAggregate?: InputMaybe<ResultSetsAggregateInput>;
-  /** Return Results where all of the related ResultSetsConnections match this filter */
-  setsConnection_ALL?: InputMaybe<ResultSetsConnectionWhere>;
-  /** Return Results where none of the related ResultSetsConnections match this filter */
-  setsConnection_NONE?: InputMaybe<ResultSetsConnectionWhere>;
-  /** Return Results where one of the related ResultSetsConnections match this filter */
-  setsConnection_SINGLE?: InputMaybe<ResultSetsConnectionWhere>;
-  /** Return Results where some of the related ResultSetsConnections match this filter */
-  setsConnection_SOME?: InputMaybe<ResultSetsConnectionWhere>;
-  /** Return Results where all of the related Sets match this filter */
-  sets_ALL?: InputMaybe<SetWhere>;
-  /** Return Results where none of the related Sets match this filter */
-  sets_NONE?: InputMaybe<SetWhere>;
-  /** Return Results where one of the related Sets match this filter */
-  sets_SINGLE?: InputMaybe<SetWhere>;
-  /** Return Results where some of the related Sets match this filter */
-  sets_SOME?: InputMaybe<SetWhere>;
-};
-
-export type ResultsConnection = {
-  __typename?: 'ResultsConnection';
-  edges: Array<ResultEdge>;
-  pageInfo: PageInfo;
-  totalCount: Scalars['Int']['output'];
-};
+export enum Result {
+  D = 'D',
+  L = 'L',
+  W = 'W'
+}
 
 export type Set = {
   __typename?: 'Set';
@@ -3071,7 +2478,7 @@ export type Set = {
   athleteAggregate?: Maybe<SetAthleteAthleteAggregationSelection>;
   athleteConnection: SetAthleteConnection;
   complete: Scalars['Boolean']['output'];
-  id: Scalars['ID']['output'];
+  id?: Maybe<Scalars['ID']['output']>;
   match?: Maybe<Match>;
   matchAggregate?: Maybe<SetMatchMatchAggregationSelection>;
   matchConnection: SetMatchConnection;
@@ -3196,7 +2603,7 @@ export type SetTargetConnectionArgs = {
 export type SetAggregateSelection = {
   __typename?: 'SetAggregateSelection';
   count: Scalars['Int']['output'];
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type SetArrowArrowsAggregationSelection = {
@@ -3208,7 +2615,7 @@ export type SetArrowArrowsAggregationSelection = {
 export type SetArrowArrowsNodeAggregateSelection = {
   __typename?: 'SetArrowArrowsNodeAggregateSelection';
   angle: IntAggregateSelectionNullable;
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
   offset: IntAggregateSelectionNonNullable;
   timestamp: IntAggregateSelectionNonNullable;
 };
@@ -3374,26 +2781,34 @@ export type SetAthleteAggregateInput = {
   count_GTE?: InputMaybe<Scalars['Int']['input']>;
   count_LT?: InputMaybe<Scalars['Int']['input']>;
   count_LTE?: InputMaybe<Scalars['Int']['input']>;
+  edge?: InputMaybe<SetAthleteEdgeAggregationWhereInput>;
   node?: InputMaybe<SetAthleteNodeAggregationWhereInput>;
 };
 
 export type SetAthleteAthleteAggregationSelection = {
   __typename?: 'SetAthleteAthleteAggregationSelection';
   count: Scalars['Int']['output'];
+  edge?: Maybe<SetAthleteAthleteEdgeAggregateSelection>;
   node?: Maybe<SetAthleteAthleteNodeAggregateSelection>;
+};
+
+export type SetAthleteAthleteEdgeAggregateSelection = {
+  __typename?: 'SetAthleteAthleteEdgeAggregateSelection';
+  eloDelta: IntAggregateSelectionNullable;
 };
 
 export type SetAthleteAthleteNodeAggregateSelection = {
   __typename?: 'SetAthleteAthleteNodeAggregateSelection';
-  elimRating: IntAggregateSelectionNonNullable;
+  elimElo: IntAggregateSelectionNullable;
   familyName: StringAggregateSelectionNonNullable;
   givenName: StringAggregateSelectionNonNullable;
-  id: IdAggregateSelectionNonNullable;
-  qualRating: IntAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
+  qualElo: IntAggregateSelectionNullable;
 };
 
 export type SetAthleteConnectFieldInput = {
   connect?: InputMaybe<AthleteConnectInput>;
+  edge: AthleteSetCreateInput;
   /** Whether or not to overwrite any matching relationship with the new properties. Will default to `false` in 4.0.0. */
   overwrite?: Scalars['Boolean']['input'];
   where?: InputMaybe<AthleteConnectWhere>;
@@ -3405,6 +2820,7 @@ export type SetAthleteConnectOrCreateFieldInput = {
 };
 
 export type SetAthleteConnectOrCreateFieldInputOnCreate = {
+  edge: AthleteSetCreateInput;
   node: AthleteOnCreateInput;
 };
 
@@ -3416,6 +2832,7 @@ export type SetAthleteConnection = {
 };
 
 export type SetAthleteConnectionSort = {
+  edge?: InputMaybe<AthleteSetSort>;
   node?: InputMaybe<AthleteSort>;
 };
 
@@ -3423,10 +2840,12 @@ export type SetAthleteConnectionWhere = {
   AND?: InputMaybe<Array<SetAthleteConnectionWhere>>;
   NOT?: InputMaybe<SetAthleteConnectionWhere>;
   OR?: InputMaybe<Array<SetAthleteConnectionWhere>>;
+  edge?: InputMaybe<AthleteSetWhere>;
   node?: InputMaybe<AthleteWhere>;
 };
 
 export type SetAthleteCreateFieldInput = {
+  edge: AthleteSetCreateInput;
   node: AthleteCreateInput;
 };
 
@@ -3440,6 +2859,32 @@ export type SetAthleteDisconnectFieldInput = {
   where?: InputMaybe<SetAthleteConnectionWhere>;
 };
 
+export type SetAthleteEdgeAggregationWhereInput = {
+  AND?: InputMaybe<Array<SetAthleteEdgeAggregationWhereInput>>;
+  NOT?: InputMaybe<SetAthleteEdgeAggregationWhereInput>;
+  OR?: InputMaybe<Array<SetAthleteEdgeAggregationWhereInput>>;
+  eloDelta_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  eloDelta_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  eloDelta_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
+};
+
 export type SetAthleteFieldInput = {
   connect?: InputMaybe<SetAthleteConnectFieldInput>;
   connectOrCreate?: InputMaybe<SetAthleteConnectOrCreateFieldInput>;
@@ -3450,26 +2895,26 @@ export type SetAthleteNodeAggregationWhereInput = {
   AND?: InputMaybe<Array<SetAthleteNodeAggregationWhereInput>>;
   NOT?: InputMaybe<SetAthleteNodeAggregationWhereInput>;
   OR?: InputMaybe<Array<SetAthleteNodeAggregationWhereInput>>;
-  elimRating_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  elimRating_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  elimRating_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  elimElo_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  elimElo_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
   familyName_AVERAGE_LENGTH_EQUAL?: InputMaybe<Scalars['Float']['input']>;
   familyName_AVERAGE_LENGTH_GT?: InputMaybe<Scalars['Float']['input']>;
   familyName_AVERAGE_LENGTH_GTE?: InputMaybe<Scalars['Float']['input']>;
@@ -3500,35 +2945,38 @@ export type SetAthleteNodeAggregationWhereInput = {
   givenName_SHORTEST_LENGTH_GTE?: InputMaybe<Scalars['Int']['input']>;
   givenName_SHORTEST_LENGTH_LT?: InputMaybe<Scalars['Int']['input']>;
   givenName_SHORTEST_LENGTH_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
-  qualRating_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
-  qualRating_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_AVERAGE_EQUAL?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_GT?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_GTE?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_LT?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_AVERAGE_LTE?: InputMaybe<Scalars['Float']['input']>;
+  qualElo_MAX_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_GT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_GTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_LT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MAX_LTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_GT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_GTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_LT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_MIN_LTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_EQUAL?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_GT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_GTE?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_LT?: InputMaybe<Scalars['Int']['input']>;
+  qualElo_SUM_LTE?: InputMaybe<Scalars['Int']['input']>;
 };
 
-export type SetAthleteRelationship = {
+export type SetAthleteRelationship = AthleteSet & {
   __typename?: 'SetAthleteRelationship';
   cursor: Scalars['String']['output'];
+  eloDelta?: Maybe<Scalars['Int']['output']>;
   node: Athlete;
+  result: Result;
 };
 
 export type SetAthleteUpdateConnectionInput = {
+  edge?: InputMaybe<AthleteSetUpdateInput>;
   node?: InputMaybe<AthleteUpdateInput>;
 };
 
@@ -3672,7 +3120,7 @@ export type SetMatchMatchAggregationSelection = {
 
 export type SetMatchMatchNodeAggregateSelection = {
   __typename?: 'SetMatchMatchNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type SetMatchNodeAggregationWhereInput = {
@@ -3729,7 +3177,7 @@ export type SetSetSetsAggregationSelection = {
 
 export type SetSetSetsNodeAggregateSelection = {
   __typename?: 'SetSetSetsNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
 };
 
 export type SetSetsAggregateInput = {
@@ -3994,7 +3442,7 @@ export type SetTargetTargetAggregationSelection = {
 
 export type SetTargetTargetNodeAggregateSelection = {
   __typename?: 'SetTargetTargetNodeAggregateSelection';
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
   max: IntAggregateSelectionNonNullable;
   min: IntAggregateSelectionNonNullable;
   radius: IntAggregateSelectionNonNullable;
@@ -4060,7 +3508,7 @@ export type SetWhere = {
   id?: InputMaybe<Scalars['ID']['input']>;
   id_CONTAINS?: InputMaybe<Scalars['ID']['input']>;
   id_ENDS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  id_IN?: InputMaybe<Array<Scalars['ID']['input']>>;
+  id_IN?: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
   id_STARTS_WITH?: InputMaybe<Scalars['ID']['input']>;
   match?: InputMaybe<MatchWhere>;
   matchAggregate?: InputMaybe<SetMatchAggregateInput>;
@@ -4113,7 +3561,7 @@ export type StringAggregateSelectionNonNullable = {
 
 export type Target = {
   __typename?: 'Target';
-  id: Scalars['ID']['output'];
+  id?: Maybe<Scalars['ID']['output']>;
   max: Scalars['Int']['output'];
   min: Scalars['Int']['output'];
   radius: Scalars['Int']['output'];
@@ -4124,7 +3572,7 @@ export type Target = {
 export type TargetAggregateSelection = {
   __typename?: 'TargetAggregateSelection';
   count: Scalars['Int']['output'];
-  id: IdAggregateSelectionNonNullable;
+  id: IdAggregateSelectionNullable;
   max: IntAggregateSelectionNonNullable;
   min: IntAggregateSelectionNonNullable;
   radius: IntAggregateSelectionNonNullable;
@@ -4205,7 +3653,7 @@ export type TargetWhere = {
   id?: InputMaybe<Scalars['ID']['input']>;
   id_CONTAINS?: InputMaybe<Scalars['ID']['input']>;
   id_ENDS_WITH?: InputMaybe<Scalars['ID']['input']>;
-  id_IN?: InputMaybe<Array<Scalars['ID']['input']>>;
+  id_IN?: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
   id_STARTS_WITH?: InputMaybe<Scalars['ID']['input']>;
   max?: InputMaybe<Scalars['Int']['input']>;
   max_GT?: InputMaybe<Scalars['Int']['input']>;
@@ -4272,12 +3720,6 @@ export type UpdateMatchesMutationResponse = {
   __typename?: 'UpdateMatchesMutationResponse';
   info: UpdateInfo;
   matches: Array<Match>;
-};
-
-export type UpdateResultsMutationResponse = {
-  __typename?: 'UpdateResultsMutationResponse';
-  info: UpdateInfo;
-  results: Array<Result>;
 };
 
 export type UpdateSetsMutationResponse = {
@@ -4363,6 +3805,7 @@ export type DirectiveResolverFn<TResult = {}, TParent = {}, TContext = {}, TArgs
 /** Mapping of interface types */
 export type ResolversInterfaceTypes<RefType extends Record<string, unknown>> = {
   AthleteMatch: ( AthleteMatchesRelationship ) | ( MatchAthletesRelationship );
+  AthleteSet: ( AthleteSetsRelationship ) | ( SetAthleteRelationship );
 };
 
 /** Mapping between all available schema types and the resolvers types */
@@ -4439,25 +3882,14 @@ export type ResolversTypes = {
   AthleteOnCreateInput: AthleteOnCreateInput;
   AthleteOptions: AthleteOptions;
   AthleteRelationInput: AthleteRelationInput;
-  AthleteResultResultsAggregationSelection: ResolverTypeWrapper<AthleteResultResultsAggregationSelection>;
-  AthleteResultResultsNodeAggregateSelection: ResolverTypeWrapper<AthleteResultResultsNodeAggregateSelection>;
-  AthleteResultsAggregateInput: AthleteResultsAggregateInput;
-  AthleteResultsConnectFieldInput: AthleteResultsConnectFieldInput;
-  AthleteResultsConnectOrCreateFieldInput: AthleteResultsConnectOrCreateFieldInput;
-  AthleteResultsConnectOrCreateFieldInputOnCreate: AthleteResultsConnectOrCreateFieldInputOnCreate;
-  AthleteResultsConnection: ResolverTypeWrapper<AthleteResultsConnection>;
-  AthleteResultsConnectionSort: AthleteResultsConnectionSort;
-  AthleteResultsConnectionWhere: AthleteResultsConnectionWhere;
-  AthleteResultsCreateFieldInput: AthleteResultsCreateFieldInput;
-  AthleteResultsDeleteFieldInput: AthleteResultsDeleteFieldInput;
-  AthleteResultsDisconnectFieldInput: AthleteResultsDisconnectFieldInput;
-  AthleteResultsFieldInput: AthleteResultsFieldInput;
-  AthleteResultsNodeAggregationWhereInput: AthleteResultsNodeAggregationWhereInput;
-  AthleteResultsRelationship: ResolverTypeWrapper<AthleteResultsRelationship>;
-  AthleteResultsUpdateConnectionInput: AthleteResultsUpdateConnectionInput;
-  AthleteResultsUpdateFieldInput: AthleteResultsUpdateFieldInput;
+  AthleteSet: ResolverTypeWrapper<ResolversInterfaceTypes<ResolversTypes>['AthleteSet']>;
+  AthleteSetCreateInput: AthleteSetCreateInput;
   AthleteSetSetsAggregationSelection: ResolverTypeWrapper<AthleteSetSetsAggregationSelection>;
+  AthleteSetSetsEdgeAggregateSelection: ResolverTypeWrapper<AthleteSetSetsEdgeAggregateSelection>;
   AthleteSetSetsNodeAggregateSelection: ResolverTypeWrapper<AthleteSetSetsNodeAggregateSelection>;
+  AthleteSetSort: AthleteSetSort;
+  AthleteSetUpdateInput: AthleteSetUpdateInput;
+  AthleteSetWhere: AthleteSetWhere;
   AthleteSetsAggregateInput: AthleteSetsAggregateInput;
   AthleteSetsConnectFieldInput: AthleteSetsConnectFieldInput;
   AthleteSetsConnectOrCreateFieldInput: AthleteSetsConnectOrCreateFieldInput;
@@ -4468,6 +3900,7 @@ export type ResolversTypes = {
   AthleteSetsCreateFieldInput: AthleteSetsCreateFieldInput;
   AthleteSetsDeleteFieldInput: AthleteSetsDeleteFieldInput;
   AthleteSetsDisconnectFieldInput: AthleteSetsDisconnectFieldInput;
+  AthleteSetsEdgeAggregationWhereInput: AthleteSetsEdgeAggregationWhereInput;
   AthleteSetsFieldInput: AthleteSetsFieldInput;
   AthleteSetsNodeAggregationWhereInput: AthleteSetsNodeAggregationWhereInput;
   AthleteSetsRelationship: ResolverTypeWrapper<AthleteSetsRelationship>;
@@ -4484,7 +3917,6 @@ export type ResolversTypes = {
   CreateEventsMutationResponse: ResolverTypeWrapper<CreateEventsMutationResponse>;
   CreateInfo: ResolverTypeWrapper<CreateInfo>;
   CreateMatchesMutationResponse: ResolverTypeWrapper<CreateMatchesMutationResponse>;
-  CreateResultsMutationResponse: ResolverTypeWrapper<CreateResultsMutationResponse>;
   CreateSetsMutationResponse: ResolverTypeWrapper<CreateSetsMutationResponse>;
   CreateTargetsMutationResponse: ResolverTypeWrapper<CreateTargetsMutationResponse>;
   DeleteInfo: ResolverTypeWrapper<DeleteInfo>;
@@ -4527,7 +3959,7 @@ export type ResolversTypes = {
   Float: ResolverTypeWrapper<Scalars['Float']['output']>;
   Gender: Gender;
   ID: ResolverTypeWrapper<Scalars['ID']['output']>;
-  IDAggregateSelectionNonNullable: ResolverTypeWrapper<IdAggregateSelectionNonNullable>;
+  IDAggregateSelectionNullable: ResolverTypeWrapper<IdAggregateSelectionNullable>;
   Int: ResolverTypeWrapper<Scalars['Int']['output']>;
   IntAggregateSelectionNonNullable: ResolverTypeWrapper<IntAggregateSelectionNonNullable>;
   IntAggregateSelectionNullable: ResolverTypeWrapper<IntAggregateSelectionNullable>;
@@ -4604,61 +4036,11 @@ export type ResolversTypes = {
   MatchWhere: MatchWhere;
   MatchesConnection: ResolverTypeWrapper<MatchesConnection>;
   Mutation: ResolverTypeWrapper<{}>;
+  NameOrder: NameOrder;
   NationCode: NationCode;
   PageInfo: ResolverTypeWrapper<PageInfo>;
   Query: ResolverTypeWrapper<{}>;
-  Result: ResolverTypeWrapper<Result>;
-  ResultAggregateSelection: ResolverTypeWrapper<ResultAggregateSelection>;
-  ResultAthleteAggregateInput: ResultAthleteAggregateInput;
-  ResultAthleteAthleteAggregationSelection: ResolverTypeWrapper<ResultAthleteAthleteAggregationSelection>;
-  ResultAthleteAthleteNodeAggregateSelection: ResolverTypeWrapper<ResultAthleteAthleteNodeAggregateSelection>;
-  ResultAthleteConnectFieldInput: ResultAthleteConnectFieldInput;
-  ResultAthleteConnectOrCreateFieldInput: ResultAthleteConnectOrCreateFieldInput;
-  ResultAthleteConnectOrCreateFieldInputOnCreate: ResultAthleteConnectOrCreateFieldInputOnCreate;
-  ResultAthleteConnection: ResolverTypeWrapper<ResultAthleteConnection>;
-  ResultAthleteConnectionSort: ResultAthleteConnectionSort;
-  ResultAthleteConnectionWhere: ResultAthleteConnectionWhere;
-  ResultAthleteCreateFieldInput: ResultAthleteCreateFieldInput;
-  ResultAthleteDeleteFieldInput: ResultAthleteDeleteFieldInput;
-  ResultAthleteDisconnectFieldInput: ResultAthleteDisconnectFieldInput;
-  ResultAthleteFieldInput: ResultAthleteFieldInput;
-  ResultAthleteNodeAggregationWhereInput: ResultAthleteNodeAggregationWhereInput;
-  ResultAthleteRelationship: ResolverTypeWrapper<ResultAthleteRelationship>;
-  ResultAthleteUpdateConnectionInput: ResultAthleteUpdateConnectionInput;
-  ResultAthleteUpdateFieldInput: ResultAthleteUpdateFieldInput;
-  ResultConnectInput: ResultConnectInput;
-  ResultConnectOrCreateInput: ResultConnectOrCreateInput;
-  ResultConnectOrCreateWhere: ResultConnectOrCreateWhere;
-  ResultConnectWhere: ResultConnectWhere;
-  ResultCreateInput: ResultCreateInput;
-  ResultDeleteInput: ResultDeleteInput;
-  ResultDisconnectInput: ResultDisconnectInput;
-  ResultEdge: ResolverTypeWrapper<ResultEdge>;
-  ResultOnCreateInput: ResultOnCreateInput;
-  ResultOptions: ResultOptions;
-  ResultRelationInput: ResultRelationInput;
-  ResultSetSetsAggregationSelection: ResolverTypeWrapper<ResultSetSetsAggregationSelection>;
-  ResultSetSetsNodeAggregateSelection: ResolverTypeWrapper<ResultSetSetsNodeAggregateSelection>;
-  ResultSetsAggregateInput: ResultSetsAggregateInput;
-  ResultSetsConnectFieldInput: ResultSetsConnectFieldInput;
-  ResultSetsConnectOrCreateFieldInput: ResultSetsConnectOrCreateFieldInput;
-  ResultSetsConnectOrCreateFieldInputOnCreate: ResultSetsConnectOrCreateFieldInputOnCreate;
-  ResultSetsConnection: ResolverTypeWrapper<ResultSetsConnection>;
-  ResultSetsConnectionSort: ResultSetsConnectionSort;
-  ResultSetsConnectionWhere: ResultSetsConnectionWhere;
-  ResultSetsCreateFieldInput: ResultSetsCreateFieldInput;
-  ResultSetsDeleteFieldInput: ResultSetsDeleteFieldInput;
-  ResultSetsDisconnectFieldInput: ResultSetsDisconnectFieldInput;
-  ResultSetsFieldInput: ResultSetsFieldInput;
-  ResultSetsNodeAggregationWhereInput: ResultSetsNodeAggregationWhereInput;
-  ResultSetsRelationship: ResolverTypeWrapper<ResultSetsRelationship>;
-  ResultSetsUpdateConnectionInput: ResultSetsUpdateConnectionInput;
-  ResultSetsUpdateFieldInput: ResultSetsUpdateFieldInput;
-  ResultSort: ResultSort;
-  ResultUniqueWhere: ResultUniqueWhere;
-  ResultUpdateInput: ResultUpdateInput;
-  ResultWhere: ResultWhere;
-  ResultsConnection: ResolverTypeWrapper<ResultsConnection>;
+  Result: Result;
   Set: ResolverTypeWrapper<Set>;
   SetAggregateSelection: ResolverTypeWrapper<SetAggregateSelection>;
   SetArrowArrowsAggregationSelection: ResolverTypeWrapper<SetArrowArrowsAggregationSelection>;
@@ -4680,6 +4062,7 @@ export type ResolversTypes = {
   SetArrowsUpdateFieldInput: SetArrowsUpdateFieldInput;
   SetAthleteAggregateInput: SetAthleteAggregateInput;
   SetAthleteAthleteAggregationSelection: ResolverTypeWrapper<SetAthleteAthleteAggregationSelection>;
+  SetAthleteAthleteEdgeAggregateSelection: ResolverTypeWrapper<SetAthleteAthleteEdgeAggregateSelection>;
   SetAthleteAthleteNodeAggregateSelection: ResolverTypeWrapper<SetAthleteAthleteNodeAggregateSelection>;
   SetAthleteConnectFieldInput: SetAthleteConnectFieldInput;
   SetAthleteConnectOrCreateFieldInput: SetAthleteConnectOrCreateFieldInput;
@@ -4690,6 +4073,7 @@ export type ResolversTypes = {
   SetAthleteCreateFieldInput: SetAthleteCreateFieldInput;
   SetAthleteDeleteFieldInput: SetAthleteDeleteFieldInput;
   SetAthleteDisconnectFieldInput: SetAthleteDisconnectFieldInput;
+  SetAthleteEdgeAggregationWhereInput: SetAthleteEdgeAggregationWhereInput;
   SetAthleteFieldInput: SetAthleteFieldInput;
   SetAthleteNodeAggregationWhereInput: SetAthleteNodeAggregationWhereInput;
   SetAthleteRelationship: ResolverTypeWrapper<SetAthleteRelationship>;
@@ -4783,7 +4167,6 @@ export type ResolversTypes = {
   UpdateEventsMutationResponse: ResolverTypeWrapper<UpdateEventsMutationResponse>;
   UpdateInfo: ResolverTypeWrapper<UpdateInfo>;
   UpdateMatchesMutationResponse: ResolverTypeWrapper<UpdateMatchesMutationResponse>;
-  UpdateResultsMutationResponse: ResolverTypeWrapper<UpdateResultsMutationResponse>;
   UpdateSetsMutationResponse: ResolverTypeWrapper<UpdateSetsMutationResponse>;
   UpdateTargetsMutationResponse: ResolverTypeWrapper<UpdateTargetsMutationResponse>;
 };
@@ -4862,25 +4245,14 @@ export type ResolversParentTypes = {
   AthleteOnCreateInput: AthleteOnCreateInput;
   AthleteOptions: AthleteOptions;
   AthleteRelationInput: AthleteRelationInput;
-  AthleteResultResultsAggregationSelection: AthleteResultResultsAggregationSelection;
-  AthleteResultResultsNodeAggregateSelection: AthleteResultResultsNodeAggregateSelection;
-  AthleteResultsAggregateInput: AthleteResultsAggregateInput;
-  AthleteResultsConnectFieldInput: AthleteResultsConnectFieldInput;
-  AthleteResultsConnectOrCreateFieldInput: AthleteResultsConnectOrCreateFieldInput;
-  AthleteResultsConnectOrCreateFieldInputOnCreate: AthleteResultsConnectOrCreateFieldInputOnCreate;
-  AthleteResultsConnection: AthleteResultsConnection;
-  AthleteResultsConnectionSort: AthleteResultsConnectionSort;
-  AthleteResultsConnectionWhere: AthleteResultsConnectionWhere;
-  AthleteResultsCreateFieldInput: AthleteResultsCreateFieldInput;
-  AthleteResultsDeleteFieldInput: AthleteResultsDeleteFieldInput;
-  AthleteResultsDisconnectFieldInput: AthleteResultsDisconnectFieldInput;
-  AthleteResultsFieldInput: AthleteResultsFieldInput;
-  AthleteResultsNodeAggregationWhereInput: AthleteResultsNodeAggregationWhereInput;
-  AthleteResultsRelationship: AthleteResultsRelationship;
-  AthleteResultsUpdateConnectionInput: AthleteResultsUpdateConnectionInput;
-  AthleteResultsUpdateFieldInput: AthleteResultsUpdateFieldInput;
+  AthleteSet: ResolversInterfaceTypes<ResolversParentTypes>['AthleteSet'];
+  AthleteSetCreateInput: AthleteSetCreateInput;
   AthleteSetSetsAggregationSelection: AthleteSetSetsAggregationSelection;
+  AthleteSetSetsEdgeAggregateSelection: AthleteSetSetsEdgeAggregateSelection;
   AthleteSetSetsNodeAggregateSelection: AthleteSetSetsNodeAggregateSelection;
+  AthleteSetSort: AthleteSetSort;
+  AthleteSetUpdateInput: AthleteSetUpdateInput;
+  AthleteSetWhere: AthleteSetWhere;
   AthleteSetsAggregateInput: AthleteSetsAggregateInput;
   AthleteSetsConnectFieldInput: AthleteSetsConnectFieldInput;
   AthleteSetsConnectOrCreateFieldInput: AthleteSetsConnectOrCreateFieldInput;
@@ -4891,6 +4263,7 @@ export type ResolversParentTypes = {
   AthleteSetsCreateFieldInput: AthleteSetsCreateFieldInput;
   AthleteSetsDeleteFieldInput: AthleteSetsDeleteFieldInput;
   AthleteSetsDisconnectFieldInput: AthleteSetsDisconnectFieldInput;
+  AthleteSetsEdgeAggregationWhereInput: AthleteSetsEdgeAggregationWhereInput;
   AthleteSetsFieldInput: AthleteSetsFieldInput;
   AthleteSetsNodeAggregationWhereInput: AthleteSetsNodeAggregationWhereInput;
   AthleteSetsRelationship: AthleteSetsRelationship;
@@ -4907,7 +4280,6 @@ export type ResolversParentTypes = {
   CreateEventsMutationResponse: CreateEventsMutationResponse;
   CreateInfo: CreateInfo;
   CreateMatchesMutationResponse: CreateMatchesMutationResponse;
-  CreateResultsMutationResponse: CreateResultsMutationResponse;
   CreateSetsMutationResponse: CreateSetsMutationResponse;
   CreateTargetsMutationResponse: CreateTargetsMutationResponse;
   DeleteInfo: DeleteInfo;
@@ -4948,7 +4320,7 @@ export type ResolversParentTypes = {
   EventsConnection: EventsConnection;
   Float: Scalars['Float']['output'];
   ID: Scalars['ID']['output'];
-  IDAggregateSelectionNonNullable: IdAggregateSelectionNonNullable;
+  IDAggregateSelectionNullable: IdAggregateSelectionNullable;
   Int: Scalars['Int']['output'];
   IntAggregateSelectionNonNullable: IntAggregateSelectionNonNullable;
   IntAggregateSelectionNullable: IntAggregateSelectionNullable;
@@ -5026,58 +4398,6 @@ export type ResolversParentTypes = {
   Mutation: {};
   PageInfo: PageInfo;
   Query: {};
-  Result: Result;
-  ResultAggregateSelection: ResultAggregateSelection;
-  ResultAthleteAggregateInput: ResultAthleteAggregateInput;
-  ResultAthleteAthleteAggregationSelection: ResultAthleteAthleteAggregationSelection;
-  ResultAthleteAthleteNodeAggregateSelection: ResultAthleteAthleteNodeAggregateSelection;
-  ResultAthleteConnectFieldInput: ResultAthleteConnectFieldInput;
-  ResultAthleteConnectOrCreateFieldInput: ResultAthleteConnectOrCreateFieldInput;
-  ResultAthleteConnectOrCreateFieldInputOnCreate: ResultAthleteConnectOrCreateFieldInputOnCreate;
-  ResultAthleteConnection: ResultAthleteConnection;
-  ResultAthleteConnectionSort: ResultAthleteConnectionSort;
-  ResultAthleteConnectionWhere: ResultAthleteConnectionWhere;
-  ResultAthleteCreateFieldInput: ResultAthleteCreateFieldInput;
-  ResultAthleteDeleteFieldInput: ResultAthleteDeleteFieldInput;
-  ResultAthleteDisconnectFieldInput: ResultAthleteDisconnectFieldInput;
-  ResultAthleteFieldInput: ResultAthleteFieldInput;
-  ResultAthleteNodeAggregationWhereInput: ResultAthleteNodeAggregationWhereInput;
-  ResultAthleteRelationship: ResultAthleteRelationship;
-  ResultAthleteUpdateConnectionInput: ResultAthleteUpdateConnectionInput;
-  ResultAthleteUpdateFieldInput: ResultAthleteUpdateFieldInput;
-  ResultConnectInput: ResultConnectInput;
-  ResultConnectOrCreateInput: ResultConnectOrCreateInput;
-  ResultConnectOrCreateWhere: ResultConnectOrCreateWhere;
-  ResultConnectWhere: ResultConnectWhere;
-  ResultCreateInput: ResultCreateInput;
-  ResultDeleteInput: ResultDeleteInput;
-  ResultDisconnectInput: ResultDisconnectInput;
-  ResultEdge: ResultEdge;
-  ResultOnCreateInput: ResultOnCreateInput;
-  ResultOptions: ResultOptions;
-  ResultRelationInput: ResultRelationInput;
-  ResultSetSetsAggregationSelection: ResultSetSetsAggregationSelection;
-  ResultSetSetsNodeAggregateSelection: ResultSetSetsNodeAggregateSelection;
-  ResultSetsAggregateInput: ResultSetsAggregateInput;
-  ResultSetsConnectFieldInput: ResultSetsConnectFieldInput;
-  ResultSetsConnectOrCreateFieldInput: ResultSetsConnectOrCreateFieldInput;
-  ResultSetsConnectOrCreateFieldInputOnCreate: ResultSetsConnectOrCreateFieldInputOnCreate;
-  ResultSetsConnection: ResultSetsConnection;
-  ResultSetsConnectionSort: ResultSetsConnectionSort;
-  ResultSetsConnectionWhere: ResultSetsConnectionWhere;
-  ResultSetsCreateFieldInput: ResultSetsCreateFieldInput;
-  ResultSetsDeleteFieldInput: ResultSetsDeleteFieldInput;
-  ResultSetsDisconnectFieldInput: ResultSetsDisconnectFieldInput;
-  ResultSetsFieldInput: ResultSetsFieldInput;
-  ResultSetsNodeAggregationWhereInput: ResultSetsNodeAggregationWhereInput;
-  ResultSetsRelationship: ResultSetsRelationship;
-  ResultSetsUpdateConnectionInput: ResultSetsUpdateConnectionInput;
-  ResultSetsUpdateFieldInput: ResultSetsUpdateFieldInput;
-  ResultSort: ResultSort;
-  ResultUniqueWhere: ResultUniqueWhere;
-  ResultUpdateInput: ResultUpdateInput;
-  ResultWhere: ResultWhere;
-  ResultsConnection: ResultsConnection;
   Set: Set;
   SetAggregateSelection: SetAggregateSelection;
   SetArrowArrowsAggregationSelection: SetArrowArrowsAggregationSelection;
@@ -5099,6 +4419,7 @@ export type ResolversParentTypes = {
   SetArrowsUpdateFieldInput: SetArrowsUpdateFieldInput;
   SetAthleteAggregateInput: SetAthleteAggregateInput;
   SetAthleteAthleteAggregationSelection: SetAthleteAthleteAggregationSelection;
+  SetAthleteAthleteEdgeAggregateSelection: SetAthleteAthleteEdgeAggregateSelection;
   SetAthleteAthleteNodeAggregateSelection: SetAthleteAthleteNodeAggregateSelection;
   SetAthleteConnectFieldInput: SetAthleteConnectFieldInput;
   SetAthleteConnectOrCreateFieldInput: SetAthleteConnectOrCreateFieldInput;
@@ -5109,6 +4430,7 @@ export type ResolversParentTypes = {
   SetAthleteCreateFieldInput: SetAthleteCreateFieldInput;
   SetAthleteDeleteFieldInput: SetAthleteDeleteFieldInput;
   SetAthleteDisconnectFieldInput: SetAthleteDisconnectFieldInput;
+  SetAthleteEdgeAggregationWhereInput: SetAthleteEdgeAggregationWhereInput;
   SetAthleteFieldInput: SetAthleteFieldInput;
   SetAthleteNodeAggregationWhereInput: SetAthleteNodeAggregationWhereInput;
   SetAthleteRelationship: SetAthleteRelationship;
@@ -5201,14 +4523,13 @@ export type ResolversParentTypes = {
   UpdateEventsMutationResponse: UpdateEventsMutationResponse;
   UpdateInfo: UpdateInfo;
   UpdateMatchesMutationResponse: UpdateMatchesMutationResponse;
-  UpdateResultsMutationResponse: UpdateResultsMutationResponse;
   UpdateSetsMutationResponse: UpdateSetsMutationResponse;
   UpdateTargetsMutationResponse: UpdateTargetsMutationResponse;
 };
 
 export type ArrowResolvers<ContextType = any, ParentType extends ResolversParentTypes['Arrow'] = ResolversParentTypes['Arrow']> = {
   angle?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   offset?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   set?: Resolver<ResolversTypes['Set'], ParentType, ContextType, RequireFields<ArrowSetArgs, 'directed'>>;
   setAggregate?: Resolver<Maybe<ResolversTypes['ArrowSetSetAggregationSelection']>, ParentType, ContextType, RequireFields<ArrowSetAggregateArgs, 'directed'>>;
@@ -5220,7 +4541,7 @@ export type ArrowResolvers<ContextType = any, ParentType extends ResolversParent
 export type ArrowAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ArrowAggregateSelection'] = ResolversParentTypes['ArrowAggregateSelection']> = {
   angle?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   offset?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   timestamp?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -5252,7 +4573,7 @@ export type ArrowSetSetAggregationSelectionResolvers<ContextType = any, ParentTy
 };
 
 export type ArrowSetSetNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ArrowSetSetNodeAggregateSelection'] = ResolversParentTypes['ArrowSetSetNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5265,17 +4586,15 @@ export type ArrowsConnectionResolvers<ContextType = any, ParentType extends Reso
 
 export type AthleteResolvers<ContextType = any, ParentType extends ResolversParentTypes['Athlete'] = ResolversParentTypes['Athlete']> = {
   activeNation?: Resolver<ResolversTypes['NationCode'], ParentType, ContextType>;
-  elimRating?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  elimElo?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   familyName?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   givenName?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   matches?: Resolver<Array<ResolversTypes['Event']>, ParentType, ContextType, RequireFields<AthleteMatchesArgs, 'directed'>>;
   matchesAggregate?: Resolver<Maybe<ResolversTypes['AthleteEventMatchesAggregationSelection']>, ParentType, ContextType, RequireFields<AthleteMatchesAggregateArgs, 'directed'>>;
   matchesConnection?: Resolver<ResolversTypes['AthleteMatchesConnection'], ParentType, ContextType, RequireFields<AthleteMatchesConnectionArgs, 'directed'>>;
-  qualRating?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  results?: Resolver<Array<ResolversTypes['Result']>, ParentType, ContextType, RequireFields<AthleteResultsArgs, 'directed'>>;
-  resultsAggregate?: Resolver<Maybe<ResolversTypes['AthleteResultResultsAggregationSelection']>, ParentType, ContextType, RequireFields<AthleteResultsAggregateArgs, 'directed'>>;
-  resultsConnection?: Resolver<ResolversTypes['AthleteResultsConnection'], ParentType, ContextType, RequireFields<AthleteResultsConnectionArgs, 'directed'>>;
+  nameOrder?: Resolver<ResolversTypes['NameOrder'], ParentType, ContextType>;
+  qualElo?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   sets?: Resolver<Array<ResolversTypes['Set']>, ParentType, ContextType, RequireFields<AthleteSetsArgs, 'directed'>>;
   setsAggregate?: Resolver<Maybe<ResolversTypes['AthleteSetSetsAggregationSelection']>, ParentType, ContextType, RequireFields<AthleteSetsAggregateArgs, 'directed'>>;
   setsConnection?: Resolver<ResolversTypes['AthleteSetsConnection'], ParentType, ContextType, RequireFields<AthleteSetsConnectionArgs, 'directed'>>;
@@ -5284,11 +4603,11 @@ export type AthleteResolvers<ContextType = any, ParentType extends ResolversPare
 
 export type AthleteAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteAggregateSelection'] = ResolversParentTypes['AthleteAggregateSelection']> = {
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  elimRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  elimElo?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   familyName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
   givenName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
-  qualRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
+  qualElo?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5306,19 +4625,19 @@ export type AthleteEventMatchesAggregationSelectionResolvers<ContextType = any, 
 };
 
 export type AthleteEventMatchesEdgeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteEventMatchesEdgeAggregateSelection'] = ResolversParentTypes['AthleteEventMatchesEdgeAggregateSelection']> = {
-  deltaR?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  eloDelta?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
 export type AthleteEventMatchesNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteEventMatchesNodeAggregateSelection'] = ResolversParentTypes['AthleteEventMatchesNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
 export type AthleteMatchResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteMatch'] = ResolversParentTypes['AthleteMatch']> = {
   __resolveType: TypeResolveFn<'AthleteMatchesRelationship' | 'MatchAthletesRelationship', ParentType, ContextType>;
-  deltaR?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   division?: Resolver<ResolversTypes['Division'], ParentType, ContextType>;
+  eloDelta?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   gender?: Resolver<ResolversTypes['Gender'], ParentType, ContextType>;
   nation?: Resolver<ResolversTypes['NationCode'], ParentType, ContextType>;
 };
@@ -5332,47 +4651,34 @@ export type AthleteMatchesConnectionResolvers<ContextType = any, ParentType exte
 
 export type AthleteMatchesRelationshipResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteMatchesRelationship'] = ResolversParentTypes['AthleteMatchesRelationship']> = {
   cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  deltaR?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   division?: Resolver<ResolversTypes['Division'], ParentType, ContextType>;
+  eloDelta?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   gender?: Resolver<ResolversTypes['Gender'], ParentType, ContextType>;
   nation?: Resolver<ResolversTypes['NationCode'], ParentType, ContextType>;
   node?: Resolver<ResolversTypes['Event'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type AthleteResultResultsAggregationSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteResultResultsAggregationSelection'] = ResolversParentTypes['AthleteResultResultsAggregationSelection']> = {
-  count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  node?: Resolver<Maybe<ResolversTypes['AthleteResultResultsNodeAggregateSelection']>, ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type AthleteResultResultsNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteResultResultsNodeAggregateSelection'] = ResolversParentTypes['AthleteResultResultsNodeAggregateSelection']> = {
-  deltaR?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type AthleteResultsConnectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteResultsConnection'] = ResolversParentTypes['AthleteResultsConnection']> = {
-  edges?: Resolver<Array<ResolversTypes['AthleteResultsRelationship']>, ParentType, ContextType>;
-  pageInfo?: Resolver<ResolversTypes['PageInfo'], ParentType, ContextType>;
-  totalCount?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type AthleteResultsRelationshipResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteResultsRelationship'] = ResolversParentTypes['AthleteResultsRelationship']> = {
-  cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  node?: Resolver<ResolversTypes['Result'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+export type AthleteSetResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteSet'] = ResolversParentTypes['AthleteSet']> = {
+  __resolveType: TypeResolveFn<'AthleteSetsRelationship' | 'SetAthleteRelationship', ParentType, ContextType>;
+  eloDelta?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
+  result?: Resolver<ResolversTypes['Result'], ParentType, ContextType>;
 };
 
 export type AthleteSetSetsAggregationSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteSetSetsAggregationSelection'] = ResolversParentTypes['AthleteSetSetsAggregationSelection']> = {
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  edge?: Resolver<Maybe<ResolversTypes['AthleteSetSetsEdgeAggregateSelection']>, ParentType, ContextType>;
   node?: Resolver<Maybe<ResolversTypes['AthleteSetSetsNodeAggregateSelection']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type AthleteSetSetsEdgeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteSetSetsEdgeAggregateSelection'] = ResolversParentTypes['AthleteSetSetsEdgeAggregateSelection']> = {
+  eloDelta?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type AthleteSetSetsNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteSetSetsNodeAggregateSelection'] = ResolversParentTypes['AthleteSetSetsNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5385,7 +4691,9 @@ export type AthleteSetsConnectionResolvers<ContextType = any, ParentType extends
 
 export type AthleteSetsRelationshipResolvers<ContextType = any, ParentType extends ResolversParentTypes['AthleteSetsRelationship'] = ResolversParentTypes['AthleteSetsRelationship']> = {
   cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  eloDelta?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   node?: Resolver<ResolversTypes['Set'], ParentType, ContextType>;
+  result?: Resolver<ResolversTypes['Result'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5427,12 +4735,6 @@ export type CreateMatchesMutationResponseResolvers<ContextType = any, ParentType
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type CreateResultsMutationResponseResolvers<ContextType = any, ParentType extends ResolversParentTypes['CreateResultsMutationResponse'] = ResolversParentTypes['CreateResultsMutationResponse']> = {
-  info?: Resolver<ResolversTypes['CreateInfo'], ParentType, ContextType>;
-  results?: Resolver<Array<ResolversTypes['Result']>, ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
 export type CreateSetsMutationResponseResolvers<ContextType = any, ParentType extends ResolversParentTypes['CreateSetsMutationResponse'] = ResolversParentTypes['CreateSetsMutationResponse']> = {
   info?: Resolver<ResolversTypes['CreateInfo'], ParentType, ContextType>;
   sets?: Resolver<Array<ResolversTypes['Set']>, ParentType, ContextType>;
@@ -5454,7 +4756,7 @@ export type DeleteInfoResolvers<ContextType = any, ParentType extends ResolversP
 
 export type EventResolvers<ContextType = any, ParentType extends ResolversParentTypes['Event'] = ResolversParentTypes['Event']> = {
   complete?: Resolver<ResolversTypes['Boolean'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   matches?: Resolver<Array<ResolversTypes['Match']>, ParentType, ContextType, RequireFields<EventMatchesArgs, 'directed'>>;
   matchesAggregate?: Resolver<Maybe<ResolversTypes['EventMatchMatchesAggregationSelection']>, ParentType, ContextType, RequireFields<EventMatchesAggregateArgs, 'directed'>>;
   matchesConnection?: Resolver<ResolversTypes['EventMatchesConnection'], ParentType, ContextType, RequireFields<EventMatchesConnectionArgs, 'directed'>>;
@@ -5463,7 +4765,7 @@ export type EventResolvers<ContextType = any, ParentType extends ResolversParent
 
 export type EventAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['EventAggregateSelection'] = ResolversParentTypes['EventAggregateSelection']> = {
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5480,7 +4782,7 @@ export type EventMatchMatchesAggregationSelectionResolvers<ContextType = any, Pa
 };
 
 export type EventMatchMatchesNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['EventMatchMatchesNodeAggregateSelection'] = ResolversParentTypes['EventMatchMatchesNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5504,9 +4806,9 @@ export type EventsConnectionResolvers<ContextType = any, ParentType extends Reso
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type IdAggregateSelectionNonNullableResolvers<ContextType = any, ParentType extends ResolversParentTypes['IDAggregateSelectionNonNullable'] = ResolversParentTypes['IDAggregateSelectionNonNullable']> = {
-  longest?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
-  shortest?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+export type IdAggregateSelectionNullableResolvers<ContextType = any, ParentType extends ResolversParentTypes['IDAggregateSelectionNullable'] = ResolversParentTypes['IDAggregateSelectionNullable']> = {
+  longest?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
+  shortest?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5534,7 +4836,7 @@ export type MatchResolvers<ContextType = any, ParentType extends ResolversParent
   event?: Resolver<Maybe<ResolversTypes['Event']>, ParentType, ContextType, RequireFields<MatchEventArgs, 'directed'>>;
   eventAggregate?: Resolver<Maybe<ResolversTypes['MatchEventEventAggregationSelection']>, ParentType, ContextType, RequireFields<MatchEventAggregateArgs, 'directed'>>;
   eventConnection?: Resolver<ResolversTypes['MatchEventConnection'], ParentType, ContextType, RequireFields<MatchEventConnectionArgs, 'directed'>>;
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   sets?: Resolver<Array<ResolversTypes['Set']>, ParentType, ContextType, RequireFields<MatchSetsArgs, 'directed'>>;
   setsAggregate?: Resolver<Maybe<ResolversTypes['MatchSetSetsAggregationSelection']>, ParentType, ContextType, RequireFields<MatchSetsAggregateArgs, 'directed'>>;
   setsConnection?: Resolver<ResolversTypes['MatchSetsConnection'], ParentType, ContextType, RequireFields<MatchSetsConnectionArgs, 'directed'>>;
@@ -5544,7 +4846,7 @@ export type MatchResolvers<ContextType = any, ParentType extends ResolversParent
 
 export type MatchAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['MatchAggregateSelection'] = ResolversParentTypes['MatchAggregateSelection']> = {
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5556,16 +4858,16 @@ export type MatchAthleteAthletesAggregationSelectionResolvers<ContextType = any,
 };
 
 export type MatchAthleteAthletesEdgeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['MatchAthleteAthletesEdgeAggregateSelection'] = ResolversParentTypes['MatchAthleteAthletesEdgeAggregateSelection']> = {
-  deltaR?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  eloDelta?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
 export type MatchAthleteAthletesNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['MatchAthleteAthletesNodeAggregateSelection'] = ResolversParentTypes['MatchAthleteAthletesNodeAggregateSelection']> = {
-  elimRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  elimElo?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   familyName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
   givenName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
-  qualRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
+  qualElo?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5578,8 +4880,8 @@ export type MatchAthletesConnectionResolvers<ContextType = any, ParentType exten
 
 export type MatchAthletesRelationshipResolvers<ContextType = any, ParentType extends ResolversParentTypes['MatchAthletesRelationship'] = ResolversParentTypes['MatchAthletesRelationship']> = {
   cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  deltaR?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   division?: Resolver<ResolversTypes['Division'], ParentType, ContextType>;
+  eloDelta?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   gender?: Resolver<ResolversTypes['Gender'], ParentType, ContextType>;
   nation?: Resolver<ResolversTypes['NationCode'], ParentType, ContextType>;
   node?: Resolver<ResolversTypes['Athlete'], ParentType, ContextType>;
@@ -5606,7 +4908,7 @@ export type MatchEventEventAggregationSelectionResolvers<ContextType = any, Pare
 };
 
 export type MatchEventEventNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['MatchEventEventNodeAggregateSelection'] = ResolversParentTypes['MatchEventEventNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5623,7 +4925,7 @@ export type MatchSetSetsAggregationSelectionResolvers<ContextType = any, ParentT
 };
 
 export type MatchSetSetsNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['MatchSetSetsNodeAggregateSelection'] = ResolversParentTypes['MatchSetSetsNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5652,21 +4954,18 @@ export type MutationResolvers<ContextType = any, ParentType extends ResolversPar
   createAthletes?: Resolver<ResolversTypes['CreateAthletesMutationResponse'], ParentType, ContextType, RequireFields<MutationCreateAthletesArgs, 'input'>>;
   createEvents?: Resolver<ResolversTypes['CreateEventsMutationResponse'], ParentType, ContextType, RequireFields<MutationCreateEventsArgs, 'input'>>;
   createMatches?: Resolver<ResolversTypes['CreateMatchesMutationResponse'], ParentType, ContextType, RequireFields<MutationCreateMatchesArgs, 'input'>>;
-  createResults?: Resolver<ResolversTypes['CreateResultsMutationResponse'], ParentType, ContextType, RequireFields<MutationCreateResultsArgs, 'input'>>;
   createSets?: Resolver<ResolversTypes['CreateSetsMutationResponse'], ParentType, ContextType, RequireFields<MutationCreateSetsArgs, 'input'>>;
   createTargets?: Resolver<ResolversTypes['CreateTargetsMutationResponse'], ParentType, ContextType, RequireFields<MutationCreateTargetsArgs, 'input'>>;
   deleteArrows?: Resolver<ResolversTypes['DeleteInfo'], ParentType, ContextType, Partial<MutationDeleteArrowsArgs>>;
   deleteAthletes?: Resolver<ResolversTypes['DeleteInfo'], ParentType, ContextType, Partial<MutationDeleteAthletesArgs>>;
   deleteEvents?: Resolver<ResolversTypes['DeleteInfo'], ParentType, ContextType, Partial<MutationDeleteEventsArgs>>;
   deleteMatches?: Resolver<ResolversTypes['DeleteInfo'], ParentType, ContextType, Partial<MutationDeleteMatchesArgs>>;
-  deleteResults?: Resolver<ResolversTypes['DeleteInfo'], ParentType, ContextType, Partial<MutationDeleteResultsArgs>>;
   deleteSets?: Resolver<ResolversTypes['DeleteInfo'], ParentType, ContextType, Partial<MutationDeleteSetsArgs>>;
   deleteTargets?: Resolver<ResolversTypes['DeleteInfo'], ParentType, ContextType, Partial<MutationDeleteTargetsArgs>>;
   updateArrows?: Resolver<ResolversTypes['UpdateArrowsMutationResponse'], ParentType, ContextType, Partial<MutationUpdateArrowsArgs>>;
   updateAthletes?: Resolver<ResolversTypes['UpdateAthletesMutationResponse'], ParentType, ContextType, Partial<MutationUpdateAthletesArgs>>;
   updateEvents?: Resolver<ResolversTypes['UpdateEventsMutationResponse'], ParentType, ContextType, Partial<MutationUpdateEventsArgs>>;
   updateMatches?: Resolver<ResolversTypes['UpdateMatchesMutationResponse'], ParentType, ContextType, Partial<MutationUpdateMatchesArgs>>;
-  updateResults?: Resolver<ResolversTypes['UpdateResultsMutationResponse'], ParentType, ContextType, Partial<MutationUpdateResultsArgs>>;
   updateSets?: Resolver<ResolversTypes['UpdateSetsMutationResponse'], ParentType, ContextType, Partial<MutationUpdateSetsArgs>>;
   updateTargets?: Resolver<ResolversTypes['UpdateTargetsMutationResponse'], ParentType, ContextType, Partial<MutationUpdateTargetsArgs>>;
 };
@@ -5692,100 +4991,12 @@ export type QueryResolvers<ContextType = any, ParentType extends ResolversParent
   matches?: Resolver<Array<ResolversTypes['Match']>, ParentType, ContextType, Partial<QueryMatchesArgs>>;
   matchesAggregate?: Resolver<ResolversTypes['MatchAggregateSelection'], ParentType, ContextType, Partial<QueryMatchesAggregateArgs>>;
   matchesConnection?: Resolver<ResolversTypes['MatchesConnection'], ParentType, ContextType, Partial<QueryMatchesConnectionArgs>>;
-  results?: Resolver<Array<ResolversTypes['Result']>, ParentType, ContextType, Partial<QueryResultsArgs>>;
-  resultsAggregate?: Resolver<ResolversTypes['ResultAggregateSelection'], ParentType, ContextType, Partial<QueryResultsAggregateArgs>>;
-  resultsConnection?: Resolver<ResolversTypes['ResultsConnection'], ParentType, ContextType, Partial<QueryResultsConnectionArgs>>;
   sets?: Resolver<Array<ResolversTypes['Set']>, ParentType, ContextType, Partial<QuerySetsArgs>>;
   setsAggregate?: Resolver<ResolversTypes['SetAggregateSelection'], ParentType, ContextType, Partial<QuerySetsAggregateArgs>>;
   setsConnection?: Resolver<ResolversTypes['SetsConnection'], ParentType, ContextType, Partial<QuerySetsConnectionArgs>>;
   targets?: Resolver<Array<ResolversTypes['Target']>, ParentType, ContextType, Partial<QueryTargetsArgs>>;
   targetsAggregate?: Resolver<ResolversTypes['TargetAggregateSelection'], ParentType, ContextType, Partial<QueryTargetsAggregateArgs>>;
   targetsConnection?: Resolver<ResolversTypes['TargetsConnection'], ParentType, ContextType, Partial<QueryTargetsConnectionArgs>>;
-};
-
-export type ResultResolvers<ContextType = any, ParentType extends ResolversParentTypes['Result'] = ResolversParentTypes['Result']> = {
-  athlete?: Resolver<ResolversTypes['Athlete'], ParentType, ContextType, RequireFields<ResultAthleteArgs, 'directed'>>;
-  athleteAggregate?: Resolver<Maybe<ResolversTypes['ResultAthleteAthleteAggregationSelection']>, ParentType, ContextType, RequireFields<ResultAthleteAggregateArgs, 'directed'>>;
-  athleteConnection?: Resolver<ResolversTypes['ResultAthleteConnection'], ParentType, ContextType, RequireFields<ResultAthleteConnectionArgs, 'directed'>>;
-  deltaR?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
-  result?: Resolver<ResolversTypes['Result'], ParentType, ContextType>;
-  sets?: Resolver<Array<ResolversTypes['Set']>, ParentType, ContextType, RequireFields<ResultSetsArgs, 'directed'>>;
-  setsAggregate?: Resolver<Maybe<ResolversTypes['ResultSetSetsAggregationSelection']>, ParentType, ContextType, RequireFields<ResultSetsAggregateArgs, 'directed'>>;
-  setsConnection?: Resolver<ResolversTypes['ResultSetsConnection'], ParentType, ContextType, RequireFields<ResultSetsConnectionArgs, 'directed'>>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultAggregateSelection'] = ResolversParentTypes['ResultAggregateSelection']> = {
-  count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  deltaR?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultAthleteAthleteAggregationSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultAthleteAthleteAggregationSelection'] = ResolversParentTypes['ResultAthleteAthleteAggregationSelection']> = {
-  count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  node?: Resolver<Maybe<ResolversTypes['ResultAthleteAthleteNodeAggregateSelection']>, ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultAthleteAthleteNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultAthleteAthleteNodeAggregateSelection'] = ResolversParentTypes['ResultAthleteAthleteNodeAggregateSelection']> = {
-  elimRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
-  familyName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
-  givenName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
-  qualRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultAthleteConnectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultAthleteConnection'] = ResolversParentTypes['ResultAthleteConnection']> = {
-  edges?: Resolver<Array<ResolversTypes['ResultAthleteRelationship']>, ParentType, ContextType>;
-  pageInfo?: Resolver<ResolversTypes['PageInfo'], ParentType, ContextType>;
-  totalCount?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultAthleteRelationshipResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultAthleteRelationship'] = ResolversParentTypes['ResultAthleteRelationship']> = {
-  cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  node?: Resolver<ResolversTypes['Athlete'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultEdgeResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultEdge'] = ResolversParentTypes['ResultEdge']> = {
-  cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  node?: Resolver<ResolversTypes['Result'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultSetSetsAggregationSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultSetSetsAggregationSelection'] = ResolversParentTypes['ResultSetSetsAggregationSelection']> = {
-  count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  node?: Resolver<Maybe<ResolversTypes['ResultSetSetsNodeAggregateSelection']>, ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultSetSetsNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultSetSetsNodeAggregateSelection'] = ResolversParentTypes['ResultSetSetsNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultSetsConnectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultSetsConnection'] = ResolversParentTypes['ResultSetsConnection']> = {
-  edges?: Resolver<Array<ResolversTypes['ResultSetsRelationship']>, ParentType, ContextType>;
-  pageInfo?: Resolver<ResolversTypes['PageInfo'], ParentType, ContextType>;
-  totalCount?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultSetsRelationshipResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultSetsRelationship'] = ResolversParentTypes['ResultSetsRelationship']> = {
-  cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  node?: Resolver<ResolversTypes['Set'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
-export type ResultsConnectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['ResultsConnection'] = ResolversParentTypes['ResultsConnection']> = {
-  edges?: Resolver<Array<ResolversTypes['ResultEdge']>, ParentType, ContextType>;
-  pageInfo?: Resolver<ResolversTypes['PageInfo'], ParentType, ContextType>;
-  totalCount?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
 export type SetResolvers<ContextType = any, ParentType extends ResolversParentTypes['Set'] = ResolversParentTypes['Set']> = {
@@ -5797,7 +5008,7 @@ export type SetResolvers<ContextType = any, ParentType extends ResolversParentTy
   athleteAggregate?: Resolver<Maybe<ResolversTypes['SetAthleteAthleteAggregationSelection']>, ParentType, ContextType, RequireFields<SetAthleteAggregateArgs, 'directed'>>;
   athleteConnection?: Resolver<ResolversTypes['SetAthleteConnection'], ParentType, ContextType, RequireFields<SetAthleteConnectionArgs, 'directed'>>;
   complete?: Resolver<ResolversTypes['Boolean'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   match?: Resolver<Maybe<ResolversTypes['Match']>, ParentType, ContextType, RequireFields<SetMatchArgs, 'directed'>>;
   matchAggregate?: Resolver<Maybe<ResolversTypes['SetMatchMatchAggregationSelection']>, ParentType, ContextType, RequireFields<SetMatchAggregateArgs, 'directed'>>;
   matchConnection?: Resolver<ResolversTypes['SetMatchConnection'], ParentType, ContextType, RequireFields<SetMatchConnectionArgs, 'directed'>>;
@@ -5812,7 +5023,7 @@ export type SetResolvers<ContextType = any, ParentType extends ResolversParentTy
 
 export type SetAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetAggregateSelection'] = ResolversParentTypes['SetAggregateSelection']> = {
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5824,7 +5035,7 @@ export type SetArrowArrowsAggregationSelectionResolvers<ContextType = any, Paren
 
 export type SetArrowArrowsNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetArrowArrowsNodeAggregateSelection'] = ResolversParentTypes['SetArrowArrowsNodeAggregateSelection']> = {
   angle?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   offset?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   timestamp?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -5845,16 +5056,22 @@ export type SetArrowsRelationshipResolvers<ContextType = any, ParentType extends
 
 export type SetAthleteAthleteAggregationSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetAthleteAthleteAggregationSelection'] = ResolversParentTypes['SetAthleteAthleteAggregationSelection']> = {
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  edge?: Resolver<Maybe<ResolversTypes['SetAthleteAthleteEdgeAggregateSelection']>, ParentType, ContextType>;
   node?: Resolver<Maybe<ResolversTypes['SetAthleteAthleteNodeAggregateSelection']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type SetAthleteAthleteEdgeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetAthleteAthleteEdgeAggregateSelection'] = ResolversParentTypes['SetAthleteAthleteEdgeAggregateSelection']> = {
+  eloDelta?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type SetAthleteAthleteNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetAthleteAthleteNodeAggregateSelection'] = ResolversParentTypes['SetAthleteAthleteNodeAggregateSelection']> = {
-  elimRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  elimElo?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   familyName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
   givenName?: Resolver<ResolversTypes['StringAggregateSelectionNonNullable'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
-  qualRating?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
+  qualElo?: Resolver<ResolversTypes['IntAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5867,7 +5084,9 @@ export type SetAthleteConnectionResolvers<ContextType = any, ParentType extends 
 
 export type SetAthleteRelationshipResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetAthleteRelationship'] = ResolversParentTypes['SetAthleteRelationship']> = {
   cursor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  eloDelta?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   node?: Resolver<ResolversTypes['Athlete'], ParentType, ContextType>;
+  result?: Resolver<ResolversTypes['Result'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5891,7 +5110,7 @@ export type SetMatchMatchAggregationSelectionResolvers<ContextType = any, Parent
 };
 
 export type SetMatchMatchNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetMatchMatchNodeAggregateSelection'] = ResolversParentTypes['SetMatchMatchNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5908,7 +5127,7 @@ export type SetSetSetsAggregationSelectionResolvers<ContextType = any, ParentTyp
 };
 
 export type SetSetSetsNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetSetSetsNodeAggregateSelection'] = ResolversParentTypes['SetSetSetsNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -5945,7 +5164,7 @@ export type SetTargetTargetAggregationSelectionResolvers<ContextType = any, Pare
 };
 
 export type SetTargetTargetNodeAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['SetTargetTargetNodeAggregateSelection'] = ResolversParentTypes['SetTargetTargetNodeAggregateSelection']> = {
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   max?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   min?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   radius?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
@@ -5967,7 +5186,7 @@ export type StringAggregateSelectionNonNullableResolvers<ContextType = any, Pare
 };
 
 export type TargetResolvers<ContextType = any, ParentType extends ResolversParentTypes['Target'] = ResolversParentTypes['Target']> = {
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   max?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   min?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   radius?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
@@ -5978,7 +5197,7 @@ export type TargetResolvers<ContextType = any, ParentType extends ResolversParen
 
 export type TargetAggregateSelectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['TargetAggregateSelection'] = ResolversParentTypes['TargetAggregateSelection']> = {
   count?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  id?: Resolver<ResolversTypes['IDAggregateSelectionNonNullable'], ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['IDAggregateSelectionNullable'], ParentType, ContextType>;
   max?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   min?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
   radius?: Resolver<ResolversTypes['IntAggregateSelectionNonNullable'], ParentType, ContextType>;
@@ -6032,12 +5251,6 @@ export type UpdateMatchesMutationResponseResolvers<ContextType = any, ParentType
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type UpdateResultsMutationResponseResolvers<ContextType = any, ParentType extends ResolversParentTypes['UpdateResultsMutationResponse'] = ResolversParentTypes['UpdateResultsMutationResponse']> = {
-  info?: Resolver<ResolversTypes['UpdateInfo'], ParentType, ContextType>;
-  results?: Resolver<Array<ResolversTypes['Result']>, ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
-};
-
 export type UpdateSetsMutationResponseResolvers<ContextType = any, ParentType extends ResolversParentTypes['UpdateSetsMutationResponse'] = ResolversParentTypes['UpdateSetsMutationResponse']> = {
   info?: Resolver<ResolversTypes['UpdateInfo'], ParentType, ContextType>;
   sets?: Resolver<Array<ResolversTypes['Set']>, ParentType, ContextType>;
@@ -6068,11 +5281,9 @@ export type Resolvers<ContextType = any> = {
   AthleteMatch?: AthleteMatchResolvers<ContextType>;
   AthleteMatchesConnection?: AthleteMatchesConnectionResolvers<ContextType>;
   AthleteMatchesRelationship?: AthleteMatchesRelationshipResolvers<ContextType>;
-  AthleteResultResultsAggregationSelection?: AthleteResultResultsAggregationSelectionResolvers<ContextType>;
-  AthleteResultResultsNodeAggregateSelection?: AthleteResultResultsNodeAggregateSelectionResolvers<ContextType>;
-  AthleteResultsConnection?: AthleteResultsConnectionResolvers<ContextType>;
-  AthleteResultsRelationship?: AthleteResultsRelationshipResolvers<ContextType>;
+  AthleteSet?: AthleteSetResolvers<ContextType>;
   AthleteSetSetsAggregationSelection?: AthleteSetSetsAggregationSelectionResolvers<ContextType>;
+  AthleteSetSetsEdgeAggregateSelection?: AthleteSetSetsEdgeAggregateSelectionResolvers<ContextType>;
   AthleteSetSetsNodeAggregateSelection?: AthleteSetSetsNodeAggregateSelectionResolvers<ContextType>;
   AthleteSetsConnection?: AthleteSetsConnectionResolvers<ContextType>;
   AthleteSetsRelationship?: AthleteSetsRelationshipResolvers<ContextType>;
@@ -6082,7 +5293,6 @@ export type Resolvers<ContextType = any> = {
   CreateEventsMutationResponse?: CreateEventsMutationResponseResolvers<ContextType>;
   CreateInfo?: CreateInfoResolvers<ContextType>;
   CreateMatchesMutationResponse?: CreateMatchesMutationResponseResolvers<ContextType>;
-  CreateResultsMutationResponse?: CreateResultsMutationResponseResolvers<ContextType>;
   CreateSetsMutationResponse?: CreateSetsMutationResponseResolvers<ContextType>;
   CreateTargetsMutationResponse?: CreateTargetsMutationResponseResolvers<ContextType>;
   DeleteInfo?: DeleteInfoResolvers<ContextType>;
@@ -6094,7 +5304,7 @@ export type Resolvers<ContextType = any> = {
   EventMatchesConnection?: EventMatchesConnectionResolvers<ContextType>;
   EventMatchesRelationship?: EventMatchesRelationshipResolvers<ContextType>;
   EventsConnection?: EventsConnectionResolvers<ContextType>;
-  IDAggregateSelectionNonNullable?: IdAggregateSelectionNonNullableResolvers<ContextType>;
+  IDAggregateSelectionNullable?: IdAggregateSelectionNullableResolvers<ContextType>;
   IntAggregateSelectionNonNullable?: IntAggregateSelectionNonNullableResolvers<ContextType>;
   IntAggregateSelectionNullable?: IntAggregateSelectionNullableResolvers<ContextType>;
   Match?: MatchResolvers<ContextType>;
@@ -6117,18 +5327,6 @@ export type Resolvers<ContextType = any> = {
   Mutation?: MutationResolvers<ContextType>;
   PageInfo?: PageInfoResolvers<ContextType>;
   Query?: QueryResolvers<ContextType>;
-  Result?: ResultResolvers<ContextType>;
-  ResultAggregateSelection?: ResultAggregateSelectionResolvers<ContextType>;
-  ResultAthleteAthleteAggregationSelection?: ResultAthleteAthleteAggregationSelectionResolvers<ContextType>;
-  ResultAthleteAthleteNodeAggregateSelection?: ResultAthleteAthleteNodeAggregateSelectionResolvers<ContextType>;
-  ResultAthleteConnection?: ResultAthleteConnectionResolvers<ContextType>;
-  ResultAthleteRelationship?: ResultAthleteRelationshipResolvers<ContextType>;
-  ResultEdge?: ResultEdgeResolvers<ContextType>;
-  ResultSetSetsAggregationSelection?: ResultSetSetsAggregationSelectionResolvers<ContextType>;
-  ResultSetSetsNodeAggregateSelection?: ResultSetSetsNodeAggregateSelectionResolvers<ContextType>;
-  ResultSetsConnection?: ResultSetsConnectionResolvers<ContextType>;
-  ResultSetsRelationship?: ResultSetsRelationshipResolvers<ContextType>;
-  ResultsConnection?: ResultsConnectionResolvers<ContextType>;
   Set?: SetResolvers<ContextType>;
   SetAggregateSelection?: SetAggregateSelectionResolvers<ContextType>;
   SetArrowArrowsAggregationSelection?: SetArrowArrowsAggregationSelectionResolvers<ContextType>;
@@ -6136,6 +5334,7 @@ export type Resolvers<ContextType = any> = {
   SetArrowsConnection?: SetArrowsConnectionResolvers<ContextType>;
   SetArrowsRelationship?: SetArrowsRelationshipResolvers<ContextType>;
   SetAthleteAthleteAggregationSelection?: SetAthleteAthleteAggregationSelectionResolvers<ContextType>;
+  SetAthleteAthleteEdgeAggregateSelection?: SetAthleteAthleteEdgeAggregateSelectionResolvers<ContextType>;
   SetAthleteAthleteNodeAggregateSelection?: SetAthleteAthleteNodeAggregateSelectionResolvers<ContextType>;
   SetAthleteConnection?: SetAthleteConnectionResolvers<ContextType>;
   SetAthleteRelationship?: SetAthleteRelationshipResolvers<ContextType>;
@@ -6163,7 +5362,6 @@ export type Resolvers<ContextType = any> = {
   UpdateEventsMutationResponse?: UpdateEventsMutationResponseResolvers<ContextType>;
   UpdateInfo?: UpdateInfoResolvers<ContextType>;
   UpdateMatchesMutationResponse?: UpdateMatchesMutationResponseResolvers<ContextType>;
-  UpdateResultsMutationResponse?: UpdateResultsMutationResponseResolvers<ContextType>;
   UpdateSetsMutationResponse?: UpdateSetsMutationResponseResolvers<ContextType>;
   UpdateTargetsMutationResponse?: UpdateTargetsMutationResponseResolvers<ContextType>;
 };
